@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ 🌐 Portfolio Website
 
-## Getting Started
+A minimalist, responsive portfolio built with React- & Next.js and Tailwind CSS, showcasing my frontend development projects, design approach, and case studies.  
+It reflects my focus on clean architecture, scalable UI, and user-centered functionality.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ 🚀 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Frontend: Next.js, React.js, Tailwind CSS, Framer Motion  
+- State & Logic: Custom Hook (useSticky), local state
+- Content Management: Modular config.js for dynamic data  
+- Deployment: Vercel  
+- Version Control: Git & GitHub  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+🧭 Structure & Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The portfolio was designed with clarity and usability in mind:
+- Grid-based layout for project overview  
+- Case study pages with smooth scrolling and section navigation  
+- Fixed GitHub access button for quick exploration  
+- Minimal animations using Framer Motion for a refined UI  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ 🧩 Project Sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🌟 Featured Projects (Case Studies)
+Original projects independently designed, developed, and deployed by me:
+
+- Liascope Astrology App (React + Next.js) – Complex chart-rendering app with API integrations, SVG logic, and modern state management.
+- Liascope Astrology Vanilla JS – Original MVC-based implementation serving as the base for the React refactor.
+- ToDoeZel App (React + Next.js) – Clean, responsive productivity app with modular components and persistent state.
+- Portfolio Website (React + Next.js) – The site you're currently viewing; showcases my personal work and design direction.
+
+Each includes a **detailed case study** describing architecture, challenges, and learnings.
+
+
+
+🧠 Additional Projects (Learning & Experimentation)
+Extended and customized versions of guided learning apps — demonstrating growth, problem-solving, and independent extension of existing codebases:
+
+- Forkify App (Recipe Finder) – Enhanced with local persistence, refined UI, and mobile responsiveness.  
+- Mapty App – Improved workout handling and map interaction features.  
+- The Wild Oasis (Admin Version) – Practiced React Query, authentication, and dashboard design.  
+- The Wild Oasis (Custom Version) – Focused on UI consistency, component reuse, and optimized UX.
+
+
+
+🪶 _Built with care, curiosity, and React by Liascope (Zeliha A.)._
