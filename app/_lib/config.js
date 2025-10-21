@@ -176,11 +176,11 @@ function generateImages(folder, count) {
 
 },   {logo: '/portfolio/0.png',
       title: 'Portfolio Website',
-      description: 'Responsive, minimalist personal portfolio built with React, Next.js, and Tailwind. Focus on design, structure, and UI/UX.',
+      description: 'Clean, responsive portfolio built with React.js, Next.js and Tailwind CSS, featuring a sticky navigation that highlights active sections, a scroll-triggered header powered by a custom useSticky hook, image sliders for project previews, and smooth transitions for an intuitive UX.',
       tech: ['React', 'Next.js', 'Tailwind CSS','Framer Motion' ],
       link: 'https://liascope-portfolio.vercel.app/', 
       github: 'https://github.com/liascope/portfolio', 
-      images: []
+      images: generateImages("portfolio", 5)
     },
 
       {logo: '/forkify/0.png',

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { navLinks } from "../_lib/config";
+import logo from '@/public/favicon.png'
 
 export default function Header() {
   const pathname = usePathname();
@@ -14,8 +15,9 @@ export default function Header() {
         <div className="flex justify-center w-full sm:h-15 h-10 my-3">
           <div className="sm:w-60 w-40 relative">
           <Image
-            src="/favicon.png"
+            src={logo}
             alt="Logo"
+            quality={100}
             fill
             priority
             className="brightness-80 saturate-100 contain-content"
