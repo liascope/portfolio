@@ -19,10 +19,10 @@ export default function Skills() {
     return (
       <div
         key={index}
-        className="flex flex-col justify-center items-center text-center bg-white/40 backdrop-blur-sm rounded-xl shadow hover:scale-105 transition h-32 sm:h-36 w-full"
+        className="flex flex-col text-teal-900/80 hover:text-sky-900/80 justify-center items-center text-center bg-white/40 backdrop-blur-sm rounded-xl shadow hover:scale-105 transition h-32 sm:h-36 w-full"
       >
         <Icon className="text-3xl sm:text-4xl mb-2" />
-        <span className="text-sm uppercase text-teal-900/50 sm:text-base font-semibold">
+        <span className="text-sm uppercase sm:text-base font-semibold">
           {item}
         </span>
       </div>

@@ -147,14 +147,6 @@ function generateImages(folder, count) {
   return Array.from({ length: count }, (_, i) => `/${folder}/${i+1}.png`);
 }
  export const projects = [
-    // {
-    //   title: 'Portfolio Website',
-    //   description: 'Minimalist personal portfolio built with React, Next.js, and Tailwind. Focus on design, structure, and UI/UX.',
-    //   tech: ['React', 'Next.js', 'Tailwind CSS'],
-    //   link: 'https://dein-vercel-link.com', 
-    //   github: 'https://github.com/liascope/portfolio', 
-    //   images: []
-    // },
        { logo: '/astroJS/0.png',
   title: 'Astrology App (Vanilla JS)',
   description: 'The original version of my astrology charting app, built to validate the concept and deepen my understanding of architectural patterns. Developed using the MVC pattern, it integrates external astrology and timezone APIs, performs chart calculations, and dynamically renders responsive SVG charts. This project marked my first experience with third-party libraries and laid the groundwork for the later React/Next.js refactor',
@@ -181,7 +173,16 @@ function generateImages(folder, count) {
   link: 'https://todoezel-react.vercel.app/',
   github: 'https://github.com/liascope/todoezel-react',
   images: generateImages("todoReact", 8)
-},
+
+},   {logo: '/portfolio/0.png',
+      title: 'Portfolio Website',
+      description: 'Responsive, minimalist personal portfolio built with React, Next.js, and Tailwind. Focus on design, structure, and UI/UX.',
+      tech: ['React', 'Next.js', 'Tailwind CSS','Framer Motion' ],
+      link: 'https://liascope-portfolio.vercel.app/', 
+      github: 'https://github.com/liascope/portfolio', 
+      images: []
+    },
+
       {logo: '/forkify/0.png',
       title: 'Recipe App',
   description: 'JavaScript recipe app built with the MVC pattern. Features recipe search via API, bookmarking with localStorage, and responsive design. Independently added and coded: Shopping List, KCal/Nutrition Information API call, Delete Recipe, Add Recipe, Add Ingredients, Sort Recipes A-Z, Display number of search results, and Display number of pages',
