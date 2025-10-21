@@ -1,0 +1,4 @@
+export default function ArrowRight(){return(<svg height='35' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15 15L15 17C15 17.961 16.2234 18.3688 16.8 17.6L20.55 12.6C20.8167 12.2444 20.8167 11.7556 20.55 11.4L16.8 6.4C16.2234 5.63119 15 6.03899 15 7L15 11C15 11.5523 14.5523 12 14 12L3 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"></path></svg>)}
+
+
+{/* <svg height='35' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.2426 12L17.6568 13.4142C18.3363 14.0938 19.4898 13.5171 19.3538 12.5657L18.47 6.37852C18.4071 5.93854 18.0614 5.59284 17.6214 5.52999L11.4343 4.6461C10.4829 4.5102 9.90618 5.66362 10.5857 6.34316L13.4141 9.17159C13.8047 9.56211 13.8047 10.1953 13.4141 10.5858L5.63598 18.364" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"></path></svg> */}
