@@ -16,7 +16,7 @@ import PrettierNEsLint from "../__components.js/Icons/PrettierNEsLint";
 import ReactRouter from "../__components.js/Icons/ReactRouter";
 import Redux from "../__components.js/Icons/Redux";
 import RestApi from "../__components.js/Icons/RestApi";
-import WebpackNVite from "../__components.js/Icons/WebpackNVite";
+import ParcelNVite from "../__components.js/Icons/ParcelNVite";
 import FramerMotion from "../__components.js/Icons/FramerMotion";
 import Supabase from "../__components.js/Icons/Supabase";
 import DevTools from "../__components.js/Icons/DevTools";
@@ -30,16 +30,16 @@ import Auth from "../__components.js/Icons/Auth";
   export const navLinks = [
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
-    { href: "/skills", label: "Skills" },
+    { href: "/techstack", label: "Tech Stack" },
     { href: "/contact", label: "Contact" },
   ];
 
 
 
-// Skills / Techstack
+//Techstack
 export const skillIcons = {
   "JavaScript (ES6+)": Javascript,
-  "TypeScript (basic experience)": Typescript,
+  "TypeScript (basic)": Typescript,
   "React.js": ReactIcon,
   "Next.js": Next,
   "HTML5": Html,
@@ -50,9 +50,9 @@ export const skillIcons = {
   "VS Code": Vsc,
   "Vercel": Vercel,
   "React Router": ReactRouter,
-   "npm & Yarn": Npm,
-  "Webpack & Vite (build tools)": WebpackNVite,
-  "Redux Toolkit & Redux": Redux,
+   "npm": Npm,
+  "Parcel & Vite": ParcelNVite,
+  "Redux Toolkit": Redux,
   "REST APIs": RestApi,
   "TanStack Query": ReactQuery, 
   "Prettier & ESLint": PrettierNEsLint,
@@ -63,48 +63,50 @@ export const skillIcons = {
  "Styled Components": StyledComponents,
  "SVG & Icon Design": IconSvgDesign,
  "CSS Modules": CssModules,
-"NextAuth (Auth.js)": Auth
+"Auth.js": Auth
 };
+// Strings in skillIcons have to be the same as Strings in stack //
 export const stack = {
   Core: [
     "JavaScript (ES6+)",
-    "TypeScript (basic experience)",
-    "HTML5",
-    "CSS3",
-    // "Cross-Browser Compatibility",
+   "HTML5",
+   "CSS3", 
+   "TypeScript (basic)",
+    
   ],
   "Frameworks & Libraries": [
     "React.js",
     "Next.js",
     "React Router",
     "TanStack Query",
-    "Redux Toolkit & Redux",
-    "Framer Motion",
+    "Redux Toolkit",
+  
   ],
   "Styling & UI": [
     "Tailwind CSS",
     "CSS Modules",
     "Styled Components",
-     "Responsive Design", 
+     "Responsive Design",   
+     "Framer Motion",
      "SVG & Icon Design",
   ],
   "Tools & Dev Environment": [
     "Git & GitHub",
     "VS Code",
-    "npm & Yarn",
+    "npm",
     "Prettier & ESLint",
     "Debugging & Chrome DevTools",
-    "Webpack & Vite (build tools)"
+    "Parcel & Vite"
   ],
   "Backend & Deployment": [
     "REST APIs",
     "Supabase",
-    "NextAuth (Auth.js)",
+    "Auth.js",
     "Netlify",
     "Vercel",
   ],
 };
-// Skills / Techstack End
+// Techstack End
 
 // CaseStudy
 export const sections = [

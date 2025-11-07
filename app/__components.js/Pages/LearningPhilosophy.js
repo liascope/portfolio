@@ -78,7 +78,7 @@ export default function LearningPhilosophy() {
   </section>
 
   <GitHubRepos/>
-<IconButton link="/skills" icon={ArrowRight}>Explore Skills</IconButton>
+<IconButton link="/techstack" icon={ArrowRight}>Explore technologies and tools I`ve worked with</IconButton>
       </section>
   );
 }

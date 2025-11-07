@@ -2,13 +2,12 @@ import { skillIcons, stack } from "@/app/_lib/config";
 import ArrowLeft from "../Icons/ArrowLeft";
 import IconButton from "../IconButton";
 
-export default function Skills() {
+export default function Techstack() {
   return (<main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 p-2 sm:p-4">
       <section className="max-w-6xl mx-auto sm:mt-12 backdrop-blur-lg bg-white/30 rounded-2xl p-4 sm:p-8 shadow-xl">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6 uppercase text-sky-900/80 tracking-widest">Skills / Tech Stack</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 uppercase text-sky-900/80 tracking-widest">Tech Stack</h1>
         <p className="text-base sm:text-lg mb-8 text-teal-900">
-          These are my current skills and tools, focused on modern web
-          development with React and Next.js.
+        These are the technologies and tools I`ve worked with.
         </p>
         {Object.entries(stack).map(([category, items]) => (
           <div key={category} className="mb-8  ">
