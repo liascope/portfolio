@@ -16,7 +16,7 @@ import PrettierNEsLint from "../__components.js/Icons/PrettierNEsLint";
 import ReactRouter from "../__components.js/Icons/ReactRouter";
 import Redux from "../__components.js/Icons/Redux";
 import RestApi from "../__components.js/Icons/RestApi";
-import ParcelNVite from "../__components.js/Icons/ParcelNVite";
+import Vite from "../__components.js/Icons/Vite";
 import FramerMotion from "../__components.js/Icons/FramerMotion";
 import Supabase from "../__components.js/Icons/Supabase";
 import DevTools from "../__components.js/Icons/DevTools";
@@ -51,9 +51,9 @@ export const skillIcons = {
   "Vercel": Vercel,
   "React Router": ReactRouter,
    "npm": Npm,
-  "Parcel & Vite": ParcelNVite,
+  "Vite": Vite,
   "Redux Toolkit": Redux,
-  "REST APIs": RestApi,
+  "RESTful APIs": RestApi,
   "TanStack Query": ReactQuery, 
   "Prettier & ESLint": PrettierNEsLint,
   "Netlify":Netlify,
@@ -61,7 +61,7 @@ export const skillIcons = {
   "Supabase":Supabase,
  "Debugging & Chrome DevTools": DevTools,
  "Styled Components": StyledComponents,
- "SVG & Icon Design": IconSvgDesign,
+ "SVG Optimization & Custom Icons": IconSvgDesign,
  "CSS Modules": CssModules,
 "Auth.js": Auth
 };
@@ -88,7 +88,7 @@ export const stack = {
     "Styled Components",
      "Responsive Design",   
      "Framer Motion",
-     "SVG & Icon Design",
+     "SVG Optimization & Custom Icons",
   ],
   "Tools & Dev Environment": [
     "Git & GitHub",
@@ -96,10 +96,10 @@ export const stack = {
     "npm",
     "Prettier & ESLint",
     "Debugging & Chrome DevTools",
-    "Parcel & Vite"
+    "Vite"
   ],
   "Backend & Deployment": [
-    "REST APIs",
+    "RESTful APIs",
     "Supabase",
     "Auth.js",
     "Netlify",
