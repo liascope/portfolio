@@ -51,9 +51,7 @@ export default function AstroReactNext() {
 │   ├─ /chart/natalTransit    → Natal & transit overlay
 │   ├─ /chart/progression     → Progressed chart
 │   ├─ /chart/draconic        → Draconic chart
-│   └─ /chart/perfection      → Annual perfection chart
-│
-└─ /api                       → Server endpoints (POST route to set user consent cookie)`}
+│   └─ /chart/perfection      → Annual perfection chart`}
   </pre>
 </article>
 
@@ -86,11 +84,11 @@ export default function AstroReactNext() {
   <article className="bg-white/40 backdrop-blur-sm rounded-xl p-2 sm:p-6 shadow hover:scale-105 transition">
         <ul className="list-disc ml-6 space-y-2">
            <h2 id="architecture" title="Architecture & Tech Decisions" className="text-2xl sm:text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Architecture & Tech Decisions</h2>
-          <li><strong>Next.js + React.js</strong> – Selected for hybrid rendering and fast routing, enabling smooth navigation between dynamic chart pages and efficient handling of API-driven data.</li>
+          <li><strong>Next.js + React.js</strong> – Chosen for fast client-side routing and smooth navigation between dynamic chart pages, while efficiently handling API-driven data on the frontend.</li>
 
          <li><strong>Context API + React Hook Form</strong> – Enables centralized state management for user data and charts with predictable flow, while providing efficient form validation and submission without external state libraries.</li>
 
-         <li><strong>React Query (TanStack Query)</strong> – Chosen for reliable API fetching with built-in caching and deduplication, which reduced unnecessary timezone and location lookups and improved both performance and user experience.</li>
+         <li><strong>TanStack Query</strong> – Implemented for the form`s city/place autofill to efficiently fetch suggestions while reducing redundant API requests. Its caching and deduplication mechanisms ensure smoother and faster user interactions, enhancing overall performance and user experience.</li>
 
     <li><strong>Framer Motion</strong> – Used for smooth animations in chart transitions and page navigation, enhancing user experience through subtle motion without impacting performance.</li>
 
@@ -128,13 +126,13 @@ export default function AstroReactNext() {
   <li>
     <strong>User Input & Location Handling: </strong>  
     Form is handled via <code>React Hook Form</code>.  
-    The location input is in a separate component that calculates latitude and longitude using the Nominatim API. These values are passed via props.</li>
+    The location input is in a separate component that calculates latitude and longitude using the Nominatim API via TanStackQuery. These values are passed via props.</li>
       <ul className={` overflow-hidden transition-all duration-1000 ease-in-out mb-3 space-y-2 ${
               readMore ? "max-h-500" : "max-h-0"
             }`}>
         <li>
           <strong>Context API: </strong>  
-          The retrieved data is passed to the Context API. Latitude and longitude are sent to the <code>useTimezone</code> custom hook, which performs the timezone calculation via React Query (TimezoneDB API). All data and API response are passed to the third-party chart library js_astro in the <code>calcChart</code> function. From the Context API, all values are made available to the corresponding components.
+          The retrieved data is passed to the Context API. Latitude and longitude are sent to the <code>TimezoneDB-API</code> for timezone calculation. All data and API response are passed to the third-party chart library js_astro in the <code>calcChart</code> function. From the Context API, all values are made available to the corresponding components.
         </li>
 
         <li>
