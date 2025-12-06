@@ -51,7 +51,9 @@ export default function AstroReactNext() {
 │   ├─ /chart/natalTransit    → Natal & transit overlay
 │   ├─ /chart/progression     → Progressed chart
 │   ├─ /chart/draconic        → Draconic chart
-│   └─ /chart/perfection      → Annual perfection chart`}
+│   └─ /chart/perfection      → Annual perfection chart
+|
+├─ /api/nominatim/route.js    → SS Nominatim route to bypass CORS & dev request limits`}
   </pre>
 </article>
 
@@ -88,7 +90,7 @@ export default function AstroReactNext() {
 
          <li><strong>Context API + React Hook Form</strong> – Enables centralized state management for user data and charts with predictable flow, while providing efficient form validation and submission without external state libraries.</li>
 
-         <li><strong>TanStack Query</strong> – Implemented for the form`s city/place autofill to efficiently fetch suggestions while reducing redundant API requests. Its caching and deduplication mechanisms ensure smoother and faster user interactions, enhancing overall performance and user experience.</li>
+         <li><strong>TanStack Query</strong> – Implemented for the form`s city/place autofill to efficiently fetch suggestions and the latitude and longitude of locations while reducing redundant API requests. Its caching and deduplication mechanisms ensure smoother and faster user interactions, enhancing overall performance and user experience.</li>
 
     <li><strong>Framer Motion</strong> – Used for smooth animations in chart transitions and page navigation, enhancing user experience through subtle motion without impacting performance.</li>
 
@@ -126,13 +128,13 @@ export default function AstroReactNext() {
   <li>
     <strong>User Input & Location Handling: </strong>  
     Form is handled via <code>React Hook Form</code>.  
-    The location input is in a separate component that calculates latitude and longitude using the Nominatim API via TanStackQuery. These values are passed via props.</li>
+    The location input is in a separate component that shows location suggestions and calculates latitude and longitude using the Nominatim API via TanStackQuery. These values are passed via props. Before submitting, the time zone of the choosen location is calculated by TimezoneDB-API in the submit function.</li>
       <ul className={` overflow-hidden transition-all duration-1000 ease-in-out mb-3 space-y-2 ${
               readMore ? "max-h-500" : "max-h-0"
             }`}>
         <li>
           <strong>Context API: </strong>  
-          The retrieved data is passed to the Context API. Latitude and longitude are sent to the <code>TimezoneDB-API</code> for timezone calculation. All data and API response are passed to the third-party chart library js_astro in the <code>calcChart</code> function. From the Context API, all values are made available to the corresponding components.
+          The retrieved data is passed to the Context API. All data and API response are passed to the third-party chart library js_astro in the <code>calcChart</code> function. From the Context API, all values are made available to the corresponding components.
         </li>
 
         <li>
