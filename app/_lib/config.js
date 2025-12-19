@@ -135,7 +135,7 @@ export const nextStep = {
 export const reactNextProjects = [
   {name:"Liascope Astrology - React.js", link: "https://github.com/liascope/liascope-react"},{name: "Todoezel - React.js", link:"https://github.com/liascope/todoezel-react"}, {name: "The Wild Oasis - Customer Version", link:"https://github.com/liascope/wildoasisweb"}
 ];
-export const reactProjects = [
+export const reactProjects = [{name: "Todoezel - ReactRedux", link:"https://github.com/liascope/todoezel-reactredux"},
   {name:"Wild Oasis - Admin Version", link:"https://github.com/liascope/thewildoasisapp"},{name:"Fast React Pizza", link:"https://github.com/liascope/fast-react-pizza"}, {name:"Classy Weather", link:"https://github.com/liascope/weatherapp"}, {name:"EatNSplit", link:"https://github.com/liascope/eatNsplit"}
 ];
 export const vanillaJSprojects = [
@@ -169,11 +169,14 @@ function generateImages(folder, count) {
 ,
     {logo: '/todoReact/0.png',
   title: 'To-Do List App',
-  description: 'A modern, feature-rich to-do and notes app that helps users stay productive with progress tracking, date-based reminders, and shopping lists. Originally built in Vanilla JS, ToDoeZel was refactored into React/Next.js.',
-  tech: [  'React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'Custom Hooks',  'LocalStorage',  'Framer Motion'
-  ], caseStudy: '/projects/casestudy/Todoezel',
-  link: 'https://todoezel-react.vercel.app/',
-  github: 'https://github.com/liascope/todoezel-react',
+  description: 'A modern, feature-rich to-do and notes app that helps users stay productive with progress tracking, date-based reminders, and shopping lists. Originally built in Vanilla JS, ToDoeZel was refactored into React.js with Redux Toolkit',
+  tech: [  'React.js', 'Redux Toolkit', 'Tailwind CSS', 'React Router', 'Custom Hooks',  'LocalStorage',  'Framer Motion'
+  ],
+  //  caseStudy: '/projects/casestudy/Todoezel',
+  link: 'https://todoezel-reactredux.vercel.app/',
+  // link: 'https://todoezel-react.vercel.app/',
+  github: 'https://github.com/liascope/todoezel-reactredux',
+  // 'https://github.com/liascope/todoezel-react',
   images: generateImages("todoReact", 8)
 
 },   {logo: '/portfolio/0.png',
