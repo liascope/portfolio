@@ -118,7 +118,7 @@ export default function AstroJS() {
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
  <Link href="/projects/casestudy/LiascopeAstrologyReactNext" className="hover:text-teal-600/60 " target="_blanked">Astrology App - React/Next.js</Link>
     <span className="border-sky-700/30">|</span>
-   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" >To-Do List App - React/Next.js</Link>
+   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" >To-Do List App - React.js</Link>
   </div>
 </section>
         </footer>

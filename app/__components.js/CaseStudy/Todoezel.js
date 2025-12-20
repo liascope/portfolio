@@ -36,22 +36,42 @@ export default function Todoezel() {
   </h2>
 
   <pre className="bg-gray-100 p-3 rounded-md text-xs sm:text-sm overflow-x-auto">
-{`/app
-├─Layout          → Header,Today's Header,Navigation,Footer
-│   ├─ /          → Main page for Todos&Notes
-│   ├─ /shop      → Shopping list
-│   ├─ /do-later  → Page for saving date-based tasks
-│   ├─ /today     → Today's tasks
-│   └─ /saved     → Archive for date-based tasks
-│
-├─_components    → All reusable UI components
-│
-└─_lib
-   ├─ hooks/     → Custom React hooks
-   ├─ context/   → Context API for global state
-   ├─ config.js  → App configuration
-   └─ helpers.js → Utility functions`}
-  </pre>
+{`/src
+├─ lib
+|  ├─ config       → App configuration (constants, helpers)
+|  └─ useStorage   → Custom hook for LocalStorage persistence
+└ components
+   ├─ app
+   │   ├─ store          → Redux store configuration
+   │   └─ router         → React Router setup
+   │
+   ├─ layout
+   │   ├─ AppLayout      → Main layout wrapping pages
+   │   ├─ ErrorBoundary  → Global error handling
+   │   ├─ Header         → Header component
+   │   ├─ HeaderToday    → Displays today's tasks
+   │   ├─ Navigation     → Navigation bar
+   │   └─ ModalContent   → Reusable modal UI
+   │
+   ├─ pages
+   │   ├─ DoLater        → Page for saving date-based tasks
+   │   ├─ doLaterSlice   → Redux slice for date-based tasks
+   │   ├─ SavedTasks     → Archive for date-based tasks
+   │   ├─ TodaysTasks    → Page showing today's tasks
+   │   └─ todoAndShop/
+   │       └─ TodoShop   → Page for Todoes & Shop items
+   │
+   └─ ui
+       ├─ Button
+       ├─ ButtonQuery
+       ├─ ToggleList
+       ├─ Confirm
+       ├─ Spinner
+       ├─ Percent
+       ├─ NotFound
+       └─ NaviCons/     → All SVG icons`}
+</pre>
+
 </article>
    <article className="bg-white/40 backdrop-blur-sm rounded-xl p-5 sm:p-10 shadow hover:scale-105 transition">
 <ul className="list-disc ml-6 space-y-2">
@@ -84,17 +104,16 @@ export default function Todoezel() {
         <article className="bg-white/40 backdrop-blur-sm rounded-xl text-sm sm:text-base p-5 sm:p-12 shadow hover:scale-105 transition my-10">
           <ul className="list-disc ml-6 space-y-2">
               <h2 id="architecture" title="Architecture & Tech Decisions" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Architecture & Tech Decisions</h2>
-            <li>
-              <strong>React.js + Next.js</strong> — chosen to structure the app into modular components
-              and to use Next.js conventions (pages/layouts, routing, error handling) for a scalable,
-              production-ready codebase.
-            </li>
-
-            <li>
-              <strong>Context API + Hooks</strong> — used for global state (date-based tasks and app-wide
-              derived state). Context is intentionally lighter than Redux and fits the project scale,
-              while hooks manage component-local behaviors.
-            </li>
+          <li>
+            <strong>React.js</strong> — chosen to structure the app into modular components
+               and to build a scalable, production-ready codebase with clear separation of UI, layout, and pages.
+         </li>
+         <li>
+         <strong>React Router</strong> — implemented to manage client-side routing and navigation between pages and layouts. Enables declarative routing with nested routes for a clear and maintainable page structure.
+       </li>
+        <li>
+        <strong>Redux Toolkit</strong> — used for global state management (date-based tasks and app-wide derived state). Redux Toolkit provides a predictable, centralized state store that simplifies state updates and ensures consistency.
+         </li>
 
             <li>
               <strong>Custom Hook for localStorage</strong> — encapsulates save/load logic so persistence
@@ -105,30 +124,28 @@ export default function Todoezel() {
               <strong>Tailwind CSS</strong> — utility-first approach allowed rapid, consistent styling and
               mobile-first responsive layout without a bloated stylesheet.
             </li>
-
             <li>
               <strong>Framer Motion</strong> — subtle, performant animations (header toggle, modal) that
               improve perceived responsiveness and user motivation.
             </li>
-<li>
-  <strong>Reusable UI Components</strong> - modular Buttons, Input+Button combos, ToggleList items, and Percent-Tracker improve consistency, reduce duplication, and support scalable development.
-</li>
+            <li>
+           <strong>Reusable UI Components</strong> - modular Buttons, Input+Button combos, ToggleList items, and Percent-Tracker improve consistency, reduce duplication, and support scalable development.
+           </li>
 
             <li>
               <strong>Custom SVG icons</strong> — handcrafted icons reduce external dependencies,
               keep bundle size small, and allow precise visual alignment with the app’s friendly brand.
             </li> 
+            <li><strong>Vite</strong> - chosen as a modern build tool and development server for fast reloads and lightweight React integration.</li>
             <li><strong>Deployment</strong> – Hosted on Vercel for fast global delivery and automatic builds.</li>
           </ul>
 
           <div id="state-management" title="State Management & Data Flow" className="my-10">
             <h2 className="text-lg sm:text-xl font-semibold uppercase text-sky-900/60 tracking-widest">State Management</h2>
-            <p className= "mt-2">
-              Global state (Context + localStorage) stores date-based tasks so they can be surfaced
-              across pages. Local state (useState/useEffect via a custom hook) handles notes and shop items
-              that are primarily relevant to a single page. Derived state powers the Today’s Header by
-              filtering global tasks by due date.
-            </p>
+           <p className="mt-2">
+  Date-based tasks are handled via global state (Redux Toolkit) and persisted in LocalStorage using <code>store.subscribe()</code>, making them available across multiple pages. Page-specific data such as Todoes and Shop items use local state with a custom <code>useStorage</code> hook for LocalStorage persistence. Derived state computes Today’s Header by filtering global tasks by the current date.
+</p>
+
             </div>
           </article>
        
@@ -137,7 +154,7 @@ export default function Todoezel() {
       <ul className="list-disc ml-6 space-y-2">
        <h2 id="challenges" title="Challenges & Learnings" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Challenges & Learnings</h2>
       <li>
-        <strong>State Architecture:</strong> Designed a robust combination of global (Context + localStorage) and component-local state, enabling conditional rendering and scalable feature expansion.
+        <strong>State Architecture:</strong> Designed a robust combination of global and component-local state, enabling conditional rendering and scalable feature expansion.
       </li>
       <li>
         <strong>Reusable Components:</strong> Built flexible UI components (toggle, delete, input handling, progress tracker) to reduce duplication and maintain consistency across the app.
@@ -145,7 +162,7 @@ export default function Todoezel() {
       <li>
         <strong>Feature Enhancement:</strong> Refactored from <Link href="https://github.com/liascope/todoezel" target="_blank" className="font-semibold tracking-wider text-sky-900/50 cursor-pointer hover:text-teal-700">
                          TodoeZel - Vanilla JS
-                        </Link> to React/Next.js while adding new functionality like the Trash button, improving both UX and maintainability.
+                        </Link> to React.js with Redux Toolkit while adding new functionality like the Trash button, improving both UX and maintainability.
       </li>
       <li>
         <strong>Custom SVG Icons:</strong> Replaced inconsistent emojis and PNGs with handcrafted SVGs, solving technical and licensing issues while learning scalable icon design.
@@ -158,7 +175,7 @@ export default function Todoezel() {
  <article className="flex-1 flex flex-col items-center rounded-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.15)] shadow-sky-800/60">
       <ImageSlider images={['/caseStudy/csTodo1.png', '/caseStudy/csTodo2.png']} sliderHeight="h-xl" />
       <p className="text-xs text-sky-900/80 text-justify p-4">
-        Comparison of JS vs React/Next.js versions. Changes include updated design, custom SVG icons, and Trash button feature.
+        Comparison of JS vs React.js versions. Changes include updated design, custom SVG icons, and Trash button feature.
       </p>
     </article>
   </div>
@@ -175,8 +192,8 @@ export default function Todoezel() {
 
    <footer>
         <div className="flex flex-row gap-6 w-full justify-center items-center">
-        <Button link="https://todoezel-react.vercel.app/" target="_blank"> Live Demo </Button>
-        <Button link='https://github.com/liascope/todoezel-react' bright={true} target="_blank"> GitHub Repo </Button>
+        <Button link="https://todoezel-reactredux.vercel.app/" target="_blank"> Live Demo </Button>
+        <Button link='https://github.com/liascope/todoezel-reactredux' bright={true} target="_blank"> GitHub Repo </Button>
       </div>
       <section className="mt-8 sm:mt-16 border-t border-sky-700/30 pb-2 pt-8 text-center">
   <h3 className=" font-bold tracking-widest text-sky-900/30 mb-4 uppercase">

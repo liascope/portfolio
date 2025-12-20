@@ -120,8 +120,8 @@ export const sections = [
 ];
 export const caseStudy = {
   LiascopeAstrologyJS: "Astrology App - Vanilla JS",
-  LiascopeAstrologyReactNext: "Astrology App - React/Next.js",
-  Todoezel: "To-Do List App",
+  LiascopeAstrologyReactNext: "Astrology App - React.js & Next.js",
+  Todoezel: "To-Do List App - React.js",
 };
 // CaseStudy End 
 
@@ -170,13 +170,11 @@ function generateImages(folder, count) {
     {logo: '/todoReact/0.png',
   title: 'To-Do List App',
   description: 'A modern, feature-rich to-do and notes app that helps users stay productive with progress tracking, date-based reminders, and shopping lists. Originally built in Vanilla JS, ToDoeZel was refactored into React.js with Redux Toolkit',
-  tech: [  'React.js', 'Redux Toolkit', 'Tailwind CSS', 'React Router', 'Custom Hooks',  'LocalStorage',  'Framer Motion'
+  tech: [  'React.js', 'Redux Toolkit', 'Tailwind CSS','Vite', 'React Router', 'Custom Hooks',  'LocalStorage', 'Framer Motion'
   ],
-  //  caseStudy: '/projects/casestudy/Todoezel',
+    caseStudy: '/projects/casestudy/Todoezel',
   link: 'https://todoezel-reactredux.vercel.app/',
-  // link: 'https://todoezel-react.vercel.app/',
   github: 'https://github.com/liascope/todoezel-reactredux',
-  // 'https://github.com/liascope/todoezel-react',
   images: generateImages("todoReact", 8)
 
 },   {logo: '/portfolio/0.png',
