@@ -6,27 +6,123 @@ import ImageSlider from "../ImageSlider";
 import Button from "../Button";
 import HeaderCS from "./HeaderCS";
 import { nextStep } from "@/app/_lib/config";
+
+
 export default function AstroReactNext() {
   const [readMore, setReadMore] = useState(false) 
- 
   return (<main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4 ">
       <section className="max-w-6xl mx-auto bg-white/30 backdrop-blur-lg rounded-2xl p-4 sm:p-8 shadow-xl">
 
 <HeaderCS img="astroReact">Astrology App - React/Next.js</HeaderCS>
 
-          <article className="mb-10 mt-2">
-  <p className="sm:text-lg text-base p-3 sm:p-6">
-     Liascope Astrology originated as a personal solution to a common challenge: most online astrology tools are cluttered, visually overwhelming, and not beginner-friendly. After validating the concept with the <Link href='https://github.com/liascope/liascope' target="_blank" className=" hover:text-teal-900">Vanilla JavaScript version </Link>, I set out to rebuild Liascope Astrology with React.js and Next.js to modernize the codebase, improve responsiveness, and expand its feature set. My goal was to create a cleaner and more scalable application that makes exploring natal, transit, and derived charts faster and more intuitive across devices.
+          <article className="flex flex-col mb-10 mt-2 sm:text-lg text-base px-5 sm:px-10 gap-5">
+  <p>
+     Liascope Astrology is a modern astrology charting application designed to provide a clean and beginner-friendly alternative to cluttered and visually overwhelming astrology tools. The application allows users to generate and explore multiple astrological charts through an intuitive, responsive interface with interactive SVG visualizations. </p>
+     <p>
+     The project originated as a <strong className="text-teal-900/50">Vanilla JavaScript application structured using the MVC pattern</strong>. After validating the core domain logic, the application was refactored and rebuilt with React.js and Next.js.
   </p>
   <ul className="list-disc ml-6 sm:ml-12 space-y-2">
-    <li>Modernize the architecture by refactoring from Vanilla JS to React/Next.js.</li>
-    <li>Implement a fully responsive layout for accessibility on all screen sizes.</li>
-    <li>Enhance UX with smoother data input, chart generation, and navigation.</li>
-    <li>Expand functionality with new features and SVG manipulation capabilities.</li>
+  <li>Ensure full responsiveness and smooth UX across devices, including input handling and chart generation.</li>
+  <li>Expand functionality with new features, such as save & load charts, input & location autocomplete.</li>
+  <li>Enable advanced SVG manipulation for interactive, dynamic charts.</li>
   </ul>
 </article>
 
-<article className="p-5 sm:p-12 bg-white/40 backdrop-blur-sm rounded-xl shadow hover:scale-105 transition my-10">
+
+<article className='p-5 sm:p-12 bg-white/40 backdrop-blur-sm rounded-xl shadow hover:scale-105 transition my-10'>
+  <h2 id="project-evolution" title="Project Evolution"  className='sm:text-2xl flex flex-row items-center justify-evenly text-xl font-bold sm:tracking-widest cursor-pointer uppercase text-sky-900/60 mb-8'>Project Evolution: Vanilla JS → React & Next.js </h2>
+ <p className="mb-4">
+    The initial Vanilla JavaScript version was intentionally implemented using a clear MVC architecture to demonstrate structured application design and explicit data flow without frameworks. While this version successfully validated the core domain logic, the project was refactored into React.js and Next.js to align with modern frontend production standards, long-term scalability and maintainability.</p>
+ 
+     <h2 className="sm:text-xl text-lg font-bold sm:tracking-widest uppercase text-sky-900/60 my-6">Improvements & Technical Progress</h2>
+     <div className="flex flex-col sm:flex-row gap-10">
+<div className="flex-1">
+      <p className="mb-4">
+Compared to the original Vanilla JavaScript implementation, the React & Next.js version improves flexibility, maintainability, and overall user experience without rewriting the core business logic.
+</p>
+<p className="mb-4">
+In the initial version, limitations of the external SVG chart library required pragmatic workarounds. For example, retrograde planets were rendered outside the chart because direct SVG manipulation was not yet feasible given my experience at the time.
+</p>
+<p className="mb-4">
+In the React/Next.js version, SVG rendering is handled internally through custom hooks, enabling direct manipulation of chart elements. This allows integrated retrograde indicators, dynamic filtering, and responsive scaling directly within the SVG.
+</p>
+<p className="mb-4">
+The layout was also fully refactored to be responsive, replacing the desktop-only design of the original version and ensuring a consistent experience across devices.
+</p>
+
+  </div> 
+  <article className="md:w-1/1 flex-1 flex flex-col items-center rounded-xl shadow-[0_-4px_10px_rgba(0,0,0,0.15)] shadow-sky-800/60 h-fit">   
+  <ImageSlider images={['/caseStudy/csAstroReact1.png', '/caseStudy/csAstroReact2.png','/caseStudy/csAstroReact3.png']} sliderHeight="h-xl" />
+ <ul className="text-xs text-sky-900/80 text-justify p-4">
+             <li>Liascope Vanilla JS (left) and Liacope React.js & Next.js (right):
+             1.Form & Autocomplete functionality -
+             2.Data Info Table extension -
+             3.Displaying Retrograde & Filter functionality</li>
+           </ul>
+         </article>
+         
+</div>
+
+<section className="mt-4">
+  <h4 className="sm:text-xl text-lg font-bold sm:tracking-widest uppercase text-sky-900/50 mb-6 text-center" >
+    Project Versions
+  </h4>
+
+  <div className="grid sm:grid-cols-2 gap-6 mx-0 sm:mx-20">
+   
+    <div className="flex flex-col p-6 rounded-xl bg-white/50 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+      <div className="flex items-center sm:flex-row-reverse justify-between mb-4">
+        <p className="font-bold tracking-widest uppercase text-teal-900/60">Vanilla JS (MVC)</p>
+        <span className="text-xs font-semibold bg-sky-200/30 text-sky-900/60 px-2 py-1 rounded-full">v1.0</span>
+      </div>
+      <div className="flex sm:flex-row-reverse gap-4 sm:justify-self-end">
+        <Link
+          href="https://liascope.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg bg-teal-700/80 text-white text-sm font-semibold hover:rounded-sm hover:bg-teal-600 transition"
+        >
+          Live Demo
+        </Link>
+        <Link
+          href="https://github.com/liascope/liascope"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg border border-teal-800/80 text-teal-800/80 text-sm font-semibold hover:rounded-sm hover:text-teal-600/80 transition"
+        >
+          GitHub
+        </Link>
+      </div>
+    </div>
+    <div className="flex flex-col p-6 rounded-xl bg-white/50 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+      <div className="flex items-center justify-between mb-4">
+        <p className="font-bold tracking-widest uppercase text-teal-900/60">React & Next.js</p>
+        <span className="text-xs font-semibold bg-sky-200/30 text-sky-900/60 px-2 py-1 rounded-full">v2.0</span>
+      </div>
+      <div className="flex gap-4">
+        <Link
+          href="https://liascope-react.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg bg-teal-700/80 text-white text-sm font-semibold hover:rounded-sm hover:bg-teal-600 transition"
+        >
+          Live Demo
+        </Link>
+        <Link
+          href="https://github.com/liascope/liascope-react"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg border border-teal-800/80 text-teal-800/80 text-sm font-semibold hover:rounded-sm hover:text-teal-600/80 transition"
+        >
+          GitHub
+        </Link>
+      </div>
+    </div>
+  </div>
+</section> 
+</article>
+
+<article className="p-5 sm:p-12 my-10">
   <h2 id="app-structure" title="App Structure & Pages"  className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">App Structure</h2>
   <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 {`/app
@@ -57,8 +153,8 @@ export default function AstroReactNext() {
   </pre>
 </article>
 
-       <div   className="flex flex-col sm:flex-row my-10 gap-10 items-center">
- <article className="bg-white/40 backdrop-blur-sm rounded-xl p-3 sm:p-10 shadow hover:scale-105 transition">
+       {/* <div   className="flex flex-col sm:flex-row my-10 gap-10 items-center"> */}
+ <article className="bg-white/40 backdrop-blur-sm rounded-xl p-3 sm:p-10 shadow hover:scale-105 transition m-10">
   <ul className="list-disc ml-6 space-y-2">
     <h2 id="key-features" title="Key Features" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Key Features</h2>
     <li><strong>Multi-Chart Generation:</strong> Natal, Transit, Natal&Transit, Draconic, Progression, Annual Perfection charts.</li>
@@ -70,7 +166,7 @@ export default function AstroReactNext() {
   </ul>
 </article> 
 
- <article className="md:w-1/1 flex flex-col items-center rounded-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.15)] shadow-sky-800/60 h-fit">   
+ {/* <article className="md:w-1/1 flex flex-col items-center rounded-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.15)] shadow-sky-800/60 h-fit">   
   <ImageSlider images={['/caseStudy/csAstroReact1.png', '/caseStudy/csAstroReact2.png','/caseStudy/csAstroReact3.png']} sliderHeight="h-xl" />
  <ul className="text-xs text-sky-900/80 text-justify p-4">
              <li>Liascope Vanilla JS (left) and Liacope React.js & Next.js (right):
@@ -78,36 +174,36 @@ export default function AstroReactNext() {
              2.Data Info Table extension -
              3.Displaying Retrograde & Filter functionality</li>
            </ul>
-         </article>
+         </article> */}
 
-         </div>
+         {/* </div> */}
 
  <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
   <article className="bg-white/40 backdrop-blur-sm rounded-xl p-2 sm:p-6 shadow hover:scale-105 transition">
         <ul className="list-disc ml-6 space-y-2">
            <h2 id="architecture" title="Architecture & Tech Decisions" className="text-2xl sm:text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Architecture & Tech Decisions</h2>
-          <li><strong>Next.js + React.js</strong> – Chosen for fast client-side routing and smooth navigation between dynamic chart pages, while efficiently handling API-driven data on the frontend.</li>
+          <li><strong>Next.js + React.js</strong> – Chosen for component-based architecture, predictable routing, and scalable UI composition using the App Router.</li>
 
-         <li><strong>Context API + React Hook Form</strong> – Enables centralized state management for user data and charts with predictable flow, while providing efficient form validation and submission without external state libraries.</li>
+         <li><strong>Context API + React Hook Form</strong> – Used to manage global application state and complex form interactions with a clear and predictable data flow, without introducing unnecessary external state libraries.</li>
 
-         <li><strong>TanStack Query</strong> – Implemented for the form`s city/place autofill to efficiently fetch suggestions and the latitude and longitude of locations while reducing redundant API requests. Its caching and deduplication mechanisms ensure smoother and faster user interactions, enhancing overall performance and user experience.</li>
+         <li><strong>TanStack Query</strong> – Implemented for the form`s city/place autofill to efficiently fetch suggestions and the latitude and longitude of locations while reducing redundant API requests.</li>
 
-    <li><strong>Framer Motion</strong> – Used for smooth animations in chart transitions and page navigation, enhancing user experience through subtle motion without impacting performance.</li>
+    <li><strong>Framer Motion</strong> – Used for smooth animations in chart transitions and page navigation.</li>
 
 <li><strong>TailwindCSS</strong> – Chosen for its utility-first approach to build a clean, consistent, and fully responsive UI efficiently, reducing the need for large custom CSS files and improving scalability.</li>
 
-<li><strong>Custom Hooks</strong> – Encapsulate complex logic such as SVG rendering, timezone lookups, and retrograde handling into reusable functions, improving code organization, readability, and testability.</li>
+<li><strong>Custom Hooks</strong> – Encapsulate complex logic such as SVG rendering, timezone handling, retrograde calculations, and derived chart data, improving readability and reusability.</li>
 
 <li><strong>LocalStorage & SessionStorage</strong> – Implemented a hybrid persistence strategy: profiles are stored long-term in <code>localStorage</code>, while session data persists temporarily to survive page reloads without unnecessary backend calls.</li>
 
 
-<li><strong>Deployment</strong> – Hosted on Vercel for seamless integration with Next.js, providing fast builds, automatic deployments, and global CDN support.</li>
+<li><strong>Deployment</strong> – Deployed on Vercel to leverage seamless Next.js integration, fast builds, and global CDN delivery.</li>
   <ul className="list-disc space-y-2">
     <h3 className="font-bold tracking-widest text-sky-900/50 uppercase my-3">External APIs & Libraries</h3>
-    <li><strong className="cursor-pointer hover:text-teal-700" ><Link href="https://nominatim.org/" target="_blank" >Nominatim API</Link></strong> – Provides geolocation data with autocomplete, streamlining birthplace input for users.</li>
-    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" >Timezone API</Link></strong> – Ensures accurate timezone conversion, which is essential for precise astrological calculations.</li>
-    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" >js_astro</Link></strong> – Powers core natal, transit, and derived chart degree calculations, extended to handle retrograde logic and timezone conversions.</li>
-    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://astrodraw.github.io/" target="_blank" >AstroChart</Link></strong> – A SVG Chart Library ntegrated and customized for chart rendering, enabling responsive scaling, filtering, and interactive chart manipulation.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700" ><Link href="https://nominatim.org/" target="_blank" >Nominatim API</Link></strong> – Location autocomplete and geocoding.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" >Timezone API</Link></strong> – Accurate timezone resolution for precise chart calculations.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" >js_astro</Link></strong> – Core astrological calculations, extended to handle retrograde logic and timezone conversions.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://astrodraw.github.io/" target="_blank" >AstroChart</Link></strong> – SVG chart rendering library, customized for responsive scaling and interactive filtering.</li>
   </ul>
 </ul>
 </article>
@@ -196,39 +292,32 @@ export default function AstroReactNext() {
   </p>
   <ul className="list-disc ml-6 space-y-2">
     <li>
-      <strong>Architectural Refactoring:</strong> Converted procedural logic into reusable hooks and components, adopting Context API to manage multiple APIs, derived states, and six different chart types.
+    Translating MVC-based procedural logic into reusable React components and custom hooks while preserving domain logic
     </li>
     <li>
-      <strong>Custom Hooks & State Management:</strong> Built hooks for API fetching, persistence, and complex state handling, reducing duplication and improving scalability across charts.
+     Managing complex derived state across multiple chart types using the Context API with predictable state ownership 
     </li>
    
     <li>
-      <strong>SVG Rendering & UI Enhancements:</strong> Extended the chart-drawing library for interactive filtering, responsive scaling, dynamic SVG styling, and features such as aspect filtering and chart manipulation.
+    Extending and refactoring a third-party SVG chart library to support responsive behavior, interactive filtering, and chart manipulation
     </li>
     <li>
-      <strong>Next.js Practices:</strong> Implemented App Router conventions including loading and error states for improved UX and maintainability.
+     Adapting and modernizing external libraries to correctly handle timezone conversions and retrograde calculations across environments
     </li>
     <li>
-      <strong>Form Handling with React Hook Form:</strong> Implemented complex forms independently for the first time, including validation, conditional inputs, and state synchronization with global Context. Learned how to structure reusable form components while maintaining UX consistency.
+      Structuring complex, multi-step forms with validation and conditional logic while maintaining a consistent user experience
     </li>
-  <li>
-  <strong>Third-Party Library Integration & Deployment:</strong> Adapted and modernized the Japanese astrology library to correctly handle retrograde planet calculations and timezone conversions, resolving compatibility issues and fixing breaking changes during build and deployment.
-</li>
-
   </ul>
 </article>
 
 <article className="px-7 sm:px-20 py-6 text-base sm:text-lg">
   <h2  id="reflection" title="Reflection & Next Steps"  className="sm:text-2xl text-xl text-center font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Reflection & Next Steps</h2>
  <p className="mb-4 text-center">
- The Vanilla JS version gave hands-on experience with architecture, libraries, and API integration. The React/Next.js version scaled and modernized the app with reusable components, responsive design, and performance optimizations.
+This project strengthened my architectural thinking and highlighted the importance of upfront planning when building complex frontend applications. 
 </p>
 <ul className="px-6 list-disc mx-6 space-y-2 text-base">
-  <li>Deepened understanding of global state management and API orchestration across multiple chart types.</li>
-  <li>Enhanced skills in designing clean, responsive and user-friendly interfaces for complex, data-heavy applications.</li>
-  <li>Refactored and adapted external code to meet project-specific requirements, including third-party libraries and SVG chart manipulations.</li>
-  <li>Improved debugging workflows and architectural thinking to ensure scalable and maintainable frontend solutions.</li>
-  <li>Gained practical experience with component reusability, performance optimization, and accessibility considerations.</li>
+  <li>Defining state structures and data flow early significantly reduced refactoring during implementation.</li>
+  <li>The transition from a procedural MVC approach to a component-driven architecture improved my ability to design scalable, reusable, and maintainable frontend systems in a structured and predictable way.</li>
 </ul>
 
  <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
@@ -248,8 +337,6 @@ export default function AstroReactNext() {
     Other Case Studies
   </h3>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
- <Link href="/projects/casestudy/LiascopeAstrologyJS" className="hover:text-teal-600/60 " target="_blanked">Astrology App - Vanilla JS</Link>
-    <span className="border-sky-700/30">|</span>
    <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" >To-Do List App - React.js</Link>
   </div>
 </section>

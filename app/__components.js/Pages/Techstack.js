@@ -12,7 +12,7 @@ export default function Techstack() {
         {Object.entries(stack).map(([category, items]) => (
           <div key={category} className="mb-8  ">
             <h2 className="text-lg sm:text-xl font-bold text-sky-900/60 uppercase tracking-widest mb-6">{category}</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-4">
   {items.map((item, index) => {
     const Icon = skillIcons[item];
     return (

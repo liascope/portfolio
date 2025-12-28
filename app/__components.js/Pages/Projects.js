@@ -6,6 +6,8 @@ import { projects } from "@/app/_lib/config";
 import Seperation from '../Seperation';
 import IconButton from '../IconButton';
 import ArrowLeft from '../Icons/ArrowLeft';
+import Button from '../Button';
+import Mail from '../Icons/Mail';
 
 export default function Projects() {
   return ( <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4">
@@ -66,9 +68,8 @@ export default function Projects() {
   </Link>
 </div>
         </div>
-    
-      <IconButton link="/about" icon={ArrowLeft} left={true}> More about my process</IconButton>
-           </section>
+      <IconButton link="mailto:zeakin@outlook.de" icon={Mail} left={true}> Get in Contact </IconButton> 
+          </section>
       </main>
  
   );

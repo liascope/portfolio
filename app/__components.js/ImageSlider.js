@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 export default function ImageSlider({ images, sliderHeight='h-72' }) {
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -79,27 +78,30 @@ export default function ImageSlider({ images, sliderHeight='h-72' }) {
           </div>
         ))}
       </div>
+  <button
+    onClick={prevSlide}
+    className="absolute top-1/2 -left-1 -translate-y-1/2
+               text-teal-600 hover:text-teal-500
+               bg-white/30 hover:bg-white/40
+               rounded-full p-1
+               shadow-md hover:shadow-lg
+               transition-transform duration-300"
+  >
+    <ChevronLeftIcon className="w-5 h-5" />
+  </button>
 
-      {/* Navigation */}
-      <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-0 -translate-y-1/2 
-             text-teal-600 hover:text-teal-500 
-             drop-shadow-[0_1px_4px_rgba(255,255,255,0.7)]  
-             transition rounded-full backdrop-blur-xs"
-      >
-        <ChevronLeft size={30}/>
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-0 -translate-y-1/2 
-             text-teal-600 hover:text-teal-500 
-             drop-shadow-[0_1px_4px_rgba(255,255,255,0.6)] 
-             transition rounded-full backdrop-blur-xs"
-      >
-        <ChevronRight size={30} />
-      </button>
-
+  {/* Right Arrow */}
+  <button
+    onClick={nextSlide}
+    className="absolute top-1/2 -right-1 -translate-y-1/2
+               text-teal-600 hover:text-teal-500
+               bg-white/30 hover:bg-white/40
+               rounded-full p-1
+               shadow-md hover:shadow-lg
+               transition-transform duration-300"
+  >
+    <ChevronRightIcon className="w-5 h-5" />
+  </button>
       {/* Bottom Points */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
         {images.map((_, i) => (

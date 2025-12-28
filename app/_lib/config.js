@@ -1,5 +1,5 @@
 import Javascript from "../__components.js/Icons/JavaScript";
-import Typescript from "../__components.js/Icons/Typescript";
+// import Typescript from "../__components.js/Icons/Typescript";
 import ReactIcon from "../__components.js/Icons/ReactIcon";
 import Next from "../__components.js/Icons/Next";
 import Html from "../__components.js/Icons/Html";
@@ -21,7 +21,7 @@ import FramerMotion from "../__components.js/Icons/FramerMotion";
 import Supabase from "../__components.js/Icons/Supabase";
 import DevTools from "../__components.js/Icons/DevTools";
  import StyledComponents from "../__components.js/Icons/StyledComponents";
- import IconSvgDesign from "../__components.js/Icons/IconSvgDesign";
+
  import CssModules from "../__components.js/Icons/CssModules";
 import Auth from "../__components.js/Icons/Auth";
 
@@ -39,7 +39,7 @@ import Auth from "../__components.js/Icons/Auth";
 //Techstack
 export const skillIcons = {
   "JavaScript (ES6+)": Javascript,
-  "TypeScript (basic)": Typescript,
+  // "TypeScript (basic)": Typescript,
   "React.js": ReactIcon,
   "Next.js": Next,
   "HTML5": Html,
@@ -59,9 +59,8 @@ export const skillIcons = {
   "Netlify":Netlify,
   "Framer Motion": FramerMotion,
   "Supabase":Supabase,
- "Debugging & Chrome DevTools": DevTools,
+ "Chrome DevTools": DevTools,
  "Styled Components": StyledComponents,
- "SVG Optimization & Custom Icons": IconSvgDesign,
  "CSS Modules": CssModules,
 "Auth.js": Auth
 };
@@ -71,7 +70,7 @@ export const stack = {
     "JavaScript (ES6+)",
    "HTML5",
    "CSS3", 
-   "TypeScript (basic)",
+  //  "TypeScript (basic)",
     
   ],
   "Frameworks & Libraries": [
@@ -88,14 +87,13 @@ export const stack = {
     "Styled Components",
      "Responsive Design",   
      "Framer Motion",
-     "SVG Optimization & Custom Icons",
   ],
   "Tools & Dev Environment": [
     "Git & GitHub",
     "VS Code",
     "npm",
     "Prettier & ESLint",
-    "Debugging & Chrome DevTools",
+    "Chrome DevTools",
     "Vite"
   ],
   "Backend & Deployment": [
@@ -110,6 +108,7 @@ export const stack = {
 
 // CaseStudy
 export const sections = [
+  {id:"project-evolution", label: "Project Evolution"},
   { id: "app-structure", label: "App Structure & Pages" },
   { id: "key-features", label: "Key Features" },
   { id: "architecture", label: "Architecture & Tech Decisions" },
@@ -128,12 +127,12 @@ export const caseStudy = {
 export const nextStep = {
   todoezel:["Opening a GPS-based world map on the Shop page to explore the location of shops and link them to shop items.","Allowing users to export lists (Notes/Tasks, Shop List, Today’s Tasks) as PDF or PNG for printing and offline use"],
   // astroJS:[],
-  astroReactNext:['Generating downloadable PDF chart reports.',"Lunar phase calendar integration.","Adding more astrological charts, signs, and calculations.","AI-generated astrology predictions based on user inputs."]
+  astroReactNext:['Downloadable PDF chart reports.',"Lunar phase calendar integration.","Downloadable PDF chart reports.","AI-generated astrology insights based on user input."]
 }
 
 // GitHub Repos
 export const reactNextProjects = [
-  {name:"Liascope Astrology - React.js", link: "https://github.com/liascope/liascope-react"},{name: "Todoezel - React.js", link:"https://github.com/liascope/todoezel-react"}, {name: "The Wild Oasis - Customer Version", link:"https://github.com/liascope/wildoasisweb"}
+  {name:"Liascope Astrology - React.js", link: "https://github.com/liascope/liascope-react"}, {name: "The Wild Oasis - Customer Version", link:"https://github.com/liascope/wildoasisweb"}
 ];
 export const reactProjects = [{name: "Todoezel - ReactRedux", link:"https://github.com/liascope/todoezel-reactredux"},
   {name:"Wild Oasis - Admin Version", link:"https://github.com/liascope/thewildoasisapp"},{name:"Fast React Pizza", link:"https://github.com/liascope/fast-react-pizza"}, {name:"Classy Weather", link:"https://github.com/liascope/weatherapp"}, {name:"EatNSplit", link:"https://github.com/liascope/eatNsplit"}
@@ -145,19 +144,10 @@ export const vanillaJSprojects = [
 
 
 // Projects
-function generateImages(folder, count) {
+export function generateImages(folder, count) {
   return Array.from({ length: count }, (_, i) => `/${folder}/${i+1}.png`);
 }
  export const projects = [
-       { logo: '/astroJS/0.png',
-  title: 'Astrology App (Vanilla JS)',
-  description: 'The original version of my astrology charting app, built to validate the concept and deepen my understanding of architectural patterns. Developed using the MVC pattern, it integrates external astrology and timezone APIs, performs chart calculations, and dynamically renders responsive SVG charts. This project marked my first experience with third-party libraries and laid the groundwork for the later React/Next.js refactor',
-  tech: ['JavaScript (ES6+)', 'HTML5', 'CSS3', '@astrodraw/astrochart', 'js_astro', 'REST APIs', 'MVC Pattern', 'DOM Manipulation'],
-  caseStudy: '/projects/casestudy/LiascopeAstrologyJS',
-  link: 'https://liascope.netlify.app/',
-  github: 'https://github.com/liascope/liascope',
-  images: generateImages("astroJS", 6)
-},
    {logo: '/astroReact/0.png',
   title: 'Astrology App (React/Next.js)',
   description: 'A modern astrology charting app built with React.js and Next.js. It features automated transit calculations, multi-chart generation, location autocomplete, and interactive SVG visualizations. Originally developed in Vanilla JS, the app was refactored to a scalable architecture using Context API, custom hooks, and third-party library adaptations to handle complex astrological data and real-time rendering.',
@@ -185,38 +175,11 @@ function generateImages(folder, count) {
       github: 'https://github.com/liascope/portfolio', 
       images: generateImages("portfolio", 5)
     },
-
-      {logo: '/forkify/0.png',
-      title: 'Recipe App',
-  description: 'JavaScript recipe app built with the MVC pattern. Features recipe search via API, bookmarking with localStorage, and responsive design. Independently added and coded: Shopping List, KCal/Nutrition Information API call, Delete Recipe, Add Recipe, Add Ingredients, Sort Recipes A-Z, Display number of search results, and Display number of pages',
-  tech: ['JavaScript (ES6+)', 'HTML5', 'CSS3', 'Webpack', 'REST API', 'LocalStorage', 'MVC Pattern'],
-  link: 'https://forkifyliascope.netlify.app/',
-  github: 'https://github.com/liascope/forkifyliascope',
-  images: generateImages("forkify", 4)
-    },
-    {logo: '/mapty/0.png',
-  title: 'Fitness Tracking',
-  description: 'JavaScript fitness tracking app demonstrating OOP principles and Geolocation API. Independently implemented additional features and improvements including: Map Overview, Geocode Location, Edit/Delete Workout, Delete All Workouts, Sort by Date/Distance, and Confirmation Messages.',
-  tech: ['JavaScript (ES6+)', 'HTML5', 'CSS3', 'OOP', 'Geolocation API', 'LocalStorage'],
-  link: 'https://maptyzakin.netlify.app/',
-  github: 'https://github.com/liascope/maptyzakin',
-  images: generateImages("mapty", 2)
-},
-{logo: '/woAdmin/0.png',
-  title: 'Hotel Booking (Admin)',
-  description: 'Full-stack React & Next.js app for hotel staff using Supabase backend for database and authentication. Admin can manage check-ins, check-outs, and room bookings, with role-based access control.',
-  tech: ['React.js', 'Next.js', 'Supabase','Supabase Auth', 'React Query', 'Styled Components', 'Full-Stack SPA', 'Authentication & Authorization', 'Role-Based Access Control'],
-  link: 'https://the-wild-oasis-app-proj.netlify.app',
-  github: 'https://github.com/liascope/thewildoasisapp/',
-  images: generateImages("woAdmin", 3)
-},
-{logo: '/woCustom/0.png',
-title: 'Hotel Booking (Customer)',
-  description: 'Full-stack single-page React app for hotel guests featuring Google OAuth authentication via Supabase. Users can log in, browse room availability, make bookings, and track their reservation status.',
-  tech: ['React.js', 'Next.js', 'Supabase', 'Google OAuth', 'React Query', 'Styled Components', 'Tailwind CSS', 'SPA'],
-  link: 'https://wildoasisweb-theta.vercel.app/',
-  github: 'https://github.com/liascope/wildoasisweb',
-  images: generateImages("woCustom", 4)
-},
   ];
   // Projects End
+
+export const reflectionEvolution = [{
+reflection:'Early project challenges reinforced the importance of upfront planning and clear architectural decisions, significantly reducing refactoring.', evolution:(<> Established a reliable, repeatable workflow:<br /> <strong className="text-teal-900/60 tracking-widest">plan → implement → refactor → optimize</strong>
+      </>
+    ),}, {reflection:'Frequent refactoring state structures and component boundaries improved predictability and scalability.', evolution:'Applied architectural principles such as clear state ownership, predictable rendering behavior, and separation of concerns'}, {reflection:'Iterative development cycles improved API integration and reduced coupling between data logic and UI components.', evolution:'Advanced from a Vanilla JavaScript MVC architecture to React.js and Next.js with a component-driven mindset.'}
+]

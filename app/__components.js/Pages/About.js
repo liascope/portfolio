@@ -12,24 +12,24 @@ export default function About() {
         <h1 className="sm:text-3xl text-2xl uppercase font-bold mb-6 sm:tracking-wider text-sky-900/80">About</h1>
         <article className="sm:text-lg text-sm flex flex-col gap-6">
         <p>
-      I began my professional journey studying law, where I developed strong analytical thinking, discipline, and attention to detail. Yet, I soon realized that while law sharpened my logic, it left little room for creativity and innovation — two things I deeply value.
+      I began my professional journey studying law, where I developed strong analytical thinking, structured problem-solving, and discipline.
         </p>
         <p>
-Long before my studies, I was fascinated by psychological astrology — not as a belief system, but as a way to analyze human patterns and symbolic structures. It strengthened my curiosity about systems, logic, and the connection between abstract thinking and real-life meaning.
+        Over time, however, I realized that a traditional legal career did not offer the creativity, innovation, and technological depth I was seeking. I wanted to work in a field that continuously evolves and allows me to actively build and create.
         </p>
         <p>
-       That curiosity eventually drew me toward physics (astrophysics), where I took my first serious look at programming — an essential tool for modeling and problem-solving in science. I was immediately intrigued by how coding merges structure and imagination — logic and creativity in perfect balance.
+        While exploring alternative career paths, I deliberately analyzed my strengths and interests. My curiosity for technology, systems, and interactive digital experiences — combined with a strong interest in how complex systems work behind the scenes — ultimately led me to programming.
         </p>
-        <p>Since I didn’t see myself in a traditional legal career and was searching for a path that truly fits me, I decided to gain hands-on experience in coding. I gave myself a focused three-month period to learn and build — and by the end of it, I knew I had found what I was looking for. Since then, I’ve been coding with the same motivation, curiosity, and excitement I felt from day one.</p>
-         <p>Since mid-2023, I’ve been fully dedicated to learning frontend development, mastering <strong className="text-teal-900/60 tracking-widest"> Vanilla JS, React, Next.js</strong> and other modern web technologies through self-directed study and practical projects.</p>
-          <p>For me, programming isn’t just a skill — it’s a way to continuously learn, build, and turn ideas into functional and impactful solutions.</p>
+        <p>Rather than switching fields impulsively, I made a conscious long-term decision to invest my time in a career that truly fits me. Programming brings together logic, structure, creativity, and innovation — exactly the balance I was looking for.</p>
+
+        <p>Since mid-2023, I’ve been fully dedicated to frontend development, focusing on <strong className="text-teal-900/60 tracking-widest">Vanilla JavaScript, React, Next.js, and modern web technologies</strong> through self-directed learning and practical projects.</p>
            </article>
            
           <div
         onClick={() => setOpen(!open)}
         className="flex flex-row items-center justify-center w-full text-teal-700/60 hover:text-teal-600/70 transition-all hover:tracking-wider cursor-pointer uppercase tracking-widest font-bold my-10"
       >
-        {open ? "" : "Learning Philosophy"}
+        {open ? "" : "Coding & Workflow"}
         {!open && <div className="h-8 flex items-center"><Seperation/><LearningIcon/></div>}
       </div>
 

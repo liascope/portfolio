@@ -11,13 +11,12 @@ export default function Todoezel() {
                                       
         <article className="my-2">
           <p className="p-6">
-           Designed a simple, friendly interface that keeps daily priorities visible and motivates users through progress tracking:
+           A task management application focused on reducing cognitive load by separating daily priorities, long-term tasks, and shopping lists, supported by visual progress tracking and subtle UX feedback. Initially built in Vanilla JavaScript to validate core functionality, the app was refactored into React.js with Redux to become production-ready, scalable, and maintainable
           </p>
           <ul className="list-disc ml-6 sm:ml-12 space-y-1 sm:space-y-2 text-base">
-            <li>Easy access to tasks and notes at a glance</li>
-            <li>Prominent “Today’s Tasks” header for due items</li>
-            <li>Separate shopping and “Do Later” tasks to reduce clutter.</li>
-            <li>Color-coded progress indicators and subtle UX animations.</li>
+            <li>Quick overview of today’s due tasks.</li>
+            <li>Separate lists for shopping and long-term tasks.</li>
+            <li>Progress indicators and subtle UX animations.</li>
           </ul>
          </article>
 
@@ -38,28 +37,28 @@ export default function Todoezel() {
   <pre className="bg-gray-100 p-3 rounded-md text-xs sm:text-sm overflow-x-auto">
 {`/src
 ├─ lib
-|  ├─ config       → App configuration (constants, helpers)
-|  └─ useStorage   → Custom hook for LocalStorage persistence
+|  ├─ config       → Shared configuration, constants, helpers
+|  └─ useStorage   → Reusable LocalStorage persistence hook
 └ components
    ├─ app
    │   ├─ store          → Redux store configuration
    │   └─ router         → React Router setup
    │
    ├─ layout
-   │   ├─ AppLayout      → Main layout wrapping pages
+   │   ├─ AppLayout      → Main layout wrapper
    │   ├─ ErrorBoundary  → Global error handling
-   │   ├─ Header         → Header component
+   │   ├─ Header         → App header
    │   ├─ HeaderToday    → Displays today's tasks
    │   ├─ Navigation     → Navigation bar
    │   └─ ModalContent   → Reusable modal UI
    │
    ├─ pages
-   │   ├─ DoLater        → Page for saving date-based tasks
+   │   ├─ DoLater        → Date-based tasks scheduling
    │   ├─ doLaterSlice   → Redux slice for date-based tasks
-   │   ├─ SavedTasks     → Archive for date-based tasks
-   │   ├─ TodaysTasks    → Page showing today's tasks
+   │   ├─ SavedTasks     → Archived date-based tasks
+   │   ├─ TodaysTasks    → Tasks due today
    │   └─ todoAndShop/
-   │       └─ TodoShop   → Page for Todoes & Shop items
+   │       └─ TodoShop   → To-do & shopping list
    │
    └─ ui
        ├─ Button
@@ -69,25 +68,80 @@ export default function Todoezel() {
        ├─ Spinner
        ├─ Percent
        ├─ NotFound
-       └─ NaviCons/     → All SVG icons`}
+       └─ NaviCons/     → Custom SVG icons`}
 </pre>
 
 </article>
-   <article className="bg-white/40 backdrop-blur-sm rounded-xl p-5 sm:p-10 shadow hover:scale-105 transition">
+ <section>
+  <h4 className="sm:text-xl text-lg font-bold sm:tracking-widest uppercase text-sky-900/50 mb-6 text-center" >
+    Project Versions
+  </h4>
+
+  <div className="grid sm:grid-cols-1 gap-6">
+   
+    <div className="flex flex-col p-6 rounded-xl bg-white/50 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+      <div className="flex items-center flex-row justify-between mb-4">
+        <p className="font-bold tracking-widest uppercase text-teal-900/60">Vanilla JS</p>
+        <span className="text-xs font-semibold bg-sky-200/30 text-sky-900/60 px-2 py-1 rounded-full">v1.0</span>
+      </div>
+      <div className="flex flex-row gap-4">
+        <Link
+          href="http://todoezel.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg bg-teal-700/80 text-white text-sm font-semibold hover:rounded-sm hover:bg-teal-600 transition"
+        >
+          Live Demo
+        </Link>
+        <Link
+          href="https://github.com/liascope/todoezel"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg border border-teal-800/80 text-teal-800/80 text-sm font-semibold hover:rounded-sm hover:text-teal-600/80 transition"
+        >
+          GitHub
+        </Link>
+      </div>
+    </div>
+    <div className="flex flex-col p-6 rounded-xl bg-white/50 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
+      <div className="flex items-center justify-between mb-4">
+        <p className="font-bold tracking-widest uppercase text-teal-900/60">React.js</p>
+        <span className="text-xs font-semibold bg-sky-200/30 text-sky-900/60 px-2 py-1 rounded-full">v2.0</span>
+      </div>
+      <div className="flex gap-4">
+        <Link
+          href="todoezel-reactredux.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg bg-teal-700/80 text-white text-sm font-semibold hover:rounded-sm hover:bg-teal-600 transition"
+        >
+          Live Demo
+        </Link>
+        <Link
+          href="https://github.com/liascope/todoezel-reactredux"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 rounded-lg border border-teal-800/80 text-teal-800/80 text-sm font-semibold hover:rounded-sm hover:text-teal-600/80 transition"
+        >
+          GitHub
+        </Link>
+      </div>
+    </div>
+  </div>
+   <article className="p-5 mt-10">
 <ul className="list-disc ml-6 space-y-2">
 <h2 id="key-features" title="Key Features" className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Key Features</h2>
   <li>
-    <strong>Date-based tasks:</strong> persisted in <code>localStorage</code> and surfaced automatically in Today’s Header when due.
+    <strong>Date-based tasks:</strong> automatically surfaced in Today’s Header when due.
   </li>
   <li>
-    <strong>Task type separation:</strong> Todos, Shop, and Do Later lists improve focus and discoverability.
+    <strong>Task type separation:</strong> Todos, Shop, Todays Tasks and Do Later lists to reduce clutter.
   </li>
-  <li>Toggle-List with checkbox/delete modes and a Percent-Tracker for visual progress feedback.</li>
   <li>
     <strong>ToggleList behavior:</strong> click to toggle between checkbox and delete state for quick management.
   </li>
   <li>
-    <strong>Bulk delete:</strong> Trash button appears when multiple items are completed (e.g. ≥4).
+    <strong>Bulk delete:</strong> for completed tasks.
   </li>
   <li>
     <strong>Progress tracker:</strong> color-coded to motivate users visually.
@@ -100,50 +154,42 @@ export default function Todoezel() {
   </li>
 </ul>
     </article>
+    </section> 
            </div>
         <article className="bg-white/40 backdrop-blur-sm rounded-xl text-sm sm:text-base p-5 sm:p-12 shadow hover:scale-105 transition my-10">
           <ul className="list-disc ml-6 space-y-2">
               <h2 id="architecture" title="Architecture & Tech Decisions" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Architecture & Tech Decisions</h2>
-          <li>
-            <strong>React.js</strong> — chosen to structure the app into modular components
-               and to build a scalable, production-ready codebase with clear separation of UI, layout, and pages.
+          <li> 
+           <strong>React.js</strong> — for a modular, component-driven architecture with clear separation of concerns.
          </li>
          <li>
-         <strong>React Router</strong> — implemented to manage client-side routing and navigation between pages and layouts. Enables declarative routing with nested routes for a clear and maintainable page structure.
+         <strong>React Router</strong> — for declarative client-side routing and maintainable page structure.
        </li>
         <li>
-        <strong>Redux Toolkit</strong> — used for global state management (date-based tasks and app-wide derived state). Redux Toolkit provides a predictable, centralized state store that simplifies state updates and ensures consistency.
+        <strong>Redux Toolkit</strong> — for predictable global state management of date-based and derived data.
          </li>
 
             <li>
-              <strong>Custom Hook for localStorage</strong> — encapsulates save/load logic so persistence
-              is reusable and components remain focused on UI and behavior rather than storage details.
+              <strong>Custom Hook for localStorage</strong> — to encapsulate persistence logic and keep components UI-focused.
             </li>
 
             <li>
-              <strong>Tailwind CSS</strong> — utility-first approach allowed rapid, consistent styling and
-              mobile-first responsive layout without a bloated stylesheet.
+              <strong>Tailwind CSS</strong> — for rapid, consistent, mobile-first styling.
             </li>
             <li>
-              <strong>Framer Motion</strong> — subtle, performant animations (header toggle, modal) that
-              improve perceived responsiveness and user motivation.
+              <strong>Framer Motion</strong> — for subtle, performant animations improving perceived responsiveness.
             </li>
             <li>
-           <strong>Reusable UI Components</strong> - modular Buttons, Input+Button combos, ToggleList items, and Percent-Tracker improve consistency, reduce duplication, and support scalable development.
-           </li>
-
-            <li>
-              <strong>Custom SVG icons</strong> — handcrafted icons reduce external dependencies,
-              keep bundle size small, and allow precise visual alignment with the app’s friendly brand.
+              <strong>Custom SVG icons</strong> — to reduce dependencies and ensure visual consistency.
             </li> 
-            <li><strong>Vite</strong> - chosen as a modern build tool and development server for fast reloads and lightweight React integration.</li>
-            <li><strong>Deployment</strong> – Hosted on Vercel for fast global delivery and automatic builds.</li>
+            <li><strong>Vite</strong> - for fast development and optimized production builds.</li>
+            <li><strong>Deployment</strong> – via Vercel with automated builds and global delivery.</li>
           </ul>
 
           <div id="state-management" title="State Management & Data Flow" className="my-10">
             <h2 className="text-lg sm:text-xl font-semibold uppercase text-sky-900/60 tracking-widest">State Management</h2>
            <p className="mt-2">
-  Date-based tasks are handled via global state (Redux Toolkit) and persisted in LocalStorage using <code>store.subscribe()</code>, making them available across multiple pages. Page-specific data such as Todoes and Shop items use local state with a custom <code>useStorage</code> hook for LocalStorage persistence. Derived state computes Today’s Header by filtering global tasks by the current date.
+  Date-based tasks are handled via <strong>global state (Redux Toolkit)</strong> and persisted in LocalStorage using <code>store.subscribe()</code>, making them available across multiple pages. Page-specific data such as Todoes and Shop items use <strong>local state with a custom <code>useStorage</code> hook</strong> for LocalStorage persistence. Derived state computes Today’s Header by filtering global tasks by the current date.
 </p>
 
             </div>
@@ -154,22 +200,15 @@ export default function Todoezel() {
       <ul className="list-disc ml-6 space-y-2">
        <h2 id="challenges" title="Challenges & Learnings" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Challenges & Learnings</h2>
       <li>
-        <strong>State Architecture:</strong> Designed a robust combination of global and component-local state, enabling conditional rendering and scalable feature expansion.
+        Designing a balanced <strong>state architecture</strong> combining global and local state.
       </li>
       <li>
-        <strong>Reusable Components:</strong> Built flexible UI components (toggle, delete, input handling, progress tracker) to reduce duplication and maintain consistency across the app.
+        Building <strong>reusable UI components</strong> to reduce duplication and improve consistency
       </li>
       <li>
-        <strong>Feature Enhancement:</strong> Refactored from <Link href="https://github.com/liascope/todoezel" target="_blank" className="font-semibold tracking-wider text-sky-900/50 cursor-pointer hover:text-teal-700">
-                         TodoeZel - Vanilla JS
-                        </Link> to React.js with Redux Toolkit while adding new functionality like the Trash button, improving both UX and maintainability.
+        Migrating from <Link href="https://github.com/liascope/todoezel" target="_blank" className="font-semibold tracking-wider text-sky-900/50 cursor-pointer hover:text-teal-700"> Vanilla JS</Link>  to React with Redux Toolkit highlighted the benefits of predictable state management and component-based architecture for<strong> scaling features and improving UX</strong>.
       </li>
-      <li>
-        <strong>Custom SVG Icons:</strong> Replaced inconsistent emojis and PNGs with handcrafted SVGs, solving technical and licensing issues while learning scalable icon design.
-      </li>
-      <li>
-        <strong>Iterative Refinement:</strong> Integrated polishing, code cleaning, and performance optimization into the development cycle, ensuring production-ready, maintainable code.
-      </li>
+      <li>Replacing external assets with <strong>custom SVG icons</strong> to solve technical and licensing issues</li>
     </ul>
 </article>
  <article className="flex-1 flex flex-col items-center rounded-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.15)] shadow-sky-800/60">
@@ -182,8 +221,7 @@ export default function Todoezel() {
          <article className="my-10 px-5 sm:px-12 text-sm sm:text-base">
       <h2 id="reflection" title="Reflection & Next Steps"  className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6 text-center">Reflection & Next Step</h2>
       <p className="mb-4 text-center text-base sm:text-lg">
-            ToDoeZel is a practical case study in state architecture, reusability, and user-focused design.
-            teaching me how to iteratively break down features into small, reusable components and balance technical architecture with usability goals. The project also highlighted the importance of thoughtful state management and persistence strategies.</p>     
+          This project strengthened my understanding of frontend architecture, state management, and reusable component design. It reinforced the importance of balancing technical structure with user-focused design.</p>     
             <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
               <ul className="text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {nextStep.todoezel.map((step,i)=>{return (<li key={i} className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center flex items-center  px-5 py-2 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition">{step}</li>)})}
@@ -201,8 +239,6 @@ export default function Todoezel() {
   </h3>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
  <Link href="/projects/casestudy/LiascopeAstrologyReactNext" className="hover:text-teal-600/60 " target="_blanked">Astrology App - React/Next.js</Link>
-    <span className="border-sky-700/30">|</span>
-   <Link href="/projects/casestudy/LiascopeAstrologyJS" className="hover:text-teal-600/60" target="_blanked" >Astrology App - Vanilla JS</Link>
   </div>
 </section>
         </footer>
