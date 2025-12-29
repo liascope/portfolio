@@ -35,11 +35,9 @@ import Auth from "../__components.js/Icons/Auth";
   ];
 
 
-
 //Techstack
 export const skillIcons = {
   "JavaScript (ES6+)": Javascript,
-  // "TypeScript (basic)": Typescript,
   "React.js": ReactIcon,
   "Next.js": Next,
   "HTML5": Html,
@@ -70,8 +68,6 @@ export const stack = {
     "JavaScript (ES6+)",
    "HTML5",
    "CSS3", 
-  //  "TypeScript (basic)",
-    
   ],
   "Frameworks & Libraries": [
     "React.js",
@@ -126,7 +122,6 @@ export const caseStudy = {
 
 export const nextStep = {
   todoezel:["Opening a GPS-based world map on the Shop page to explore the location of shops and link them to shop items.","Allowing users to export lists (Notes/Tasks, Shop List, Today’s Tasks) as PDF or PNG for printing and offline use"],
-  // astroJS:[],
   astroReactNext:['Downloadable PDF chart reports.',"Lunar phase calendar integration.","Downloadable PDF chart reports.","AI-generated astrology insights based on user input."]
 }
 
@@ -150,16 +145,17 @@ export function generateImages(folder, count) {
  export const projects = [
    {logo: '/astroReact/0.png',
   title: 'Astrology App (React/Next.js)',
-  description: 'A modern astrology charting app built with React.js and Next.js. It features automated transit calculations, multi-chart generation, location autocomplete, and interactive SVG visualizations. Originally developed in Vanilla JS, the app was refactored to a scalable architecture using Context API, custom hooks, and third-party library adaptations to handle complex astrological data and real-time rendering.',
-  tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'React Query', 'React Hook Form', 'Framer Motion', 'SVG', '@astrodraw/astrochart', 'js_astro', 'REST APIs'],caseStudy: '/projects/casestudy/LiascopeAstrologyReactNext',
+  description: 'An interactive astrology charting application with automated transit calculations, multi-chart generation, and dynamic SVG-based visualizations. Initially built in Vanilla JavaScript, the app was refactored to React and Next.js to support complex state, reusable chart logic, and responsive rendering.',
+  tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'TanstackQuery', 'React Hook Form', 'Framer Motion', 'SVG', '@astrodraw/astrochart', 'js_astro', 'REST APIs'],
+  caseStudy: '/projects/casestudy/LiascopeAstrologyReactNext',
   link: 'https://liascope-react.vercel.app/',
   github: 'https://github.com/liascope/liascope-react',
   images: generateImages("astroReact", 10)
 }
 ,
     {logo: '/todoReact/0.png',
-  title: 'To-Do List App',
-  description: 'A modern, feature-rich to-do and notes app that helps users stay productive with progress tracking, date-based reminders, and shopping lists. Originally built in Vanilla JS, ToDoeZel was refactored into React.js with Redux Toolkit',
+  title: 'Task Manager (React/RTK)',
+  description: 'A task management application focused on reducing cognitive load by separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JavaScript prototype into a production-ready React app with Redux Toolkit for predictable state management and persistence.',
   tech: [  'React.js', 'Redux Toolkit', 'Tailwind CSS','Vite', 'React Router', 'Custom Hooks',  'LocalStorage', 'Framer Motion'
   ],
     caseStudy: '/projects/casestudy/Todoezel',
@@ -168,10 +164,10 @@ export function generateImages(folder, count) {
   images: generateImages("todoReact", 8)
 
 },   {logo: '/portfolio/0.png',
-      title: 'Portfolio Website',
-      description: 'Clean, responsive portfolio built with React.js, Next.js and Tailwind CSS, featuring a sticky navigation that highlights active sections, a scroll-triggered header powered by a custom useSticky hook, image sliders for project previews, and smooth transitions for an intuitive UX.',
+      title: 'Portfolio Website (React/Next.js)',
+      description: 'Personal portfolio website built with React and Next.js, focusing on clear information architecture, smooth navigation, and reusable UI components. Features scroll-based interactions, animated transitions, and project previews to present case studies and technical work effectively.You are currently viewing this project live.',
       tech: ['React', 'Next.js', 'Tailwind CSS','Framer Motion' ],
-      link: 'https://liascope-portfolio.vercel.app/', 
+      // link: 'https://liascope-portfolio.vercel.app/', 
       github: 'https://github.com/liascope/portfolio', 
       images: generateImages("portfolio", 5)
     },

@@ -26,7 +26,7 @@ export default function Header() {
         </div>
       </Link>
 
-      <nav className="w-full sm:text-lg text-sm text-sky-900/70 font-bold tracking-widest uppercase max-w-6xl mx-auto px-4 py-4 flex justify-evenly items-center backdrop-blur-lg bg-white/30 rounded-2xl shadow-md sm:mb-7 mb-4">
+      <nav className="w-full sm:text-lg text-sm text-sky-900/70 font-bold tracking-widest uppercase max-w-7xl mx-auto px-4 py-4 flex justify-evenly items-center backdrop-blur-lg bg-white/30 rounded-2xl shadow-md sm:mb-7 mb-4">
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
           return (

@@ -7,7 +7,7 @@ export default function Todoezel() {
 
   return (<main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4 ">
       <section className="max-w-6xl mx-auto bg-white/30 backdrop-blur-lg rounded-xl p-4 sm:p-8 shadow-2xl text-base sm:text-lg ">
-      <HeaderCS img="todoReact">To-Do List App</HeaderCS>
+      <HeaderCS img="todoReact">Task Manager (React / Redux Toolkit)</HeaderCS>
                                       
         <article className="my-2">
           <p className="p-6">
@@ -238,7 +238,7 @@ export default function Todoezel() {
     Other Case Studies
   </h3>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
- <Link href="/projects/casestudy/LiascopeAstrologyReactNext" className="hover:text-teal-600/60 " target="_blanked">Astrology App - React/Next.js</Link>
+ <Link href="/projects/casestudy/LiascopeAstrologyReactNext" className="hover:text-teal-600/60 " target="_blanked">Liascope Astrology - React/Next.js</Link>
   </div>
 </section>
         </footer>

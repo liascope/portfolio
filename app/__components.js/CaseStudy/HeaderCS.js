@@ -1,6 +1,6 @@
 import Image from "next/image"
 export default function HeaderCS ({img, children}) { return (
-      <header className='flex flex-row justify-start items-center w-full border-l-4 border-teal-900/50 sm:gap-10 mb-2 sm:pl-3 h-xs'> 
+      <header className='flex flex-row justify-start items-center w-full border-x-4 border-teal-800/20 rounded-2xl sm:gap-10 mb-2 sm:pl-3 h-xs'> 
                   <div className="relative w-38 h-20 sm:w-50 sm:h-50 ">
   <Image
     src={`/${img}/0.png`}

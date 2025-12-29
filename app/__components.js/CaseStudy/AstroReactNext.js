@@ -337,7 +337,7 @@ This project strengthened my architectural thinking and highlighted the importan
     Other Case Studies
   </h3>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
-   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" >To-Do List App - React.js</Link>
+   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" >Todoezel Task Manager - React/Redux Toolkit</Link>
   </div>
 </section>
         </footer>

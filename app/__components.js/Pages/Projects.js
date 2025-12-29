@@ -5,13 +5,11 @@ import GitHub from '../Icons/GitHub';
 import { projects } from "@/app/_lib/config";
 import Seperation from '../Seperation';
 import IconButton from '../IconButton';
-import ArrowLeft from '../Icons/ArrowLeft';
-import Button from '../Button';
 import Mail from '../Icons/Mail';
 
 export default function Projects() {
   return ( <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4">
-      <section className="max-w-6xl mx-auto sm:mt-16 backdrop-blur-lg bg-white/30 rounded-2xl p-2 sm:p-8 shadow-xl flex flex-col">
+      <section className="max-w-7xl mx-auto sm:mt-16 backdrop-blur-lg bg-white/30 rounded-2xl p-2 sm:p-8 shadow-xl flex flex-col">
        <h1 className="sm:text-3xl text-2xl font-bold mb-8 uppercase text-sky-900/80 tracking-widest text-center">Projects</h1>
         <div className="grid gap-10 md:grid-cols-2">
           {projects.map((project, index) => (
@@ -19,9 +17,9 @@ export default function Projects() {
               key={index}
               className="bg-white/40 backdrop-blur-sm rounded-md p-6 shadow hover:scale-[1.02] transition flex flex-col justify-between items-center"
             >
-            <div className='flex flex-row items-center justify-start w-full h-10 sm:h-20 border-l-2 border-teal-900/50 mb-2 pl-2'> 
+            <div className='flex flex-row items-center justify-start w-full h-10 sm:h-20 border-x-2 rounded-2xl border-teal-800/20 mb-2 pl-2'> 
 
-  <div className="relative w-20 sm:w-35 h-full ">
+  <div className="relative w-20 sm:w-35 h-full">
   <Image
     src={project.logo}
                    alt={`Screenshot ${index + 1}`}
@@ -33,7 +31,7 @@ export default function Projects() {
 </div> 
 
               <h2 className="sm:text-lg text-md font-bold uppercase text-sky-900/50">{project.title}</h2></div>
-              <p className="text-sm mb-4">{project.description}</p>
+              <p className="text-sm mb-4 px-4 text-center">{project.description}</p>
               <div className="flex flex-wrap gap-2 text-xs mb-6">
                 {project.tech.map((tech, i) => (
                   <span
@@ -51,9 +49,9 @@ export default function Projects() {
                 {project.caseStudy && <><Link href={project.caseStudy} className="transition-all hover:scale-95 px-1 hover:text-teal-600">
                  View Case Study
                 </Link><Seperation/></>}
-                <Link href={project.link} target="_blank" className="transition-all hover:scale-95 px-1 hover:text-teal-600">
+               {project.link && <Link href={project.link} target="_blank" className="transition-all hover:scale-95 px-1 hover:text-teal-600">
                   View Demo
-                </Link><Seperation/>
+                </Link>}{project.caseStudy && project.link && <Seperation/>}
                 <Link href={project.github} target="_blank" className="transition-all hover:scale-95 px-1 hover:text-teal-600">
                   GitHub Repo
                 </Link>
