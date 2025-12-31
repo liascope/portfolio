@@ -1,31 +1,30 @@
-import Javascript from "../__components.js/Icons/JavaScript";
-// import Typescript from "../__components.js/Icons/Typescript";
-import ReactIcon from "../__components.js/Icons/ReactIcon";
-import Next from "../__components.js/Icons/Next";
-import Html from "../__components.js/Icons/Html";
-import Css from "../__components.js/Icons/Css";
-import Tailwindcss from "../__components.js/Icons/Tailwindcss";
-import Responsive from "../__components.js/Icons/Responsive";
-import GitNGitHub from "../__components.js/Icons/GitNGitHub";
-import Vsc from "../__components.js/Icons/Vsc";
-import Vercel from "../__components.js/Icons/Vercel";
-import ReactQuery from "../__components.js/Icons/ReactQuery";
-import Netlify from "../__components.js/Icons/Netlify";
-import Npm from "../__components.js/Icons/Npm";
-import PrettierNEsLint from "../__components.js/Icons/PrettierNEsLint";
-import ReactRouter from "../__components.js/Icons/ReactRouter";
-import Redux from "../__components.js/Icons/Redux";
-import RestApi from "../__components.js/Icons/RestApi";
-import Vite from "../__components.js/Icons/Vite";
-import FramerMotion from "../__components.js/Icons/FramerMotion";
-import Supabase from "../__components.js/Icons/Supabase";
-import DevTools from "../__components.js/Icons/DevTools";
- import StyledComponents from "../__components.js/Icons/StyledComponents";
+import Javascript from "../_components/Icons/JavaScript";
+import ReactIcon from "../_components/Icons/ReactIcon";
+import Next from "../_components/Icons/Next";
+import Html from "../_components/Icons/Html";
+import Css from "../_components/Icons/Css";
+import Tailwindcss from "../_components/Icons/Tailwindcss";
+import Responsive from "../_components/Icons/Responsive";
+import GitNGitHub from "../_components/Icons/GitNGitHub";
+import Vsc from "../_components/Icons/Vsc";
+import Vercel from "../_components/Icons/Vercel";
+import ReactQuery from "../_components/Icons/ReactQuery";
+import Netlify from "../_components/Icons/Netlify";
+import Npm from "../_components/Icons/Npm";
+import PrettierNEsLint from "../_components/Icons/PrettierNEsLint";
+import ReactRouter from "../_components/Icons/ReactRouter";
+import Redux from "../_components/Icons/Redux";
+import RestApi from "../_components/Icons/RestApi";
+import Vite from "../_components/Icons/Vite";
+import FramerMotion from "../_components/Icons/FramerMotion";
+import Supabase from "../_components/Icons/Supabase";
+import DevTools from "../_components/Icons/DevTools";
+import StyledComponents from "../_components/Icons/StyledComponents";
+import CssModules from "../_components/Icons/CssModules";
+import Auth from "../_components/Icons/Auth";
 
- import CssModules from "../__components.js/Icons/CssModules";
-import Auth from "../__components.js/Icons/Auth";
-
-
+export const email ='mailto:lia.07@live.de';
+export const gitHubLink="https://github.com/liascope";
 
   export const navLinks = [
     { href: "/about", label: "About" },
@@ -118,22 +117,34 @@ export const caseStudy = {
   LiascopeAstrologyReactNext: "Astrology App - React.js & Next.js",
   Todoezel: "To-Do List App - React.js",
 };
-// CaseStudy End 
+
 
 export const nextStep = {
   todoezel:["Opening a GPS-based world map on the Shop page to explore the location of shops and link them to shop items.","Allowing users to export lists (Notes/Tasks, Shop List, Today’s Tasks) as PDF or PNG for printing and offline use"],
   astroReactNext:['Downloadable PDF chart reports.',"Lunar phase calendar integration.","Downloadable PDF chart reports.","AI-generated astrology insights based on user input."]
 }
+// CaseStudy End 
 
 // GitHub Repos
 export const reactNextProjects = [
-  {name:"Liascope Astrology - React.js", link: "https://github.com/liascope/liascope-react"}, {name: "The Wild Oasis - Customer Version", link:"https://github.com/liascope/wildoasisweb"}
+  {name:"Liascope Astrology - React.js", link: "https://github.com/liascope/liascope-react"}, 
+  {name: "The Wild Oasis - Customer Version", link:"https://github.com/liascope/wildoasisweb"}
 ];
-export const reactProjects = [{name: "Todoezel - ReactRedux", link:"https://github.com/liascope/todoezel-reactredux"},
-  {name:"Wild Oasis - Admin Version", link:"https://github.com/liascope/thewildoasisapp"},{name:"Fast React Pizza", link:"https://github.com/liascope/fast-react-pizza"}, {name:"Classy Weather", link:"https://github.com/liascope/weatherapp"}, {name:"EatNSplit", link:"https://github.com/liascope/eatNsplit"}
+export const reactProjects = [
+  {name: "Todoezel - ReactRedux", link:"https://github.com/liascope/todoezel-reactredux"},
+  {name:"Wild Oasis - Admin Version", link:"https://github.com/liascope/thewildoasisapp"},
+  {name:"Fast React Pizza", link:"https://github.com/liascope/fast-react-pizza"}, 
+  {name:"Classy Weather", link:"https://github.com/liascope/weatherapp"}, 
+  {name:"EatNSplit", link:"https://github.com/liascope/eatNsplit"}
 ];
 export const vanillaJSprojects = [
-{name: "Liascope Astrology - Vanilla JS", link:"https://github.com/liascope/liascope"}, {name:"Todoezel - Vanilla JS", link:"https://github.com/liascope/todoezel"}, {name:"Astrozel-Web", link:"https://github.com/liascope/Astrozel"},{name: "Mapty", link:"https://github.com/liascope/maptyzakin"}, {name:"Forkify", link:"https://github.com/liascope/forkifyliascope"}, {name: "Dice Game", link:"https://github.com/liascope/dicegame"}, {name:"Guess My Number", link:"https://github.com/liascope/guessnumberzakin"}
+{name: "Liascope Astrology - Vanilla JS", link:"https://github.com/liascope/liascope"}, 
+{name:"Todoezel - Vanilla JS", link:"https://github.com/liascope/todoezel"}, 
+{name:"Astrozel-Web", link:"https://github.com/liascope/Astrozel"},
+{name: "Mapty", link:"https://github.com/liascope/maptyzakin"}, 
+{name:"Forkify", link:"https://github.com/liascope/forkifyliascope"}, 
+{name: "Dice Game", link:"https://github.com/liascope/dicegame"}, 
+{name:"Guess My Number", link:"https://github.com/liascope/guessnumberzakin"}
 ]
 // GitHub Repos End
 

@@ -2,10 +2,7 @@ import Link from "next/link"
 import { reactNextProjects, reactProjects, vanillaJSprojects } from "../_lib/config"
 export default function GitHubRepos (){
     return (<article className="flex flex-col items-center justify-center my-6">
-  {/* <h2 className="text-2xl font-bold mb-6 text-sky-900/40 uppercase sm:tracking-wide">
-    All GitHub Repos
-  </h2> */}
-
+ 
   <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 w-full max-w-5xl px-2 sm:px-4">
     {/* React & Next.js */}
     <li className="sm:bg-white/40 sm:backdrop-blur-sm sm:rounded-xl p-3 sm:p-6 sm:shadow transition transform hover:scale-105">

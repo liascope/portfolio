@@ -1,4 +1,4 @@
-import CasestudyNav from "@/app/__components.js/CaseStudy/CasestudyNav";
+import CasestudyNav from "@/app/_components/CaseStudy/CasestudyNav";
 
 export const metadata = {
     title: 'Liascope - Case Studies'

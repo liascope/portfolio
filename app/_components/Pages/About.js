@@ -2,8 +2,9 @@
 import { motion, AnimatePresence} from "framer-motion";
 import LearningIcon from "../Icons/LearningIcon";
 import { useState } from "react";
-import LearningPhilosophy from "./LearningPhilosophy";
+import Workflow from "./Workflow";
 import Seperation from "../Seperation";
+
 export default function About() {
   const [open, setOpen] = useState(false)
 
@@ -22,7 +23,7 @@ export default function About() {
         </p>
         <p>Rather than switching fields impulsively, I made a conscious long-term decision to invest my time in a career that truly fits me. Programming brings together logic, structure, creativity, and innovation — exactly the balance I was looking for.</p>
 
-        <p>Since mid-2023, I’ve been fully dedicated to frontend development, focusing on <strong className="text-teal-900/60 tracking-widest">Vanilla JavaScript, React, Next.js, and modern web technologies</strong> through self-directed learning and practical projects.</p>
+        <p>Since mid-2023, I’ve been fully dedicated to frontend development, focusing on <strong className="text-teal-900/60 tracking-widest">Vanilla JavaScript, React.js, Next.js</strong> and modern web technologies through self-directed learning and practical projects.</p>
            </article>
            
           <div
@@ -46,7 +47,7 @@ export default function About() {
             }}
             className="overflow-hidden w-full"
           >
-           <LearningPhilosophy />
+           <Workflow />
           </motion.div>
         )}
       </AnimatePresence>

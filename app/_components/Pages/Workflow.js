@@ -3,7 +3,7 @@ import ArrowRight from "../Icons/ArrowRight";
 import IconButton from "../IconButton";
 import GitHubRepos from "../GitHubRepos";
 
-export default function LearningPhilosophy() {
+export default function Workflow() {
   return (
       <section>
   <h2 className="sm:text-2xl text-xl mb-6 text-sky-900/60 uppercase font-bold sm:tracking-widest text-center">

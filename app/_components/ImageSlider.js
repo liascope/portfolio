@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+
 export default function ImageSlider({ images, sliderHeight='h-72' }) {
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +21,7 @@ export default function ImageSlider({ images, sliderHeight='h-72' }) {
     }
   }, [loadedImages, images]);
 
-  // Slide automatisch beim Hover
+  // slide on hover
   useEffect(() => {
     if (!isHovered) return;
     const interval = setInterval(() => {
@@ -43,7 +44,7 @@ export default function ImageSlider({ images, sliderHeight='h-72' }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Bilder-Slider */}
+      {/* pic slider */}
       <div
         className="flex transition-transform duration-700"
         style={{ transform: `translateX(-${current * 100}%)` }}
@@ -68,7 +69,7 @@ export default function ImageSlider({ images, sliderHeight='h-72' }) {
                 loading="lazy"
               />
 
-              {/* Overlay */}
+              {/* overlay */}
               <div
                 className={`absolute inset-0 transition-colors duration-500 ${
                   !isHovered ? "bg-black/15" : "bg-black/0"

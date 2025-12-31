@@ -1,4 +1,4 @@
-import Projects from "../__components.js/Pages/Projects";
+import Projects from "../_components/Pages/Projects";
 
 export const metadata = {
   title: 'Liascope - Projects'

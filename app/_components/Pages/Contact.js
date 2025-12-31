@@ -1,7 +1,7 @@
 import GitHub from "../Icons/GitHub";
 import Mail from "../Icons/Mail";
 import Button from "../Button";
-
+import { email, gitHubLink } from "@/app/_lib/config";
 
 export default function Contact() {
   return (
@@ -15,8 +15,8 @@ export default function Contact() {
           Feel free to send me an email or connect with me on GitHub.
         </p>
           <div className="flex justify-center my-10 space-x-6">
-                   <Button link="mailto:lia.07@live.de"><span className="flex flex-row items-center gap-2"><Mail/>E-Mail</span></Button>
-                   <Button link="https://github.com/liascope" target="_blank" bright={true}><span className="flex flex-row items-center gap-2"><GitHub size='h-7'/> GitHub</span></Button>
+                   <Button link={email}><span className="flex flex-row items-center gap-2"><Mail/>E-Mail</span></Button>
+                   <Button link={gitHubLink} target="_blank" bright={true}><span className="flex flex-row items-center gap-2"><GitHub size='h-7'/> GitHub</span></Button>
                   </div>
       </section>
     </main>

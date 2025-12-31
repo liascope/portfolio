@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { nextStep } from "@/app/_lib/config";
+import { nextStep, projects } from "@/app/_lib/config";
 import ImageSlider from "../ImageSlider";
 import Button from "../Button";
 import HeaderCS from "./HeaderCS";
@@ -110,7 +110,7 @@ export default function Todoezel() {
       </div>
       <div className="flex gap-4">
         <Link
-          href="todoezel-reactredux.vercel.app"
+          href={projects[1].link}
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 py-1 rounded-lg bg-teal-700/80 text-white text-sm font-semibold hover:rounded-sm hover:bg-teal-600 transition"
@@ -118,7 +118,7 @@ export default function Todoezel() {
           Live Demo
         </Link>
         <Link
-          href="https://github.com/liascope/todoezel-reactredux"
+          href={projects[1].github}
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 py-1 rounded-lg border border-teal-800/80 text-teal-800/80 text-sm font-semibold hover:rounded-sm hover:text-teal-600/80 transition"

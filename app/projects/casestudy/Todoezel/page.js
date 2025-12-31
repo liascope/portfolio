@@ -1,4 +1,4 @@
-import Todoezel from "@/app/__components.js/CaseStudy/Todoezel"
+import Todoezel from "@/app/_components/CaseStudy/Todoezel"
 
 export default function Page (){
     return <Todoezel/>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import ImageSlider from "../ImageSlider";
 import Button from "../Button";
 import HeaderCS from "./HeaderCS";
-import { nextStep } from "@/app/_lib/config";
+import { nextStep, projects } from "@/app/_lib/config";
 
 
 export default function AstroReactNext() {
@@ -19,7 +19,7 @@ export default function AstroReactNext() {
   <p>
      Liascope Astrology is a modern astrology charting application designed to provide a clean and beginner-friendly alternative to cluttered and visually overwhelming astrology tools. The application allows users to generate and explore multiple astrological charts through an intuitive, responsive interface with interactive SVG visualizations. </p>
      <p>
-     The project originated as a <strong className="text-teal-900/50">Vanilla JavaScript application structured using the MVC pattern</strong>. After validating the core domain logic, the application was refactored and rebuilt with React.js and Next.js.
+     The project originated as a <strong className="text-teal-900/60">Vanilla JavaScript </strong> project structured using the <strong className="text-teal-900/60">MVC pattern</strong>. After validating the core domain logic, the application was refactored and rebuilt with React.js and Next.js.
   </p>
   <ul className="list-disc ml-6 sm:ml-12 space-y-2">
   <li>Ensure full responsiveness and smooth UX across devices, including input handling and chart generation.</li>
@@ -101,7 +101,7 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
       </div>
       <div className="flex gap-4">
         <Link
-          href="https://liascope-react.vercel.app/"
+          href={projects[0].link}
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 py-1 rounded-lg bg-teal-700/80 text-white text-sm font-semibold hover:rounded-sm hover:bg-teal-600 transition"
@@ -109,7 +109,7 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
           Live Demo
         </Link>
         <Link
-          href="https://github.com/liascope/liascope-react"
+          href={projects[0].github}
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 py-1 rounded-lg border border-teal-800/80 text-teal-800/80 text-sm font-semibold hover:rounded-sm hover:text-teal-600/80 transition"

@@ -1,5 +1,5 @@
 
-import Button from "./__components.js/Button";
+import Button from "./_components/Button";
 export default function NotFound() {
   return (
     <main className="min-h-screen bg-gradient-to-br  from-slate-100 to-slate-200 text-teal-900/70 p-4">

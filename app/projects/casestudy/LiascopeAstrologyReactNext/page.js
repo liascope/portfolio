@@ -1,4 +1,4 @@
-import AstroReactNext from "@/app/__components.js/CaseStudy/AstroReactNext"
+import AstroReactNext from "@/app/_components/CaseStudy/AstroReactNext"
 
 
 export default function Page (){

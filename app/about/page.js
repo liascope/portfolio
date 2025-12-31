@@ -1,4 +1,4 @@
-import About from "../__components.js/Pages/About"
+import About from "../_components/Pages/About"
 
 export const metadata = {
   title: "Liascope - About",

@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import StickyHeader from "./__components.js/StickyHeader";
+import StickyHeader from "./_components/StickyHeader";
+import { gitHubLink } from "./_lib/config";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
       <p>
         © {new Date().getFullYear()} Liascope ·{' '}
         <Link
-          href="https://github.com/liascope"
+          href={gitHubLink}
           target="_blank"
           rel="noopener noreferrer"
           className=" hover:text-teal-600"

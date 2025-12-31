@@ -1,4 +1,4 @@
-import Techstack from "../__components.js/Pages/Techstack";
+import Techstack from "../_components/Pages/Techstack";
 
 export const metadata = {
   title: 'Liascope - Tech Stack'

@@ -1,4 +1,4 @@
-import Contact from "../__components.js/Pages/Contact";
+import Contact from "../_components/Pages/Contact";
 
 export const metadata = {
   title:'Liascope - Contact'
