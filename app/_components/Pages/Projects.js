@@ -11,7 +11,7 @@ export default function Projects() {
   return ( <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4">
       <section className="max-w-7xl mx-auto sm:mt-16 backdrop-blur-lg bg-white/30 rounded-2xl p-2 sm:p-8 shadow-xl flex flex-col">
        <h1 className="sm:text-3xl text-2xl font-bold mb-8 uppercase text-sky-900/80 tracking-widest text-center">Projects</h1>
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
   <div key={index}
   className="bg-white/40 backdrop-blur-sm rounded-md p-6 shadow hover:scale-[1.02] transition flex flex-col justify-between items-center" >
