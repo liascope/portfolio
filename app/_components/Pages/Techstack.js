@@ -18,10 +18,10 @@ export default function Techstack() {
     return (
       <div
         key={index}
-        className="flex flex-col text-teal-900/80 hover:text-sky-900/80 justify-center items-center text-center bg-white/40 backdrop-blur-sm rounded-xl shadow hover:scale-105 transition h-30 sm:h-36 w-full"
+        className="flex flex-col text-teal-900/80 hover:text-sky-900/80 justify-center items-center text-center md:bg-white/40 md:backdrop-blur-sm md:rounded-xl md:shadow hover:scale-105 transition h-20 sm:h-28 w-full p-1"
       >
         <Icon className="text-3xl sm:text-4xl mb-2" />
-        <span className="text-sm uppercase sm:text-base font-semibold">
+        <span className="sm:text-sm uppercase text-xs font-semibold">
           {item}
         </span>
       </div>
