@@ -57,7 +57,7 @@ export default function Projects() {
   </Link>
 </div>
         </div>
-      <IconButton link={email} icon={Mail} left={true}> For feedback & collaboration </IconButton> 
+      <IconButton link={email} icon={Mail} left={true}> For feedback / collaboration </IconButton> 
           </section>
       </main>
  
