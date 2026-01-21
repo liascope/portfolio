@@ -23,7 +23,7 @@ import StyledComponents from "../_components/Icons/StyledComponents";
 import CssModules from "../_components/Icons/CssModules";
 import Auth from "../_components/Icons/Auth";
 
-export const email ='mailto:lia.07@live.de';
+export const email ='mailto:liascope@hotmail.com';
 export const gitHubLink="https://github.com/liascope";
 
   export const navLinks = [
