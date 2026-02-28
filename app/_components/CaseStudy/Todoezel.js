@@ -206,7 +206,7 @@ export default function Todoezel() {
         Building <strong>reusable UI components</strong> to reduce duplication and improve consistency
       </li>
       <li>
-        Migrating from <Link href="https://github.com/liascope/todoezel" target="_blank" className="font-semibold tracking-wider text-sky-900/50 cursor-pointer hover:text-teal-700"> Vanilla JS</Link>  to React with Redux Toolkit highlighted the benefits of predictable state management and component-based architecture for<strong> scaling features and improving UX</strong>.
+        Migrating from <Link href="https://github.com/liascope/todoezel" target="_blank"  rel="noopener noreferrer" className="font-semibold tracking-wider text-sky-900/50 cursor-pointer hover:text-teal-700"> Vanilla JS</Link>  to React with Redux Toolkit highlighted the benefits of predictable state management and component-based architecture for<strong> scaling features and improving UX</strong>.
       </li>
       <li>Replacing external assets with <strong>custom SVG icons</strong> to solve technical and licensing issues</li>
     </ul>
@@ -237,8 +237,11 @@ export default function Todoezel() {
   <h3 className=" font-bold tracking-widest text-sky-900/30 mb-4 uppercase">
     Other Case Studies
   </h3>
+    <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
+ <Link href="/projects/casestudy/Daycare" className="hover:text-teal-600/60 " target="_blanked" rel="noopener noreferrer" >Daycare App - Fullstack-Next.js</Link>
+  </div>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
- <Link href="/projects/casestudy/LiascopeAstrologyReactNext" className="hover:text-teal-600/60 " target="_blanked">Liascope Astrology - React/Next.js</Link>
+ <Link href="/projects/casestudy/LiascopeAstrologyReactNext" className="hover:text-teal-600/60 " target="_blanked" rel="noopener noreferrer"  >Liascope Astrology - React/Next.js</Link>
   </div>
 </section>
         </footer>

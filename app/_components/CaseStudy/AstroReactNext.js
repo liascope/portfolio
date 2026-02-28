@@ -200,10 +200,10 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
 <li><strong>Deployment</strong> – Deployed on Vercel to leverage seamless Next.js integration, fast builds, and global CDN delivery.</li>
   <ul className="list-disc space-y-2">
     <h3 className="font-bold tracking-widest text-sky-900/50 uppercase my-3">External APIs & Libraries</h3>
-    <li><strong className="cursor-pointer hover:text-teal-700" ><Link href="https://nominatim.org/" target="_blank" >Nominatim API</Link></strong> – Location autocomplete and geocoding.</li>
-    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" >Timezone API</Link></strong> – Accurate timezone resolution for precise chart calculations.</li>
-    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" >js_astro</Link></strong> – Core astrological calculations, extended to handle retrograde logic and timezone conversions.</li>
-    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://astrodraw.github.io/" target="_blank" >AstroChart</Link></strong> – SVG chart rendering library, customized for responsive scaling and interactive filtering.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700" ><Link href="https://nominatim.org/" target="_blank" rel="noopener noreferrer" >Nominatim API</Link></strong> – Location autocomplete and geocoding.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" rel="noopener noreferrer" >Timezone API</Link></strong> – Accurate timezone resolution for precise chart calculations.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://github.com/astsakai/js_astro/tree/master?tab=readme-ov-file#js_astro" target="_blank" rel="noopener noreferrer">js_astro</Link></strong> – Core astrological calculations, extended to handle retrograde logic and timezone conversions.</li>
+    <li><strong className="cursor-pointer hover:text-teal-700"><Link href="https://astrodraw.github.io/" target="_blank" rel="noopener noreferrer">AstroChart</Link></strong> – SVG chart rendering library, customized for responsive scaling and interactive filtering.</li>
   </ul>
 </ul>
 </article>
@@ -336,8 +336,11 @@ This project strengthened my architectural thinking and highlighted the importan
   <h3 className=" font-bold tracking-widest text-sky-900/30 mb-4 uppercase">
     Other Case Studies
   </h3>
+    <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
+ <Link href="/projects/casestudy/Daycare" className="hover:text-teal-600/60 " target="_blanked" rel="noopener noreferrer" >Daycare App - Fullstack-Next.js</Link>
+  </div>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
-   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" >Todoezel Task Manager - React/Redux Toolkit</Link>
+   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" rel="noopener noreferrer">Todoezel Task Manager - React/Redux Toolkit</Link>
   </div>
 </section>
         </footer>

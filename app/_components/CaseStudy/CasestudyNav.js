@@ -12,8 +12,6 @@ export default function CaseStudyNav() {
   const [open, setOpen] = useState(false)
  const {isSticky} = useSticky();
 
-const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1750;
-
   useEffect(() => {
     if (!pathname)return; const lastSegment = pathname.split("/").filter(Boolean).pop();
       setTitle(caseStudy[lastSegment] || ""); }, [pathname]);
@@ -33,13 +31,24 @@ const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1750;
 
   const handleClick = (id) => {document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "center" });};
 
-  return ( <div onClick={!isDesktop ? () => {setOpen((prev) => !prev);} : undefined} className={`fixed top-1/3 z-10 transition-all duration-300  
-    ${isDesktop ? 'w-xs h-40 bg-transparent backdrop-blur-none rounded-none right-5' : ' bg-white/30 backdrop-blur-md rounded-sm pl-5 right-0'}
-    ${!isDesktop && (open ? 'w-xs h-fit py-5' : 'w-5 h-40')}`} > 
+  return ( <div
+  onClick={() => setOpen((prev) => !prev)}
+  className={`fixed top-1/3 z-10 transition-all duration-300
+    right-0 bg-white/30 backdrop-blur-md rounded-sm pl-5
+    min-[1750px]:right-5
+    min-[1750px]:bg-transparent
+    min-[1750px]:backdrop-blur-none
+    min-[1750px]:rounded-none
+    ${open ? 'w-xs h-fit py-5' : 'w-5 h-40'}
+    min-[1750px]:w-xs
+    min-[1750px]:h-40
+    min-[1750px]:pointer-events-none
+  `}
+>
 
         <div className="min-[1750px]:hidden absolute left-1 top-1/3 w-6 h-full cursor-pointer opacity-80">{open ? '\u27EB' : '\u27EA'}</div>
       <ul className={`text-md space-y-1 lg:space-y-5  transition-all duration-500 min-[1750px]:opacity-100
-  ${!isDesktop && open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'}
+  ${ open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'}
 `}>
         <h1 className={`text-base sm:text-lg text-sky-900/70 min-[1750px]:-rotate-10 font-bold uppercase transition-all duration-300 min-[1750px]:mb-10 sm:mb-5 mb-1 ${isSticky ? 'opacity-100' : 'opacity-0' }`}>{title}</h1>
         {visibleSections.map(({ id, label }) => (

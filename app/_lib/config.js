@@ -121,18 +121,19 @@ export const caseStudy = {
 
 export const nextStep = {
   todoezel:["Opening a GPS-based world map on the Shop page to explore the location of shops and link them to shop items.","Allowing users to export lists (Notes/Tasks, Shop List, Today’s Tasks) as PDF or PNG for printing and offline use"],
-  astroReactNext:['Downloadable PDF chart reports.',"Lunar phase calendar integration.","Downloadable PDF chart reports.","AI-generated astrology insights based on user input."]
+  astroReactNext:['Downloadable PDF chart reports.',"Lunar phase calendar integration.","Downloadable PDF chart reports.","AI-generated astrology insights based on user input."],
+  daycare:['In-App Messaging: Parents and caregivers can exchange messages; caregivers can also send announcements or event notifications to parents.']
 }
 // CaseStudy End 
 
 // GitHub Repos
 export const reactNextProjects = [
-  {name:"Liascope Astrology - React.js", link: "https://github.com/liascope/liascope-react"}, 
-  {name: "The Wild Oasis - Customer Version", link:"https://github.com/liascope/wildoasisweb"}
+  {name: "Daycare App - Fullstack Next.js", link:"https://github.com/liascope/daycare-app"},
+  {name:"Liascope Astrology", link: "https://github.com/liascope/liascope-react"}, 
+  {name:'Portfolio Website', link:'https://github.com/liascope/portfolio'}
 ];
 export const reactProjects = [
   {name: "Todoezel - ReactRedux", link:"https://github.com/liascope/todoezel-reactredux"},
-  {name:"Wild Oasis - Admin Version", link:"https://github.com/liascope/thewildoasisapp"},
   {name:"Fast React Pizza", link:"https://github.com/liascope/fast-react-pizza"}, 
   {name:"Classy Weather", link:"https://github.com/liascope/weatherapp"}, 
   {name:"EatNSplit", link:"https://github.com/liascope/eatNsplit"}
@@ -140,7 +141,6 @@ export const reactProjects = [
 export const vanillaJSprojects = [
 {name: "Liascope Astrology - Vanilla JS", link:"https://github.com/liascope/liascope"}, 
 {name:"Todoezel - Vanilla JS", link:"https://github.com/liascope/todoezel"}, 
-{name:"Astrozel-Web", link:"https://github.com/liascope/Astrozel"},
 {name: "Mapty", link:"https://github.com/liascope/maptyzakin"}, 
 {name:"Forkify", link:"https://github.com/liascope/forkifyliascope"}, 
 {name: "Dice Game", link:"https://github.com/liascope/dicegame"}, 
@@ -154,6 +154,16 @@ export function generateImages(folder, count) {
   return Array.from({ length: count }, (_, i) => `/${folder}/${i+1}.png`);
 }
  export const projects = [
+  {logo:'/daycare/0.png',
+    title: 'Daycare App (Fullstack-Next.js)',
+    description:'A full-stack daycare management application with secure role-based access and structured reporting workflows. Built with a server-driven architecture using Next.js Server Actions and PostgreSQL Row Level Security (RLS) for secure data access. Fully responsive across desktop and mobile devices.',
+    tech: ['React.js', 'Next.js','Supabase Auth', 'Supabase PostgreSQL', 'Supabase Storage', 'Row Level Security (RLS)','Server Actions', 'JWT Role-Based Access', 'Context API','Tailwind CSS'],
+     caseStudy: '/projects/casestudy/Daycare',
+    link:'https://daycare-app-five.vercel.app/',
+    github: 'https://github.com/liascope/daycare-app',
+    images: generateImages('daycare',5)
+
+  },
    {logo: '/astroReact/0.png',
   title: 'Astrology App (React/Next.js)',
   description: 'An interactive astrology charting application with automated transit calculations, multi-chart generation, and dynamic SVG-based visualizations. Initially built in Vanilla JavaScript, the app was refactored to React and Next.js to support complex state, reusable chart logic, and responsive rendering.',

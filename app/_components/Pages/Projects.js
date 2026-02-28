@@ -17,11 +17,11 @@ export default function Projects() {
   className="bg-white/40 backdrop-blur-sm rounded-md p-6 shadow hover:scale-[1.02] transition flex flex-col justify-between items-center" >
 <div className='flex flex-row items-center justify-start w-full h-10 sm:h-20 border-x-2 rounded-2xl border-teal-800/20 mb-2 pl-2'> 
 
-  <div className="relative w-20 sm:w-35 h-full">
-  <Image src={project.logo} alt={`Screenshot ${index + 1}`} fill className="object-contain mr-1"
+  <div className="relative w-20 sm:w-35 h-full mr-2">
+  <Image src={project.logo} alt={`Screenshot ${index + 1}`} fill className="object-contain p-2"
    sizes="(max-width: 640px) 120px, 200px" />
 </div> 
-  <h2 className="sm:text-lg text-md font-bold uppercase text-sky-900/50">{project.title}</h2></div>
+  <h2 className="sm:text-lg flex-1 text-md font-bold uppercase text-sky-900/50">{project.title}</h2></div>
   <p className="text-sm mb-4 px-4 text-center">{project.description}</p>
   <div className="flex flex-wrap gap-2 text-xs mb-6">
     {project.tech.map((tech, i) => (
