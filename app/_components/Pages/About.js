@@ -1,57 +1,39 @@
-'use client'
-import { motion, AnimatePresence} from "framer-motion";
-import LearningIcon from "../Icons/LearningIcon";
-import { useState } from "react";
-import Workflow from "./Workflow";
-import Seperation from "../Seperation";
+import GitHubRepos from "../GitHubRepos";
+import IconButton from "../IconButton";
+import ArrowRight from "../Icons/ArrowRight";
+
 
 export default function About() {
-  const [open, setOpen] = useState(false)
-
+  
   return ( <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-2 sm:p-4">
       <section className="max-w-7xl mx-auto sm:mt-12 backdrop-blur-lg bg-white/30 rounded-2xl p-4 sm:p-10 shadow-xl">
         <h1 className="sm:text-3xl text-2xl uppercase font-bold mb-6 sm:tracking-wider text-sky-900/80">About</h1>
-      <article className="sm:text-lg text-sm flex flex-col gap-6">
+<article className="sm:text-lg text-sm flex flex-col gap-6">
   <p>
-    I started my professional journey studying law, where I developed strong analytical thinking, structured problem-solving, and discipline.
+    I began my professional path studying law, where I developed analytical thinking, structured reasoning, and disciplined problem-solving. These skills continue to guide how I approach software development today.
   </p>
+
   <p>
-    Over time, however, I realized that I was seeking creativity, innovation, and technology alongside a structured workflow. Rather than switching fields impulsively, I made a conscious long-term decision to invest my time in a career that truly fits me. Combining my strengths and interests — analytical thinking, structured workflow, curiosity about technology, interactive digital experiences, and a fascination for how complex systems work behind the scenes — naturally led me to code.
+    Since mid-2023, I have been fully focused on frontend development, building applications with <strong className="text-teal-900/60 tracking-widest">JavaScript, React.js, and Next.js</strong>. My transition into tech was intentional and long-term — driven by a fascination with interactive systems and a desire to understand how complex applications work end to end.
   </p>
+
   <p>
-    Programming brings together logic, structure, creativity, and innovation — exactly the balance I was looking for. Since mid-2023, I’ve been fully dedicated to frontend development, focusing on <strong className="text-teal-900/60 tracking-widest">Vanilla JavaScript, React.js, Next.js</strong>, and modern web technologies through self-directed learning and practical projects. My portfolio projects are the tangible outcome of this learning phase, emphasizing clean architecture, reusable components, and user-centered design.
+    I approach coding with a focus on clarity, predictable state management, and maintainable architecture. I design reusable components, structure data thoughtfully, and integrate APIs in a way that keeps applications understandable and scalable as they grow.
   </p>
+
   <p>
-    Click below to explore more about my coding workflow and projects.
+    This portfolio showcases applications I planned and built from the ground up, demonstrating deliberate architectural decisions, careful state design, and user-centered interfaces. Each project reflects my commitment to clean, maintainable, and adaptable code.
   </p>
 </article>
-
            
-          <div
-        onClick={() => setOpen(!open)}
-        className="flex flex-row items-center justify-center w-full text-teal-700/60 hover:text-teal-600/70 transition-all hover:tracking-wider cursor-pointer uppercase tracking-widest font-bold my-10"
-      >
-        {open ? "" : "Coding & Workflow"}
-        {!open && <div className="h-8 flex items-center"><Seperation/><LearningIcon/></div>}
-      </div>
+          <div className="text-center sm:text-lg text-sm my-20">
+    For a closer look at my projects and implementation decisions, explore my GitHub repositories below.
+  </div>
 
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="content"
-            initial={{ height: 0, opacity: 0, y: -10 }}
-            animate={{ height: "auto", opacity: 1, y: 0 }}
-            exit={{ height: 0, opacity: 0, y: -10 }}
-            transition={{
-              duration: 0.6,
-              ease: [0.04, 0.62, 0.23, 0.98],
-            }}
-            className="overflow-hidden w-full"
-          >
-           <Workflow />
-          </motion.div>
-        )}
-      </AnimatePresence>
+  <GitHubRepos />
+  <IconButton link="/techstack" icon={ArrowRight}>
+    Technologies and tools I’ve worked with
+  </IconButton>
       </section>
       </main>
   );

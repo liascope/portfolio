@@ -23,7 +23,7 @@ export default function Projects() {
 </div> 
   <h2 className="sm:text-lg flex-1 text-md font-bold uppercase text-sky-900/50">{project.title}</h2></div>
   <p className="text-sm mb-4 px-4 text-center">{project.description}</p>
-  <div className="flex flex-wrap gap-2 text-xs mb-6">
+  <div className="flex flex-wrap justify-center gap-2 text-xs mb-6">
     {project.tech.map((tech, i) => (
       <span
         key={i}

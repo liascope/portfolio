@@ -154,50 +154,48 @@ export const vanillaJSprojects = [
 export function generateImages(folder, count) {
   return Array.from({ length: count }, (_, i) => `/${folder}/${i+1}.png`);
 }
- export const projects = [
-  {logo:'/daycare/0.png',
+ 
+export const projects = [
+  {
+    logo:'/daycare/0.png',
     title: 'Daycare App (Fullstack-Next.js)',
-    description:'A full-stack daycare management application with secure role-based access and structured reporting workflows. Built with a server-driven architecture using Next.js Server Actions and PostgreSQL Row Level Security (RLS) for secure data access. Fully responsive across desktop and mobile devices.',
-    tech: ['React.js', 'Next.js','Supabase Auth', 'Supabase PostgreSQL', 'Supabase Storage', 'Row Level Security (RLS)','Server Actions', 'JWT Role-Based Access', 'Context API','Tailwind CSS'],
-     caseStudy: '/projects/casestudy/Daycare',
-    link:'https://daycare-app-five.vercel.app/',
+    description: 'Full-stack daycare management system enabling staff to track attendance, manage schedules, and generate structured reports. Built with a server-driven architecture using Next.js Server Actions and PostgreSQL Row Level Security (RLS) for secure data access. Fully responsive across desktop and mobile.',
+    tech: ['React.js', 'Next.js','Supabase Auth', 'Supabase PostgreSQL', 'Supabase Storage', 'RLS','Server Actions', 'JWT Role-Based Access', 'Context API','Tailwind CSS'],
+    caseStudy: '/projects/casestudy/Daycare',
+       link:'https://daycare-app-five.vercel.app/',
     github: 'https://github.com/liascope/daycare-app',
     images: generateImages('daycare',5)
-
   },
-   {logo: '/astroReact/0.png',
-  title: 'Astrology App (React/Next.js)',
-  description: 'An interactive astrology charting application with automated transit calculations, multi-chart generation, and dynamic SVG-based visualizations. Initially built in Vanilla JavaScript, the app was refactored to React and Next.js to support complex state, reusable chart logic, and responsive rendering.',
-  tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'TanstackQuery', 'React Hook Form', 'Framer Motion', 'SVG', '@astrodraw/astrochart', 'js_astro', 'REST APIs'],
-  caseStudy: '/projects/casestudy/LiascopeAstrologyReactNext',
-  link: 'https://liascope-react.vercel.app/',
+  {
+    logo: '/astroReact/0.png',
+    title: 'Astrology App (React/Next.js)',
+    description: 'Interactive astrology charting app with automated transit calculations, multi-chart generation, and dynamic SVG visualizations. Refactored from Vanilla JS to React and Next.js to support complex state, reusable chart logic, and responsive rendering.',
+    tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'TanstackQuery', 'React Hook Form', 'Framer Motion', 'SVG', '@astrodraw/astrochart', 'js_astro', 'REST APIs'],
+    caseStudy: '/projects/casestudy/LiascopeAstrologyReactNext',
+      link: 'https://liascope-react.vercel.app/',
   github: 'https://github.com/liascope/liascope-react',
-  images: generateImages("astroReact", 10)
-}
-,
-    {logo: '/todoReact/0.png',
-  title: 'Task Manager (React/RTK)',
-  description: 'A task management application focused on reducing cognitive load by separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JavaScript prototype into a production-ready React app with Redux Toolkit for predictable state management and persistence.',
-  tech: [  'React.js', 'Redux Toolkit', 'Tailwind CSS','Vite', 'React Router', 'Custom Hooks',  'LocalStorage', 'Framer Motion'
-  ],
+    images: generateImages("astroReact", 10)
+  },
+  {
+    logo: '/todoReact/0.png',
+    title: 'Task Manager (React/RTK)',
+    description: 'Task management app separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JS to React with Redux Toolkit for predictable state management and persistent storage.',
+    tech: ['React.js', 'Redux Toolkit', 'Tailwind CSS','Vite', 'React Router', 'Custom Hooks', 'LocalStorage', 'Framer Motion'],
     caseStudy: '/projects/casestudy/Todoezel',
-  link: 'https://todoezel-reactredux.vercel.app/',
+     link: 'https://todoezel-reactredux.vercel.app/',
   github: 'https://github.com/liascope/todoezel-reactredux',
-  images: generateImages("todoReact", 8)
-
-},   {logo: '/portfolio/0.png',
-      title: 'Portfolio Website (React/Next.js)',
-      description: 'Personal portfolio website built with React and Next.js, focusing on clear information architecture, smooth navigation, and reusable UI components. Features scroll-based interactions, animated transitions, and project previews to present case studies and technical work effectively.You are currently viewing this project live.',
-      tech: ['React', 'Next.js', 'Tailwind CSS','Framer Motion' ],
-      // link: 'https://liascope-portfolio.vercel.app/', 
+    images: generateImages("todoReact", 8)
+  },
+  {
+    logo: '/portfolio/0.png',
+    title: 'Portfolio Website (React/Next.js)',
+    description: 'Personal portfolio showcasing projects with clear information architecture, smooth navigation, reusable UI components, and interactive scroll-based animations. Built with React and Next.js, optimized for responsive performance.',
+    tech: ['React', 'Next.js', 'Tailwind CSS'],
+       // link: 'https://liascope-portfolio.vercel.app/', 
       github: 'https://github.com/liascope/portfolio', 
-      images: generateImages("portfolio", 5)
-    },
-  ];
+    images: generateImages("portfolio", 5)
+  },
+];
+
   // Projects End
 
-export const reflectionEvolution = [{
-reflection:'Early project challenges reinforced the importance of upfront planning and clear architectural decisions, significantly reducing refactoring.', evolution:(<> Established a reliable, repeatable workflow:<br /> <strong className="text-teal-900/60 tracking-widest">plan → implement → refactor → optimize</strong>
-      </>
-    ),}, {reflection:'Frequent refactoring state structures and component boundaries improved predictability and scalability.', evolution:'Applied architectural principles such as clear state ownership, predictable rendering behavior, and separation of concerns'}, {reflection:'Iterative development cycles improved API integration and reduced coupling between data logic and UI components.', evolution:'Advanced from a Vanilla JavaScript MVC architecture to React.js and Next.js with a component-driven mindset.'}
-]
