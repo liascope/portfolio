@@ -126,28 +126,28 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
   <h2 id="app-structure" title="App Structure & Pages"  className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">App Structure</h2>
   <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 {`/app
-├─ RootLayout                → Global layout with header & footer
+├─ RootLayout                
 │   ├─ /                     → Homepage (CTA to form)
-│   ├─ /form                 → Data entry (natal & transit charts, horoscope selection)
+│   ├─ /form                 → natal & transit charts, horoscope selection
 │   ├─ /profiles             → Saved profiles (localStorage)
-│   └─ /policy               → Policy page
+│   └─ /policy              
 │
-├─ _components               → Reusable UI components (incl. NavIcons)
+├─ _components               → Reusable UI components
 │
 ├─ _lib
 │   ├─ hooks/                → Custom React hooks
 │   ├─ context/              → Context API for global state
-│   ├─ config.js             → App configuration
-│   └─ helpers.js            → Utility functions
+│   ├─ config.js            
+│   └─ helpers.js            
 │
 ├─ /charts                    → Chart layout & pages
 │   ├─ layout.js              → Chart info button & table, navigation
-│   ├─ /chart/natal           → Natal chart
-│   ├─ /chart/transit         → Transit chart
-│   ├─ /chart/natalTransit    → Natal & transit overlay
-│   ├─ /chart/progression     → Progressed chart
-│   ├─ /chart/draconic        → Draconic chart
-│   └─ /chart/perfection      → Annual perfection chart
+│   ├─ /chart/natal         
+│   ├─ /chart/transit        
+│   ├─ /chart/natalTransit    
+│   ├─ /chart/progression    
+│   ├─ /chart/draconic        
+│   └─ /chart/perfection      
 |
 ├─ /api/nominatim/route.js    → SS Nominatim route to bypass CORS & dev request limits`}
   </pre>
@@ -165,18 +165,6 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
     <li><strong>Additional UX Enhancements:</strong> Custom loader, cookie banner with policy routing, and guided modals for onboarding.</li>
   </ul>
 </article> 
-
- {/* <article className="md:w-1/1 flex flex-col items-center rounded-2xl shadow-[0_-4px_10px_rgba(0,0,0,0.15)] shadow-sky-800/60 h-fit">   
-  <ImageSlider images={['/caseStudy/csAstroReact1.png', '/caseStudy/csAstroReact2.png','/caseStudy/csAstroReact3.png']} sliderHeight="h-xl" />
- <ul className="text-xs text-sky-900/80 text-justify p-4">
-             <li>Liascope Vanilla JS (left) and Liacope React.js & Next.js (right):
-             1.Form & Autocomplete functionality -
-             2.Data Info Table extension -
-             3.Displaying Retrograde & Filter functionality</li>
-           </ul>
-         </article> */}
-
-         {/* </div> */}
 
  <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
   <article className="bg-white/40 backdrop-blur-sm rounded-xl p-2 sm:p-6 shadow hover:scale-105 transition">

@@ -113,6 +113,7 @@ export const sections = [
   { id: "reflection", label: "Reflection & Next Steps" },
 ];
 export const caseStudy = {
+  Daycare: "Daycare App - Fullstack Next.js",
   LiascopeAstrologyJS: "Astrology App - Vanilla JS",
   LiascopeAstrologyReactNext: "Astrology App - React.js & Next.js",
   Todoezel: "To-Do List App - React.js",

@@ -37,7 +37,7 @@ export default function Todoezel() {
   <pre className="bg-gray-100 p-3 rounded-md text-xs sm:text-sm overflow-x-auto">
 {`/src
 ├─ lib
-|  ├─ config       → Shared configuration, constants, helpers
+|  ├─ config       
 |  └─ useStorage   → Reusable LocalStorage persistence hook
 └ components
    ├─ app
@@ -45,11 +45,11 @@ export default function Todoezel() {
    │   └─ router         → React Router setup
    │
    ├─ layout
-   │   ├─ AppLayout      → Main layout wrapper
-   │   ├─ ErrorBoundary  → Global error handling
-   │   ├─ Header         → App header
+   │   ├─ AppLayout     
+   │   ├─ ErrorBoundary 
+   │   ├─ Header         
    │   ├─ HeaderToday    → Displays today's tasks
-   │   ├─ Navigation     → Navigation bar
+   │   ├─ Navigation    
    │   └─ ModalContent   → Reusable modal UI
    │
    ├─ pages
@@ -68,7 +68,7 @@ export default function Todoezel() {
        ├─ Spinner
        ├─ Percent
        ├─ NotFound
-       └─ NaviCons/     → Custom SVG icons`}
+       └─ NaviCons/     `}
 </pre>
 
 </article>

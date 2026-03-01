@@ -12,7 +12,7 @@ export default function Daycare() {
   return (<main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4 ">
       <section className="max-w-6xl mx-auto bg-white/30 backdrop-blur-lg rounded-2xl p-4 sm:p-8 shadow-xl">
 
-<HeaderCS img="daycare">Daycare App - Fullstack Next.js App</HeaderCS>
+<HeaderCS img="daycare">Daycare App - Fullstack Next.js</HeaderCS>
 <article className="flex flex-col mb-10 mt-2 sm:text-lg text-base px-5 sm:px-10 gap-5">
   <p>
     Daycare App is a production-oriented full-stack management system designed to handle structured daily reporting between caregivers and parents in a secure and role-controlled environment.
@@ -28,8 +28,8 @@ export default function Daycare() {
     <li>Database-enforced access control via PostgreSQL Row Level Security.</li>
   </ul>
 </article>
-<div className="flex flex-col sm:flex-row bg-white/40 backdrop-blur-sm rounded-xl p-5 sm:p-12 shadow hover:scale-105 transition my-10">
-<article className="py-10 sm:py-0">
+<div className="flex flex-col lg:flex-row bg-white/40 backdrop-blur-sm rounded-xl p-5 lg:p-12 shadow hover:scale-105 transition my-10">
+<article className="pb-10 sm:pb-0">
   <h2
     id="app-structure"
     title="App Structure & Pages"
@@ -63,7 +63,7 @@ export default function Daycare() {
   </pre>
 </article>
 
-<article className="text-sm sm:text-base flex flex-col">
+<article className="text-sm sm:text-base flex flex-col pt-10">
   <ul className="list-disc ml-6 space-y-2 px-5 sm:px-12 text-sm sm:text-base">
     <h2
       id="key-features" title="Key Features"
@@ -118,7 +118,7 @@ export default function Daycare() {
   </ul>
 </article>
 
-<article className="my-10 flex flex-col sm:flex-row gap-5 items-start">
+<article className="my-10 flex flex-col md:flex-row gap-5 items-start">
 <article className="bg-white/40 backdrop-blur-sm rounded-xl px-5 py-6 sm:px-10 shadow hover:scale-105 transition text-sm flex-1">
   <h2 id="state-management" title="State Management & Data Flow"  className="text-xl text-center font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">
     State Management & Data Flow
@@ -147,7 +147,7 @@ export default function Daycare() {
 
 </article>
 
-<div className="flex sm:flex-row flex-col gap-5 my-10">
+<div className="flex lg:flex-row flex-col gap-5 my-10">
    <article className="flex-1 px-5 text-sm">
   <h2 id='challenges' title="Challenges & Learnings" className="text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6 text-center">
     Challenges & Learnings
@@ -160,24 +160,9 @@ export default function Daycare() {
     <li>Designing a role-based UX that clearly separates responsibilities without duplicating logic.</li>
   </ul>
 </article>
- <article className="text-sm flex-1 px-5">
-  <h2 id="reflection" title="Reflection & Next Steps" className="text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6 text-center">
-    Reflection & Next Steps
-  </h2>
 
-  <p className="mb-4 text-center">
-    This project strengthened my understanding of secure backend architecture, database-level authorization, and server-driven application design.
-  </p>
+<article className="flex-1 p-5 scale-90 border-2 rounded-2xl border-dashed border-teal-900/30">
 
-  <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
-   <ul className="text-sm gap-6">
-     {nextStep.daycare.map((step,i)=>{return (<li key={i} className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center flex items-center px-5 py-4 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition">{step}</li>)})}
-   </ul>
-</article>
-
-</div>
-<article className="my-15 flex items-center justify-center w-full">
-<div className="sm:w-[50%] px-2 sm:px-12 text-sm bg-white/40 backdrop-blur-sm rounded-xl py-6 shadow hover:scale-105 transition">
   <h2 id="demo-access" title="Demo Access" className=" text-center text-lg sm:text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">
     Demo Access
   </h2>
@@ -213,8 +198,26 @@ export default function Daycare() {
         </tr>
       </tbody>
     </table>
-  </div></div>
+  </div>
 </article>
+
+</div>
+<article className="my-20 flex items-center justify-center w-full">
+  <div className="lg:w-[50%] px-2 sm:px-12 text-sm">
+  <h2 id="reflection" title="Reflection & Next Steps" className="text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6 text-center">
+    Reflection & Next Steps
+  </h2>
+
+  <p className="mb-4 text-center">
+    This project strengthened my understanding of secure backend architecture, database-level authorization, and server-driven application design.
+  </p>
+
+  <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
+   <ul className="text-sm gap-6">
+     {nextStep.daycare.map((step,i)=>{return (<li key={i} className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center flex items-center px-5 py-4 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition">{step}</li>)})}
+   </ul></div>
+</article>
+
    <footer>
         <div className="flex flex-row gap-6 w-full justify-center items-center">
         <Button link="https://daycare-app-five.vercel.app/" target="_blank"> Live Demo </Button>
