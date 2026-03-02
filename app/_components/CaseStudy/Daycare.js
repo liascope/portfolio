@@ -15,7 +15,7 @@ export default function Daycare() {
 <HeaderCS img="daycare">Daycare App - Fullstack Next.js</HeaderCS>
 <article className="flex flex-col mb-10 mt-2 sm:text-lg text-base px-5 sm:px-10 gap-5">
   <p>
-    Daycare App is a production-oriented full-stack management system designed to handle structured daily reporting between caregivers and parents in a secure and role-controlled environment.
+   A secure, role-based full-stack management system that enables structured daily reporting between caregivers and parents.
   </p>
 
   <p>
@@ -94,27 +94,22 @@ export default function Daycare() {
      <li>
      <strong>Server Actions & Server-Only Mutations:</strong> All create, update, and delete operations are handled on the server to ensure secure mutations and prevent direct client manipulation.
      </li>
-
-    <li>
-      <strong>PostgreSQL + RLS:</strong> Access control is enforced directly at the database level using Row Level Security policies tied to JWT role metadata.
-    </li>
-
     <li>
       <strong>Relational Data Modeling:</strong> Structured relationships between users, children, and reports with enforced foreign keys and indexed columns for performance.
     </li>
 
     <li>
-      <strong>Authentication:</strong> Supabase Auth with role metadata stored in JWT app_metadata.
+      <strong>Authentication:</strong> Supabase Auth with role metadata stored in JWT app_metadata. Sessions are intentionally configured as non-persistent, enforcing automatic logout when the browser is closed to reduce the risk of unauthorized access on shared devices.
     </li>
 
     <li>
-      <strong>Authorization:</strong> PostgreSQL Row Level Security policies restrict:
+      <strong>Authorization:</strong> Access control is enforced directly within PostgreSQL using Row Level Security (RLS) policies tied to JWT role metadata:
       <ul className="list-disc ml-6 mt-2 space-y-1">
         <li>Parents to viewing only their child’s reports.</li>
         <li>Caregivers to creating and managing reports.</li>
       </ul>
     </li>
-    <li><strong>Styling: </strong>Tailwind CSS ensures a fully responsive, mobile-first design across pages and dashboards.</li>
+    <li><strong>Styling & Responsiveness: </strong>Tailwind CSS enables a mobile-first, fully responsive interface across dashboards and reporting flows.</li>
   </ul>
 </article>
 
@@ -135,7 +130,7 @@ export default function Daycare() {
   <ul className="list-disc ml-6 space-y-2">
     <li>Context API for structured multi-section form state.</li>
     <li>Server Actions for all CRUD operations.</li>
-    <li>No client-side caching layer.</li>
+    <li>Deliberately avoided client-side caching to preserve a single source of truth on the server.</li>
   </ul>
 </article>
 <article className="flex flex-1 flex-col items-center rounded-xl ">
