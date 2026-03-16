@@ -328,7 +328,7 @@ This project strengthened my architectural thinking and highlighted the importan
  <Link href="/projects/casestudy/Daycare" className="hover:text-teal-600/60 " target="_blanked" rel="noopener noreferrer" >Daycare App - Fullstack-Next.js</Link>
   </div>
   <div className="flex justify-center gap-4 text-teal-700/40 tracking-wider font-semibold text-sm">
-   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" rel="noopener noreferrer">Todoezel Task Manager - React/Redux Toolkit</Link>
+   <Link href="/projects/casestudy/Todoezel" className="hover:text-teal-600/60" target="_blanked" rel="noopener noreferrer">Todoezel Task Manager - React.js, Redux Toolkit & TypeScript</Link>
   </div>
 </section>
         </footer>

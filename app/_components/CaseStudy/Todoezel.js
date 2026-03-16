@@ -7,7 +7,7 @@ export default function Todoezel() {
 
   return (<main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 p-4 ">
       <section className="max-w-6xl mx-auto bg-white/30 backdrop-blur-lg rounded-xl p-4 sm:p-8 shadow-2xl text-base sm:text-lg ">
-      <HeaderCS img="todoReact">Task Manager (React / Redux Toolkit)</HeaderCS>
+      <HeaderCS img="todoReact">Task Manager (React.js, Redux Toolkit & TypeScript)</HeaderCS>
                                       
         <article className="my-2">
           <p className="p-6">
@@ -37,7 +37,8 @@ export default function Todoezel() {
   <pre className="bg-gray-100 p-3 rounded-md text-xs sm:text-sm overflow-x-auto">
 {`/src
 ├─ lib
-|  ├─ config       
+|  ├─ config   
+|  ├─ types  
 |  └─ useStorage   → Reusable LocalStorage persistence hook
 └ components
    ├─ app
@@ -168,7 +169,9 @@ export default function Todoezel() {
         <li>
         <strong>Redux Toolkit</strong> — for predictable global state management of date-based and derived data.
          </li>
-
+        <li>
+        <strong>TypeScript</strong> — for type safety, early detection of bugs, and easier maintenance of components.
+         </li>
             <li>
               <strong>Custom Hook for localStorage</strong> — to encapsulate persistence logic and keep components UI-focused.
             </li>
@@ -208,6 +211,9 @@ export default function Todoezel() {
       <li>
         Migrating from <Link href="https://github.com/liascope/todoezel" target="_blank"  rel="noopener noreferrer" className="font-semibold tracking-wider text-sky-900/50 cursor-pointer hover:text-teal-700"> Vanilla JS</Link>  to React with Redux Toolkit highlighted the benefits of predictable state management and component-based architecture for<strong> scaling features and improving UX</strong>.
       </li>
+      <li>
+        Using <strong>TypeScript</strong> revealed issues like incorrectly named props or mis-typed state early, which were previously unnoticed in JavaScript-only code.
+      </li>
       <li>Replacing external assets with <strong>custom SVG icons</strong> to solve technical and licensing issues</li>
     </ul>
 </article>
@@ -221,7 +227,7 @@ export default function Todoezel() {
          <article className="my-10 px-5 sm:px-12 text-sm sm:text-base">
       <h2 id="reflection" title="Reflection & Next Steps"  className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6 text-center">Reflection & Next Step</h2>
       <p className="mb-4 text-center text-base sm:text-lg">
-          This project strengthened my understanding of frontend architecture, state management, and reusable component design. It reinforced the importance of balancing technical structure with user-focused design.</p>     
+          This project strengthened my understanding of frontend architecture, state management, and reusable component design with TypeScript. It reinforced the importance of balancing technical structure with user-focused design.</p>     
             <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
               <ul className="text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {nextStep.todoezel.map((step,i)=>{return (<li key={i} className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center flex items-center  px-5 py-2 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition">{step}</li>)})}
@@ -230,8 +236,8 @@ export default function Todoezel() {
 
    <footer>
         <div className="flex flex-row gap-6 w-full justify-center items-center">
-        <Button link="https://todoezel-reactredux.vercel.app/" target="_blank"> Live Demo </Button>
-        <Button link='https://github.com/liascope/todoezel-reactredux' bright={true} target="_blank"> GitHub Repo </Button>
+        <Button link="https://todoezel-rtk.vercel.app/" target="_blank"> Live Demo </Button>
+        <Button link='https://github.com/liascope/todoezel-rtk' bright={true} target="_blank"> GitHub Repo </Button>
       </div>
       <section className="mt-8 sm:mt-16 border-t border-sky-700/30 pb-2 pt-8 text-center">
   <h3 className=" font-bold tracking-widest text-sky-900/30 mb-4 uppercase">

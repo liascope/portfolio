@@ -1,4 +1,5 @@
 import Javascript from "../_components/Icons/JavaScript";
+import Typescript from "../_components/Icons/Typescript";
 import ReactIcon from "../_components/Icons/ReactIcon";
 import Next from "../_components/Icons/Next";
 import Html from "../_components/Icons/Html";
@@ -37,6 +38,7 @@ export const gitHubLink="https://github.com/liascope";
 //Techstack
 export const skillIcons = {
   "JavaScript (ES6+)": Javascript,
+  "TypeScript" : Typescript,
   "React.js": ReactIcon,
   "Next.js": Next,
   "HTML5": Html,
@@ -65,6 +67,7 @@ export const skillIcons = {
 export const stack = {
   Core: [
     "JavaScript (ES6+)",
+    "TypeScript",
    "HTML5",
    "CSS3", 
   ],
@@ -116,7 +119,7 @@ export const caseStudy = {
   Daycare: "Daycare App - Fullstack Next.js",
   LiascopeAstrologyJS: "Astrology App - Vanilla JS",
   LiascopeAstrologyReactNext: "Astrology App - React.js & Next.js",
-  Todoezel: "To-Do List App - React.js",
+  Todoezel: "To-Do List App - React.js, Redux Toolkit & TypeScript",
 };
 
 
@@ -134,7 +137,7 @@ export const reactNextProjects = [
   {name:'Portfolio Website', link:'https://github.com/liascope/portfolio'}
 ];
 export const reactProjects = [
-  {name: "Todoezel - ReactRedux", link:"https://github.com/liascope/todoezel-reactredux"},
+  {name: "Todoezel - React.js, Redux Toolkit & TypeScript", link:"https://github.com/liascope/todoezel-rtk"},
   {name:"Fast React Pizza", link:"https://github.com/liascope/fast-react-pizza"}, 
   {name:"Classy Weather", link:"https://github.com/liascope/weatherapp"}, 
   {name:"EatNSplit", link:"https://github.com/liascope/eatNsplit"}
@@ -178,12 +181,12 @@ export const projects = [
   },
   {
     logo: '/todoReact/0.png',
-    title: 'Task Manager (React/RTK)',
-    description: 'Task management app separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JS to React with Redux Toolkit for predictable state management and persistent storage.',
-    tech: ['React.js', 'Redux Toolkit', 'Tailwind CSS','Vite', 'React Router', 'Custom Hooks', 'LocalStorage', 'Framer Motion'],
+    title: 'Task Manager (React.js, Redux Toolkit & TypeScript)',
+    description: 'Task management app separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JS to React with Redux Toolkit and TypeScript for predictable state management, persistent storage and catching type-related errors early.',
+    tech: ['React.js', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS','Vite', 'React Router', 'Custom Hooks', 'LocalStorage', 'Framer Motion'],
     caseStudy: '/projects/casestudy/Todoezel',
-     link: 'https://todoezel-reactredux.vercel.app/',
-  github: 'https://github.com/liascope/todoezel-reactredux',
+     link: 'https://todoezel-rtk.vercel.app/',
+  github: 'https://github.com/liascope/todoezel-rtk',
     images: generateImages("todoReact", 8)
   },
   {
