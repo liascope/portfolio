@@ -36,7 +36,7 @@ Header Behavior
 Original projects independently designed, developed, and deployed by me:
 
 - Liascope Astrology App (React + Next.js) – Complex chart-rendering app with API integrations, SVG logic, and modern state management refactored from Liascope Astrology Vanilla JS – Original MVC-based implementation.
-- ToDoeZel App (React + Next.js) – Clean, responsive productivity app with modular components and persistent state, also refactored from Vanilla JS version.
+- Todoezel App (React + Redux Toolkit, TypeSecript) – Clean, responsive productivity app with modular components and persistent state, also refactored from Vanilla JS version.
 
 Each includes a detailed case study describing architecture, challenges, and learnings.
 
