@@ -162,6 +162,7 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
     <li><strong>Dynamic Tables & Grids:</strong> Planet and house data rendered in responsive tables for fast readability.</li>
     <li><strong>Aspect & Filter Tools:</strong> Directly on SVG charts for focused insights.</li>
     <li><strong>Autocomplete & Location Support:</strong> Quick search for “Today’s Transits” and location input for accurate calculations.</li>
+    <li><strong>Copy to Clipboard:</strong> Copy chart data for AI or external analysis.</li>
     <li><strong>Additional UX Enhancements:</strong> Custom loader, cookie banner with policy routing, and guided modals for onboarding.</li>
   </ul>
 </article> 
