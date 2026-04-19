@@ -143,8 +143,8 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
 ├─ /charts                    → Chart layout & pages
 │   ├─ layout.js              → Chart info button & table, navigation
 │   ├─ /chart/natal         
-│   ├─ /chart/transit        
-│   ├─ /chart/natalTransit    
+│   ├─ /chart/external        
+│   ├─ /chart/comparison    
 │   ├─ /chart/progression    
 │   ├─ /chart/draconic        
 │   └─ /chart/perfection      
@@ -157,7 +157,7 @@ The layout was also fully refactored to be responsive, replacing the desktop-onl
  <article className="bg-white/40 backdrop-blur-sm rounded-xl p-3 sm:p-10 shadow hover:scale-105 transition m-10">
   <ul className="list-disc ml-6 space-y-2">
     <h2 id="key-features" title="Key Features" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">Key Features</h2>
-    <li><strong>Multi-Chart Generation:</strong> Natal, Transit, Natal&Transit, Draconic, Progression, Annual Perfection charts.</li>
+    <li><strong>Multi-Chart Generation:</strong> Natal, External: Transit/Partner Chart, Comparison: Natal&Transit/Synastry, Draconic, Progression, Annual Perfection charts.</li>
     <li><strong>Save & Load:</strong> Persistent charts (up to 5) with session persistence across refreshes.</li>
     <li><strong>Dynamic Tables & Grids:</strong> Planet and house data rendered in responsive tables for fast readability.</li>
     <li><strong>Aspect & Filter Tools:</strong> Directly on SVG charts for focused insights.</li>
@@ -310,8 +310,8 @@ This project strengthened my architectural thinking and highlighted the importan
 </ul>
 
  <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
-  <ul className="text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-    {nextStep.astroReactNext.map((step,i)=>{return (<li key={i} className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center flex items-center  px-5 py-2 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition">{step}</li>)})}
+  <ul className="text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    {nextStep.astroReactNext.map((step,i)=>{return (<li key={i} className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center justify-center flex items-center px-5 py-2 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition">{step}</li>)})}
   </ul>
 </article>
 </div>

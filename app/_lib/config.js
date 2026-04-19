@@ -125,7 +125,7 @@ export const caseStudy = {
 
 export const nextStep = {
   todoezel:["Opening a GPS-based world map on the Shop page to explore the location of shops and link them to shop items.","Allowing users to export lists (Notes/Tasks, Shop List, Today’s Tasks) as PDF or PNG for printing and offline use"],
-  astroReactNext:['Downloadable PDF chart reports.',"Lunar phase calendar integration.","Downloadable PDF chart reports.","AI-generated astrology insights based on user input."],
+  astroReactNext:["Lunar phase calendar integration.","AI-generated astrology insights based on user input."],
   daycare:['In-App Messaging: Parents and caregivers can exchange messages; caregivers can also send announcements or event notifications to parents.']
 }
 // CaseStudy End 
