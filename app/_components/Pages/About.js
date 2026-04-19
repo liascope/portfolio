@@ -18,15 +18,14 @@ export default function About() {
   </p>
 
   <p>
-    I approach coding with a focus on clarity, predictable state management, and maintainable architecture. I design reusable components, structure data thoughtfully, and integrate APIs in a way that keeps applications understandable and scalable as they grow.
+   I approach coding with a focus on clarity, predictable state management, and maintainable architecture, designing reusable components, structuring data thoughtfully, and integrating APIs in a way that keeps applications scalable and easy to reason about.
   </p>
 
   <p>
-    This portfolio showcases applications I planned and built from the ground up, demonstrating deliberate architectural decisions, careful state design, and user-centered interfaces. Each project reflects my commitment to clean, maintainable, and adaptable code.
+      This portfolio showcases applications I designed and built from the ground up, demonstrating deliberate architectural decisions, structured state management, and user-focused interfaces. Each project reflects my emphasis on clean, adaptable code as complexity grows.
   </p>
 </article>
-           
-          <div className="text-center sm:text-lg text-sm my-20">
+   <div className="text-center sm:text-lg text-sm my-20">
     For a closer look at my projects and implementation decisions, explore my GitHub repositories below.
   </div>
 
