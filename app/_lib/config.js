@@ -23,6 +23,7 @@ import DevTools from '../_components/Icons/DevTools'
 import StyledComponents from '../_components/Icons/StyledComponents'
 import CssModules from '../_components/Icons/CssModules'
 import Auth from '../_components/Icons/Auth'
+import Vue from '../_components/Icons/Vue'
 
 export const email = 'mailto:liascope@hotmail.com'
 export const gitHubLink = 'https://github.com/liascope'
@@ -40,6 +41,7 @@ export const skillIcons = {
   TypeScript: Typescript,
   'React.js': ReactIcon,
   'Next.js': Next,
+  'Vue.js': Vue,
   HTML5: Html,
   CSS3: Css,
   'Tailwind CSS': Tailwindcss,
@@ -65,7 +67,7 @@ export const skillIcons = {
 // Strings in skillIcons have to be the same as Strings in stack //
 export const stack = {
   Core: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
-  'Frameworks & Libraries': ['React.js', 'Next.js', 'React Router', 'TanStack Query', 'Redux Toolkit'],
+  'Frameworks & Libraries': ['React.js', 'Next.js', 'Vue.js', 'React Router', 'TanStack Query', 'Redux Toolkit'],
   'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components', 'Responsive Design', 'Framer Motion'],
   'Tools & Dev Environment': ['Git & GitHub', 'VS Code', 'npm', 'Prettier & ESLint', 'Chrome DevTools', 'Vite'],
   'Backend & Deployment': ['RESTful APIs', 'Supabase', 'Auth.js', 'Netlify', 'Vercel'],
