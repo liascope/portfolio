@@ -77,30 +77,15 @@ export const stack = {
 // CaseStudy
 export const sections = [
   { id: 'project-evolution', label: 'Project Evolution' },
-  { id: 'app-structure', label: 'App Structure & Pages' },
   { id: 'key-features', label: 'Key Features' },
   { id: 'architecture', label: 'Architecture & Tech Decisions' },
   { id: 'state-management', label: 'State Management & Data Flow' },
   { id: 'challenges', label: 'Challenges & Learnings' },
-  { id: 'limitation', label: 'Limitation' },
-  { id: 'reflection', label: 'Reflection & Next Steps' },
 ]
 export const caseStudy = {
   Daycare: 'Daycare App - Fullstack Next.js',
-  LiascopeAstrologyJS: 'Astrology App - Vanilla JS',
   LiascopeAstrologyReactNext: 'Astrology App - React.js & Next.js',
   Todoezel: 'To-Do List App - React.js, Redux Toolkit & TypeScript',
-}
-
-export const nextStep = {
-  todoezel: [
-    'Opening a GPS-based world map on the Shop page to explore the location of shops and link them to shop items.',
-    'Allowing users to export lists (Notes/Tasks, Shop List, Today’s Tasks) as PDF or PNG for printing and offline use',
-  ],
-  astroReactNext: ['Lunar phase calendar integration.', 'AI-generated astrology insights based on user input.'],
-  daycare: [
-    'In-App Messaging: Parents and caregivers can exchange messages; caregivers can also send announcements or event notifications to parents.',
-  ],
 }
 // CaseStudy End
 

@@ -6,6 +6,7 @@ import ImageSlider from '../ImageSlider'
 import Button from '../Button'
 import HeaderCS from './HeaderCS'
 import { nextStep, projects } from '@/app/_lib/config'
+import ChallengesLearnings from '../ChallengesLearnings'
 
 export default function AstroReactNext() {
   const [readMore, setReadMore] = useState(false)
@@ -136,45 +137,7 @@ export default function AstroReactNext() {
           </section>
         </article>
 
-        <article className="p-5 sm:p-12 my-10">
-          <h2
-            id="app-structure"
-            title="App Structure & Pages"
-            className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6"
-          >
-            App Structure
-          </h2>
-          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-            {`/app
-├─ RootLayout                
-│   ├─ /                     → Homepage (CTA to form)
-│   ├─ /form                 → natal & transit charts, horoscope selection
-│   ├─ /profiles             → Saved profiles (localStorage)
-│   └─ /policy              
-│
-├─ _components               → Reusable UI components
-│
-├─ _lib
-│   ├─ hooks/                → Custom React hooks
-│   ├─ context/              → Context API for global state
-│   ├─ config.js            
-│   └─ helpers.js            
-│
-├─ /charts                    → Chart layout & pages
-│   ├─ layout.js              → Chart info button & table, navigation
-│   ├─ /chart/natal         
-│   ├─ /chart/external        
-│   ├─ /chart/comparison    
-│   ├─ /chart/progression    
-│   ├─ /chart/draconic        
-│   └─ /chart/perfection      
-|
-├─ /api/nominatim/route.js    → SS Nominatim route to bypass CORS & dev request limits`}
-          </pre>
-        </article>
-
-        {/* <div   className="flex flex-col sm:flex-row my-10 gap-10 items-center"> */}
-        <article className="bg-white/40 backdrop-blur-sm rounded-xl p-3 sm:p-10 shadow hover:scale-105 transition m-10">
+        <article className="mb-10 mt-2 px-5 sm:px-10">
           <ul className="list-disc ml-6 space-y-2">
             <h2 id="key-features" title="Key Features" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">
               Key Features
@@ -383,71 +346,25 @@ export default function AstroReactNext() {
             </ul>
           </div>
         </div>
-
-        <div className="flex flex-col gap-5 sm:gap-10 my-10">
-          <article className="bg-white/40 backdrop-blur-sm rounded-xl p-12 shadow hover:scale-105 transition">
-            <h2
-              id="challenges"
-              title="Challenges & Learnings"
-              className="sm:text-2xl text-xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6"
-            >
-              Challenges & Learnings
-            </h2>
+        <ChallengesLearnings>
+          <ul className="list-disc ml-6 space-y-2">
             <p className="mb-4">
               Implementing the MVC pattern in the original Vanilla JS version provided a strong architectural baseline for separation of concerns and
               data flow. This foundation made the subsequent transition to React.js and Next.js smoother, allowing me to focus on scaling the app,
               improving maintainability, and adopting modern frontend practices.
             </p>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>Translating MVC-based procedural logic into reusable React components and custom hooks while preserving domain logic</li>
-              <li>Managing complex derived state across multiple chart types using the Context API with predictable state ownership</li>
+            <li>Translating MVC-based procedural logic into reusable React components and custom hooks while preserving domain logic</li>
+            <li>Managing complex derived state across multiple chart types using the Context API with predictable state ownership</li>
 
-              <li>
-                Extending and refactoring a third-party SVG chart library to support responsive behavior, interactive filtering, and chart
-                manipulation
-              </li>
-              <li>
-                Adapting and modernizing external libraries to correctly handle timezone conversions and retrograde calculations across environments
-              </li>
-              <li>Structuring complex, multi-step forms with validation and conditional logic while maintaining a consistent user experience</li>
-            </ul>
-          </article>
-
-          <article className="px-7 sm:px-20 py-6 text-base sm:text-lg">
-            <h2
-              id="reflection"
-              title="Reflection & Next Steps"
-              className="sm:text-2xl text-xl text-center font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6"
-            >
-              Reflection & Next Steps
-            </h2>
-            <p className="mb-4 text-center">
-              This project strengthened my architectural thinking and highlighted the importance of upfront planning when building complex frontend
-              applications.
-            </p>
-            <ul className="px-6 list-disc mx-6 space-y-2 text-base">
-              <li>Defining state structures and data flow early significantly reduced refactoring during implementation.</li>
-              <li>
-                The transition from a procedural MVC approach to a component-driven architecture improved my ability to design scalable, reusable, and
-                maintainable frontend systems in a structured and predictable way.
-              </li>
-            </ul>
-
-            <h3 className="text-center font-bold tracking-widest uppercase text-sky-900/50 my-6">Planned enhancements include:</h3>
-            <ul className="text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-              {nextStep.astroReactNext.map((step, i) => {
-                return (
-                  <li
-                    key={i}
-                    className="bg-white/40 backdrop-blur-sm rounded-xl shadow text-center justify-center flex items-center px-5 py-2 text-teal-900/40 tracking-widest font-bold hover:scale-105 transition"
-                  >
-                    {step}
-                  </li>
-                )
-              })}
-            </ul>
-          </article>
-        </div>
+            <li>
+              Extending and refactoring a third-party SVG chart library to support responsive behavior, interactive filtering, and chart manipulation
+            </li>
+            <li>
+              Adapting and modernizing external libraries to correctly handle timezone conversions and retrograde calculations across environments
+            </li>
+            <li>Structuring complex, multi-step forms with validation and conditional logic while maintaining a consistent user experience</li>
+          </ul>
+        </ChallengesLearnings>
 
         <footer>
           <div className="flex flex-row gap-6 w-full justify-center items-center">
