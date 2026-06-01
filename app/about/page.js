@@ -1,8 +1,9 @@
-import About from "../_components/Pages/About"
+import About from '../_components/Pages/About'
 
 export const metadata = {
-  title: "Liascope - About",
-};
+  title: 'Liascope - About',
+}
 
 export default function Page() {
-return (<About/>)}
+  return <About />
+}

@@ -1,10 +1,9 @@
-import Techstack from "../_components/Pages/Techstack";
+import Techstack from '../_components/Pages/Techstack'
 
 export const metadata = {
-  title: 'Liascope - Tech Stack'
+  title: 'Liascope - Tech Stack',
 }
 
 export default function Page() {
-  return (<Techstack/>
-  );
+  return <Techstack />
 }

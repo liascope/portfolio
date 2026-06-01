@@ -1,10 +1,8 @@
-import Contact from "../_components/Pages/Contact";
+import Contact from '../_components/Pages/Contact'
 
 export const metadata = {
-  title:'Liascope - Contact'
+  title: 'Liascope - Contact',
 }
 export default function Page() {
-  return (
-   <Contact/>
-  );
+  return <Contact />
 }

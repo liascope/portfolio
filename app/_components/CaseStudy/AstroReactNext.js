@@ -5,7 +5,7 @@ import Link from 'next/link'
 import ImageSlider from '../ImageSlider'
 import Button from '../Button'
 import HeaderCS from './HeaderCS'
-import { nextStep, projects } from '@/app/_lib/config'
+import { projects } from '@/app/_lib/config'
 import ChallengesLearnings from '../ChallengesLearnings'
 
 export default function AstroReactNext() {

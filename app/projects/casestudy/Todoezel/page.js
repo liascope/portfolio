@@ -1,5 +1,5 @@
-import Todoezel from "@/app/_components/CaseStudy/Todoezel"
+import Todoezel from '@/app/_components/CaseStudy/Todoezel'
 
-export default function Page (){
-    return <Todoezel/>
+export default function Page() {
+  return <Todoezel />
 }

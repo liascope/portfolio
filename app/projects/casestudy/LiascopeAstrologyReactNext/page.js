@@ -1,6 +1,5 @@
-import AstroReactNext from "@/app/_components/CaseStudy/AstroReactNext"
+import AstroReactNext from '@/app/_components/CaseStudy/AstroReactNext'
 
-
-export default function Page (){
-    return <AstroReactNext/>
+export default function Page() {
+  return <AstroReactNext />
 }
