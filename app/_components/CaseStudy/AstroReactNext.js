@@ -26,6 +26,10 @@ export default function AstroReactNext() {
             <strong className="text-teal-900/60">MVC pattern</strong>. After validating the core domain logic, the application was refactored and
             rebuilt with React.js and Next.js.
           </p>
+          <p>
+            To enhance the user experience, an AI-powered astrology assistant was integrated using the Gemini API. This enables users to interact with
+            their charts conversationally and receive dynamic, context-aware interpretations generated from structured chart data.
+          </p>
           <ul className="list-disc ml-6 sm:ml-12 space-y-2">
             <li>Ensure full responsiveness and smooth UX across devices, including input handling and chart generation.</li>
             <li>Expand functionality with new features, such as save & load charts, input & location autocomplete.</li>
@@ -60,7 +64,8 @@ export default function AstroReactNext() {
               </p>
               <p className="mb-4">
                 In the React/Next.js version, SVG rendering is handled internally through custom hooks, enabling direct manipulation of chart
-                elements. This allows integrated retrograde indicators, dynamic filtering, and responsive scaling directly within the SVG.
+                elements. This allows integrated retrograde indicators, dynamic filtering, and responsive scaling directly within the SVG. The
+                application was further extended with an AI-powered assistant to support interactive, conversational chart interpretation.
               </p>
               <p className="mb-4">
                 The layout was also fully refactored to be responsive, replacing the desktop-only design of the original version and ensuring a
@@ -162,6 +167,10 @@ export default function AstroReactNext() {
               <strong>Copy to Clipboard:</strong> Copy chart data for AI or external analysis.
             </li>
             <li>
+              <strong>AI Assistant:</strong> Conversational chart interpretation powered by the Gemini API, allowing users to ask questions about
+              their charts.
+            </li>
+            <li>
               <strong>Additional UX Enhancements:</strong> Custom loader, cookie banner with policy routing, and guided modals for onboarding.
             </li>
           </ul>
@@ -235,6 +244,14 @@ export default function AstroReactNext() {
                     </Link>
                   </strong>{' '}
                   – Accurate timezone resolution for precise chart calculations.
+                </li>
+                <li>
+                  <strong className="cursor-pointer hover:text-teal-700">
+                    <Link href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer">
+                      Gemini API
+                    </Link>
+                  </strong>{' '}
+                  – AI-powered conversational astrology assistant for chart interpretation with rate-limited usage.
                 </li>
                 <li>
                   <strong className="cursor-pointer hover:text-teal-700">
@@ -362,7 +379,10 @@ export default function AstroReactNext() {
             <li>
               Adapting and modernizing external libraries to correctly handle timezone conversions and retrograde calculations across environments
             </li>
-            <li>Structuring complex, multi-step forms with validation and conditional logic while maintaining a consistent user experience</li>
+            <li>
+              Structuring complex, multi-step forms with validation and conditional logic while maintaining a consistent user experience, alongside
+              integrating an AI API with prompt optimization and rate-limit management.
+            </li>
           </ul>
         </ChallengesLearnings>
 
