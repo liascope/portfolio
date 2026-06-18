@@ -24,6 +24,7 @@ import StyledComponents from '../_components/Icons/StyledComponents'
 import CssModules from '../_components/Icons/CssModules'
 import Auth from '../_components/Icons/Auth'
 import Vue from '../_components/Icons/Vue'
+import Expo from '../_components/Icons/Expo'
 
 export const email = 'mailto:liascope@hotmail.com'
 export const gitHubLink = 'https://github.com/liascope'
@@ -40,6 +41,7 @@ export const skillIcons = {
   'JavaScript (ES6+)': Javascript,
   TypeScript: Typescript,
   'React.js': ReactIcon,
+  'React Native': ReactIcon,
   'Next.js': Next,
   'Vue.js': Vue,
   HTML5: Html,
@@ -63,13 +65,14 @@ export const skillIcons = {
   'Styled Components': StyledComponents,
   'CSS Modules': CssModules,
   'Auth.js': Auth,
+  Expo: Expo,
 }
 // Strings in skillIcons have to be the same as Strings in stack //
 export const stack = {
   Core: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
-  'Frameworks & Libraries': ['React.js', 'Next.js', 'Vue.js', 'React Router', 'TanStack Query', 'Redux Toolkit'],
+  'Frameworks & Libraries': ['React.js', 'React Native', 'Next.js', 'React Router', 'TanStack Query', 'Redux Toolkit', 'Vue.js'],
   'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components', 'Responsive Design', 'Framer Motion'],
-  'Tools & Dev Environment': ['Git & GitHub', 'VS Code', 'npm', 'Prettier & ESLint', 'Chrome DevTools', 'Vite'],
+  'Tools & Dev Environment': ['Git & GitHub', 'VS Code', 'npm', 'Prettier & ESLint', 'Chrome DevTools', 'Vite', 'Expo'],
   'Backend & Deployment': ['RESTful APIs', 'Supabase', 'Auth.js', 'Netlify', 'Vercel'],
 }
 // Techstack End
