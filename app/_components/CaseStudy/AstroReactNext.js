@@ -15,7 +15,7 @@ export default function AstroReactNext() {
       <section className="max-w-6xl mx-auto bg-white/30 backdrop-blur-lg rounded-2xl p-4 sm:p-8 shadow-xl">
         <HeaderCS img="astroReact">Astrology App - React/Next.js</HeaderCS>
 
-        <article className="flex flex-col mb-10 mt-2 sm:text-lg text-base px-5 sm:px-10 gap-5">
+        <article className="flex flex-col  mb-10 mt-2 sm:text-lg text-base px-5 sm:px-10 gap-5">
           <p>
             Liascope Astrology is a modern astrology charting application designed to provide a clean and beginner-friendly alternative to cluttered
             and visually overwhelming astrology tools. The application allows users to generate and explore multiple astrological charts through an
@@ -45,7 +45,7 @@ export default function AstroReactNext() {
           >
             Project Evolution: Vanilla JS → React & Next.js{' '}
           </h2>
-          <p className="mb-4">
+          <p className="space-y-2 px-5 sm:px-12 text-sm sm:text-base">
             The initial Vanilla JavaScript version was intentionally implemented using a clear MVC architecture to demonstrate structured application
             design and explicit data flow without frameworks. While this version successfully validated the core domain logic, the project was
             refactored into React.js and Next.js to align with modern frontend production standards, long-term scalability and maintainability.
@@ -54,20 +54,20 @@ export default function AstroReactNext() {
           <h2 className="sm:text-xl text-lg font-bold sm:tracking-widest uppercase text-sky-900/60 my-6">Improvements & Technical Progress</h2>
           <div className="flex flex-col sm:flex-row gap-10">
             <div className="flex-1">
-              <p className="mb-4">
+              <p className="space-y-2 px-5 sm:px-12 text-sm sm:text-base">
                 Compared to the original Vanilla JavaScript implementation, the React & Next.js version improves flexibility, maintainability, and
                 overall user experience without rewriting the core business logic.
               </p>
-              <p className="mb-4">
+              <p className="space-y-2 px-5 sm:px-12 text-sm sm:text-base">
                 In the initial version, limitations of the external SVG chart library required pragmatic workarounds. For example, retrograde planets
                 were rendered outside the chart because direct SVG manipulation was not yet feasible given my experience at the time.
               </p>
-              <p className="mb-4">
+              <p className="space-y-2 px-5 sm:px-12 text-sm sm:text-base">
                 In the React/Next.js version, SVG rendering is handled internally through custom hooks, enabling direct manipulation of chart
                 elements. This allows integrated retrograde indicators, dynamic filtering, and responsive scaling directly within the SVG. The
                 application was further extended with an AI-powered assistant to support interactive, conversational chart interpretation.
               </p>
-              <p className="mb-4">
+              <p className="space-y-2 px-5 sm:px-12 text-sm sm:text-base">
                 The layout was also fully refactored to be responsive, replacing the desktop-only design of the original version and ensuring a
                 consistent experience across devices.
               </p>
@@ -143,7 +143,7 @@ export default function AstroReactNext() {
         </article>
 
         <article className="mb-10 mt-2 px-5 sm:px-10">
-          <ul className="list-disc ml-6 space-y-2">
+          <ul className="list-disc  ml-6 space-y-2 px-5 sm:px-12 text-sm sm:text-base">
             <h2 id="key-features" title="Key Features" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">
               Key Features
             </h2>
@@ -177,8 +177,8 @@ export default function AstroReactNext() {
         </article>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-          <article className="bg-white/40 backdrop-blur-sm rounded-xl p-2 sm:p-6 shadow hover:scale-105 transition">
-            <ul className="list-disc ml-6 space-y-2">
+          <article className="bg-white/40 backdrop-blur-sm rounded-xl p-5 sm:p-6 shadow hover:scale-105 transition">
+            <ul className="list-disc ml-6 space-y-2 px-5 sm:px-12 text-sm sm:text-base">
               <h2
                 id="architecture"
                 title="Architecture & Tech Decisions"

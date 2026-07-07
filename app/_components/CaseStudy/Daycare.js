@@ -26,7 +26,7 @@ export default function Daycare() {
           </ul>
         </article>
 
-        <article className="text-sm sm:text-base flex flex-col lg:flex-row bg-white/40 backdrop-blur-sm rounded-xl p-5 lg:p-12 shadow hover:scale-105 transition my-10  ">
+        <article className="text-sm sm:text-base flex flex-col lg:flex-row bg-white/40 backdrop-blur-sm rounded-xl p-5 lg:p-12 shadow hover:scale-105 transition my-10">
           <ul className="list-disc ml-6 space-y-2 px-5 sm:px-12 text-sm sm:text-base">
             <h2 id="key-features" title="Key Features" className="text-xl sm:text-2xl font-bold sm:tracking-widest uppercase text-sky-900/60 mb-6">
               Key Features
