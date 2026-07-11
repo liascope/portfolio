@@ -122,7 +122,7 @@ export function generateImages(folder, count) {
 export const projects = [
   {
     logo: '/daycare/0.png',
-    title: 'Daycare App (Fullstack-Next.js)',
+    title: 'Daycare App',
     description:
       'Full-stack daycare management system enabling staff to track attendance, manage schedules, and generate structured reports. Built with a server-driven architecture using Next.js Server Actions and PostgreSQL Row Level Security (RLS) for secure data access. Fully responsive across desktop and mobile.',
     tech: ['React.js', 'Next.js', 'Supabase', 'Server Actions', 'JWT Role-Based Access', 'Context API', 'Tailwind CSS'],
@@ -133,7 +133,7 @@ export const projects = [
   },
   {
     logo: '/astroReact/0.png',
-    title: 'Astrology App (React/Next.js)',
+    title: 'Astrology App',
     description:
       'Interactive astrology charting app with automated transit calculations, multi-chart generation, and dynamic SVG visualizations. Refactored from Vanilla JS to React and Next.js to support complex state, reusable chart logic, and responsive rendering. Added AI-powered chat (Gemini API) for real-time astrology interpretations.',
     tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'TanStack Query', 'React Hook Form', 'Framer Motion', 'SVG', 'REST APIs'],
@@ -144,7 +144,7 @@ export const projects = [
   },
   {
     logo: '/todoReact/0.png',
-    title: 'Task Manager (React.js, Redux Toolkit & TypeScript)',
+    title: 'Task Manager App',
     description:
       'Task management app separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JS to React with Redux Toolkit and TypeScript for predictable state management, persistent storage and catching type-related errors early.',
     tech: ['React.js', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Vite', 'React Router', 'Framer Motion'],
