@@ -155,7 +155,7 @@ export const projects = [
   },
   {
     logo: '/portfolio/0.png',
-    title: 'Portfolio Website (React/Next.js)',
+    title: 'Portfolio Website',
     description:
       'Personal portfolio showcasing projects with clear information architecture, smooth navigation, reusable UI components, and interactive scroll-based animations. Built with React and Next.js, optimized for responsive performance.',
     tech: ['React', 'Next.js', 'Tailwind CSS'],
