@@ -5,21 +5,16 @@ import Next from '../_components/Icons/Next'
 import Html from '../_components/Icons/Html'
 import Css from '../_components/Icons/Css'
 import Tailwindcss from '../_components/Icons/Tailwindcss'
-import Responsive from '../_components/Icons/Responsive'
 import GitNGitHub from '../_components/Icons/GitNGitHub'
-import Vsc from '../_components/Icons/Vsc'
 import Vercel from '../_components/Icons/Vercel'
 import ReactQuery from '../_components/Icons/ReactQuery'
 import Netlify from '../_components/Icons/Netlify'
-import Npm from '../_components/Icons/Npm'
 import PrettierNEsLint from '../_components/Icons/PrettierNEsLint'
-import ReactRouter from '../_components/Icons/ReactRouter'
 import Redux from '../_components/Icons/Redux'
 import RestApi from '../_components/Icons/RestApi'
 import Vite from '../_components/Icons/Vite'
 import FramerMotion from '../_components/Icons/FramerMotion'
 import Supabase from '../_components/Icons/Supabase'
-import DevTools from '../_components/Icons/DevTools'
 import StyledComponents from '../_components/Icons/StyledComponents'
 import CssModules from '../_components/Icons/CssModules'
 import Auth from '../_components/Icons/Auth'
@@ -47,12 +42,8 @@ export const skillIcons = {
   HTML5: Html,
   CSS3: Css,
   'Tailwind CSS': Tailwindcss,
-  'Responsive Design': Responsive,
   'Git & GitHub': GitNGitHub,
-  'VS Code': Vsc,
   Vercel: Vercel,
-  'React Router': ReactRouter,
-  npm: Npm,
   Vite: Vite,
   'Redux Toolkit': Redux,
   'RESTful APIs': RestApi,
@@ -61,7 +52,6 @@ export const skillIcons = {
   Netlify: Netlify,
   'Framer Motion': FramerMotion,
   Supabase: Supabase,
-  'Chrome DevTools': DevTools,
   'Styled Components': StyledComponents,
   'CSS Modules': CssModules,
   'Auth.js': Auth,
@@ -70,9 +60,9 @@ export const skillIcons = {
 // Strings in skillIcons have to be the same as Strings in stack //
 export const stack = {
   Core: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
-  'Frameworks & Libraries': ['React.js', 'React Native', 'Next.js', 'React Router', 'TanStack Query', 'Redux Toolkit', 'Vue.js'],
-  'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components', 'Responsive Design', 'Framer Motion'],
-  'Tools & Dev Environment': ['Git & GitHub', 'VS Code', 'npm', 'Prettier & ESLint', 'Chrome DevTools', 'Vite', 'Expo'],
+  'Frameworks & State Management': ['React.js', 'React Native', 'Next.js', 'Vue.js', 'TanStack Query', 'Redux Toolkit'],
+  'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components', 'Framer Motion'],
+  'Tools & Dev Environment': ['Git & GitHub', 'Prettier & ESLint', 'Vite', 'Expo'],
   'Backend & Deployment': ['RESTful APIs', 'Supabase', 'Auth.js', 'Netlify', 'Vercel'],
 }
 // Techstack End
@@ -152,16 +142,6 @@ export const projects = [
     link: 'https://todoezel-rtk.vercel.app/',
     github: 'https://github.com/liascope/todoezel-rtk',
     images: generateImages('todoReact', 8),
-  },
-  {
-    logo: '/portfolio/0.png',
-    title: 'Portfolio Website',
-    description:
-      'Personal portfolio showcasing projects with clear information architecture, smooth navigation, reusable UI components, and interactive scroll-based animations. Built with React and Next.js, optimized for responsive performance.',
-    tech: ['React', 'Next.js', 'Tailwind CSS'],
-    // link: 'https://liascope-portfolio.vercel.app/',
-    github: 'https://github.com/liascope/portfolio',
-    images: generateImages('portfolio', 5),
   },
 ]
 

@@ -9,7 +9,7 @@ export default function Techstack() {
         <h1 className="text-2xl sm:text-3xl font-bold mb-6 uppercase text-sky-900/80 tracking-widest">Tech Stack</h1>
         <p className="text-base sm:text-lg mb-8 text-teal-900">These are the technologies and tools I`ve worked with.</p>
         {Object.entries(stack).map(([category, items]) => (
-          <div key={category} className="mb-8  ">
+          <div key={category} className="mb-8">
             <h2 className="text-lg sm:text-xl font-bold text-sky-900/60 uppercase tracking-widest mb-6">{category}</h2>
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
               {items.map((item, index) => {
