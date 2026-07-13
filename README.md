@@ -1,64 +1,93 @@
- 🌐 Portfolio Website
+🌐 Portfolio Website
 
-A minimal, responsive, content-focused frontend portfolio built to showcase my projects, case studies, and learning journey as a self-taught frontend developer aiming for a professional role in frontend engineering.
-This portfolio is intentionally designed without visual gimmicks. Instead, it emphasizes clarity, structure, accessibility, and thoughtful interaction — reflecting how I approach real-world frontend development.
+A minimal, responsive frontend portfolio built to showcase my projects, case studies, and approach to frontend development.
+The portfolio focuses on clarity, accessibility, thoughtful interactions, and maintainable frontend practices rather than visual complexity.
 
- 🚀 Tech Stack
+🚀 Tech Stack
 
-- Frontend: Next.js, React.js, Tailwind CSS, Framer Motion  
-- State & Logic: Custom Hook (useSticky), local state
-- Content Management: Modular config.js for dynamic data  
-- Deployment: Vercel  
-- Version Control: Git & GitHub  
+- Frontend: Next.js, React.js, Tailwind CSS, Framer Motion
+- State & Logic: React Hooks, local state, custom hooks
+- Content Management: Modular configuration-based project data
+- Deployment: Vercel
+- Version Control: Git & GitHub
 
-🧭 Structure & Design
+🧭 Features & Design
 
-The portfolio was designed with clarity and usability in mind:
-- Grid-based layout for project overview  
-- Case study pages with smooth scrolling and section navigation  
-- Fixed GitHub access button for quick exploration  
-- Minimal animations using Framer Motion for a refined UI  
+The portfolio was designed with a focus on usability and structure:
 
-The main navigation (fixed header) contains four core sections:
-- About
-- Projects
-- TechStack
-- Contact
+- Responsive grid-based project layout
+- Detailed case study pages
+- Smooth scrolling and section navigation
+- Accessible fixed header navigation
+- Subtle animations using Framer Motion
+- Modular architecture for scalable content management
 
-Header Behavior
-- The header is fixed for accessibility  
-- On scroll, it dynamically unfolds from the top after a certain scroll height  
-- This interaction improves usability while keeping visual distraction minimal
+🧩 Featured Projects
 
- 🧩 Project Sections
+🌟 Daycare App
 
-🌟 Featured Projects (Case Studies)
-Original projects independently designed, developed, and deployed by me:
+Full-stack Next.js + Supabase
 
-- Liascope Astrology App (React + Next.js) – Complex chart-rendering app with API integrations, SVG logic, and modern state management refactored from Liascope Astrology Vanilla JS – Original MVC-based implementation.
-- Todoezel App (React + Redux Toolkit, TypeSecript) – Clean, responsive productivity app with modular components and persistent state, also refactored from Vanilla JS version.
+A secure, role-based management system designed for structured daily reporting between caregivers and parents.
 
-Each includes a detailed case study describing architecture, challenges, and learnings.
+Features:
 
-🧠 Additional Project: 
-- Portfolio Website (React + Next.js) – The site you're currently viewing; showcases my personal work and design direction.
+- Role-based authentication (Parent / Caregiver)
+- Daily reports with evaluations and image uploads
+- Parent and caregiver dashboards
+- Secure database access with PostgreSQL Row Level Security
+- Server-driven architecture using Next.js Server Actions
+- Responsive UI built with Tailwind CSS
+
+Includes a detailed case study covering architecture decisions, security considerations, and technical challenges.
+
+🌟 Liascope Astrology App
+
+React + Next.js
+
+A complex astrology application featuring:
+
+- Dynamic chart rendering
+- AI Assistant
+- API integrations
+- SVG-based visualizations
+- Modern state management
+- Refactored architecture from the original Vanilla JavaScript MVC implementation
+
+Includes a detailed case study covering architecture decisions, challenges, and technical improvements.
+
+🌟 Todoezel App
+
+React + Redux Toolkit + TypeScript
+
+A productivity application featuring:
+
+- Modular component structure
+- Persistent state management
+- Responsive UI
+- Clean and maintainable frontend architecture
+
+Refactored from an earlier Vanilla JavaScript implementation with improved scalability and developer experience.
 
 👨‍💻 About Me
-I am a self-taught frontend developer transitioning into tech without a formal CS background or prior professional experience.
 
-What I bring instead:
-- Strong self-learning ability  
-- High attention to detail  
-- A structured approach to UI and UX  
-- Deep motivation to improve continuously  
-- The ability to document and explain technical decisions  
+I am a self-taught frontend developer focused on building real-world applications with modern frontend technologies.
 
-My goal is to start my career in frontend development, where I can contribute, learn from experienced teams, and grow into a well-rounded engineer.
+Through independent projects, I have developed experience in:
+
+- Building applications from architecture to deployment
+- Creating reusable and maintainable components
+- Working with APIs, authentication, and state management
+- Documenting technical decisions through case studies
+
+My goal is to join a frontend engineering team where I can contribute, learn from experienced developers, and continue growing as an engineer.
 
 📬 Contact
 
-If you are interested in my work, mindset, or potential collaboration —  
-feel free to reach out via the Contact section on the website.
+Interested in my work or potential collaboration?
 
-Thank you for taking the time to explore my work.
-I value clarity, craftsmanship, and continuous learning — and I bring that mindset into every line of code.
+Feel free to reach out through the contact section on my portfolio website.
+
+---
+
+Portfolio Website built by Zeliha A.

@@ -82,14 +82,14 @@ export default function Daycare() {
                     <td className="px-3 py-2">admin-0987</td>
                   </tr>
                   <tr className="hover:bg-sky-50 transition-colors rounded">
-                    <td className="px-3 py-2">Parent 1</td>
+                    <td className="px-3 py-2">Parent</td>
                     <td className="px-3 py-2">
                       <a href="mailto:parent1@example.com">noah@daycare.com</a>
                     </td>
                     <td className="px-3 py-2">noah-0987</td>
                   </tr>
                   <tr className="hover:bg-sky-50 transition-colors rounded">
-                    <td className="px-3 py-2">Parent 2</td>
+                    <td className="px-3 py-2">Parent</td>
                     <td className="px-3 py-2">
                       <a href="mailto:parent2@example.com">leo@daycare.com</a>
                     </td>
