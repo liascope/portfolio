@@ -7,9 +7,9 @@ export default function Home() {
       <section className="max-w-4xl mx-auto mt-20 backdrop-blur-lg bg-white/30 rounded-2xl p-10 shadow-xl text-center">
         <h2 className="text-2xl font-bold tracking-widest mb-6 text-sky-900/80">Hi, I'm Zeliha</h2>
         <p className="text-lg mb-6">
-          I'm Frontend Developer specializing in React.js and Next.js, creating modern web applications that combine clean, maintainable code with
+          I'm a Frontend Developer specializing in React.js and Next.js, creating modern web applications that combine clean, maintainable code with
           thoughtful, user-centered design. <br />
-          Online, you can find me as{' '}
+          Online, you can find my work under{' '}
           <Link
             href="https://github.com/liascope"
             target="_blank"
