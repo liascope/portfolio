@@ -22,8 +22,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans dark`}>
-        <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 sm:p-4 sm:tracking-wide">
+      <body className={`${inter.variable} font-sans`}>
+        <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 sm:tracking-wide">
           <StickyHeader />
           {children}
           <footer className="w-full text-center text-sm py-5 tracking-widest font-semibold text-sky-900/70">

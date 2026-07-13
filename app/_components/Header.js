@@ -10,24 +10,22 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <div className="flex flex-col">
-      <Link href="/">
-        <div className="flex justify-center w-full sm:h-15 h-10 my-3">
-          <div className="sm:w-60 w-40 relative">
-            <Image
-              src={logo}
-              alt="Logo"
-              quality={100}
-              fill
-              priority
-              className="brightness-80 saturate-100 contain-content"
-              sizes="(max-width: 640px) 120px, 200px"
-            />
-          </div>
+    <div className="flex flex-col rounded-b-2xl shadow-md backdrop-blur-lg px-0 sm:px-3 bg-gradient-to-br from-slate-100/50 to-slate-200/60 mx-auto max-w-7xl">
+      <Link href="/" className="w-full flex justify-center">
+        <div className="sm:w-40 w-25 relative sm:h-10 h-7 my-4 ">
+          <Image
+            src={logo}
+            alt="Logo"
+            quality={100}
+            fill
+            priority
+            className="brightness-80 saturate-100 contain-content"
+            sizes="(max-width: 640px) 120px, 200px"
+          />
         </div>
       </Link>
 
-      <nav className="w-full sm:text-lg text-sm text-sky-900/70 font-bold tracking-widest uppercase max-w-7xl mx-auto px-4 py-4 flex justify-evenly items-center backdrop-blur-lg bg-white/30 rounded-2xl shadow-md sm:mb-7 mb-4">
+      <nav className="sm:text-base text-xs text-sky-900/70 font-bold tracking-wider uppercase flex justify-evenly items-center sm:mb-7 mb-4">
         {navLinks.map((link) => {
           const isActive = pathname === link.href
           return (
