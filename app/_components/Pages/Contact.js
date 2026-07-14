@@ -5,9 +5,9 @@ import { email, gitHubLink } from '@/app/_lib/config'
 
 export default function Contact() {
   return (
-    <section className="sm:p-8 flex flex-col max-w-7xl mx-auto sm:mt-10 p-4 text-center h-screen">
-      <h1 className="sm:text-3xl text-2xl font-bold uppercase text-sky-900/80 tracking-widest mb-6">Contact</h1>
-      <div className="backdrop-blur-lg bg-white/30 rounded-2xl pt-10 px-8 shadow-xl sm:text-lg text-base">
+    <>
+      <h1 className="sm:text-3xl text-2xl font-bold uppercase text-sky-900/80 tracking-widest mb-6 text-center">Contact</h1>
+      <div className="backdrop-blur-lg bg-white/30 rounded-2xl pt-10 px-8 shadow-xl sm:text-lg text-base text-center">
         <p>Interested in working together, have questions, or want to share feedback?</p>
         <p>Feel free to send me an email or connect with me on GitHub.</p>
         <div className="flex justify-center my-6 space-x-6">
@@ -24,6 +24,6 @@ export default function Contact() {
           </Button>
         </div>
       </div>
-    </section>
+    </>
   )
 }

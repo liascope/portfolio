@@ -9,7 +9,7 @@ import Mail from '../Icons/Mail'
 
 export default function Projects() {
   return (
-    <section className="sm:p-8 flex flex-col max-w-7xl mx-auto sm:mt-10 p-4">
+    <>
       <h1 className="sm:text-3xl text-2xl font-bold mb-8 uppercase text-sky-900/80 tracking-widest text-center">Projects</h1>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2">
         {projects.map((project, index) => (
@@ -72,6 +72,6 @@ export default function Projects() {
         {' '}
         For feedback / collaboration{' '}
       </IconButton>
-    </section>
+    </>
   )
 }

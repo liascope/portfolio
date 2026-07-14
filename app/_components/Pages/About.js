@@ -4,7 +4,7 @@ import ArrowRight from '../Icons/ArrowRight'
 
 export default function About() {
   return (
-    <section className="sm:p-8 flex flex-col max-w-7xl mx-auto sm:mt-10 p-4">
+    <>
       <h1 className="sm:text-3xl text-2xl uppercase font-bold mb-6 sm:tracking-wider text-sky-900/80">About</h1>
 
       <article className="sm:text-lg text-sm flex flex-col gap-6 mb-20 ">
@@ -33,6 +33,6 @@ export default function About() {
       <IconButton link="/techstack" icon={ArrowRight}>
         Technologies and tools I’ve worked with
       </IconButton>
-    </section>
+    </>
   )
 }

@@ -4,7 +4,7 @@ import IconButton from '../IconButton'
 
 export default function Techstack() {
   return (
-    <section className="max-w-7xl mx-auto sm:mt-10 p-4 sm:p-8">
+    <>
       <h1 className="text-2xl sm:text-3xl font-bold mb-6 uppercase text-sky-900/80 tracking-widest">Tech Stack</h1>
       <p className="text-base sm:text-lg mb-8 text-teal-900">These are the technologies and tools I`ve worked with.</p>
       {Object.entries(stack).map(([category, items]) => (
@@ -29,6 +29,6 @@ export default function Techstack() {
       <IconButton link="/projects" icon={ArrowLeft} left={true}>
         Explore Projects
       </IconButton>
-    </section>
+    </>
   )
 }

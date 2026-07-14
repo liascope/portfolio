@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
-        <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 sm:tracking-wide">
+        <main className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 text-teal-900 sm:tracking-wide relative">
           <StickyHeader />
-          {children}
-          <footer className="w-full text-center text-sm py-5 tracking-widest font-semibold text-sky-900/70">
+          <section className="sm:px-16 flex flex-col max-w-7xl mx-auto sm:pt-20 pb-40 p-8">{children}</section>
+          <footer className="w-full absolute bottom-0 text-center sm:text-sm text-xs py-5 tracking-widest font-semibold text-sky-900/70">
             <p>
               © {new Date().getFullYear()} Liascope ·{' '}
               <Link href={gitHubLink} target="_blank" rel="noopener noreferrer" className=" hover:text-teal-600">
