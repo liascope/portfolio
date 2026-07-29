@@ -130,7 +130,7 @@ export const projects = [
     caseStudy: '/projects/casestudy/LiascopeAstrologyReactNext',
     link: 'https://liascope.vercel.app/',
     github: 'https://github.com/liascope/liascope-astrology',
-    images: generateImages('astroReact', 10),
+    images: generateImages('astroReact', 8),
   },
   {
     logo: '/todoReact/0.png',

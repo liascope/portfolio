@@ -80,7 +80,7 @@ export default function AstroReactNext() {
               <ul className="text-xs text-sky-900/80 text-justify p-4">
                 <li>
                   Liascope Vanilla JS (left) and Liacope React.js & Next.js (right): 1.Form & Autocomplete functionality - 2.Data Info Table extension
-                  - 3.Displaying Retrograde & Filter functionality
+                  - 3.Displaying Retrograde
                 </li>
               </ul>
             </article>
