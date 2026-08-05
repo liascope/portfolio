@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="backdrop-blur-lg bg-white/30 rounded-2xl pt-10 px-8 shadow-xl sm:text-lg text-base text-center">
         <p>Interested in working together, have questions, or want to share feedback?</p>
         <p>Feel free to send me an email or connect with me on GitHub.</p>
-        <div className="flex justify-center my-6 space-x-6">
+        <div className="flex justify-center my-6 flex-row gap-2 md:gap-6">
           <Button link={email}>
             <span className="flex flex-row items-center gap-2">
               <Mail />
