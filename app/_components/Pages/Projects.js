@@ -11,13 +11,13 @@ export default function Projects() {
   return (
     <>
       <h1 className="sm:text-3xl text-2xl font-bold mb-8 uppercase text-sky-900/80 tracking-widest text-center">Projects</h1>
-      <div className="grid gap-10 grid-cols-1 lg:grid-cols-2">
+      <div className="grid gap-20 md:gap-10 grid-cols-1 lg:grid-cols-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white/40 backdrop-blur-sm rounded-md p-6 shadow hover:scale-[1.02] transition flex flex-col justify-between items-center"
+            className="bg-white/40 backdrop-blur-sm md:p-6 md:shadow-md hover:scale-[1.02] transition flex flex-col justify-between items-center rounded-2xl"
           >
-            <div className="flex items-center w-full min-h-14 sm:min-h-20 border-x-2 border-teal-800/20 rounded-2xl px-3 sm:px-4 py-2 mb-2">
+            <div className="flex items-center w-full min-h-14 sm:min-h-20 md:border-x-2 border-teal-800/20 rounded-2xl px-3 sm:px-4 py-2 mb-2">
               <div className="relative flex-shrink-0 w-16 h-10 sm:w-28 sm:h-16 lg:w-32 lg:h-18">
                 <Image
                   src={project.logo}
@@ -28,12 +28,12 @@ export default function Projects() {
                 />
               </div>
 
-              <h2 className="ml-3 flex-1 text-base md:text-lg font-bold uppercase text-sky-900/50 leading-tight break-words">{project.title}</h2>
+              <h2 className="ml-6 flex-1 md:text-lg font-bold uppercase text-sky-900/50 leading-tight break-words">{project.title}</h2>
             </div>
-            <p className="text-sm mb-4 px-4 text-center">{project.description}</p>
+            <p className="text-sm mb-4 px-1 md:px-4 text-center">{project.description}</p>
             <div className="flex flex-wrap justify-center gap-2 text-xs mb-6">
               {project.tech.map((tech, i) => (
-                <span key={i} className=" text-white px-2 py-1 rounded-full bg-sky-900/60 tracking-wider uppercase font-semibold">
+                <span key={i} className=" text-white px-2 py-1 rounded-full bg-sky-900/60 tracking-wide uppercase font-semibold">
                   {tech}
                 </span>
               ))}
@@ -41,7 +41,7 @@ export default function Projects() {
 
             <ImageSlider images={project.images || []} />
 
-            <div className="flex items-center my-6 text-teal-700/80 cursor-pointer sm:text-base text-xs sm:tracking-widest font-bold">
+            <div className="flex items-center my-6 text-teal-700/80 cursor-pointer md:text-base text-xs sm:tracking-wide font-bold">
               {project.caseStudy && (
                 <>
                   <Link href={project.caseStudy} className="transition-all hover:scale-95 px-1 hover:text-teal-600">
@@ -62,7 +62,7 @@ export default function Projects() {
             </div>
           </div>
         ))}
-        <div className="border border-dashed rounded-md font-semibold flex flex-col gap-1 items-center text-teal-800/70 hover:text-sky-900/70 justify-center hover:bg-stone-50 transition p-2">
+        <div className="border border-dashed rounded-2xl font-semibold flex flex-col gap-1 items-center text-teal-800/70 hover:text-sky-900/70 justify-center hover:bg-stone-50 transition p-2 ">
           <GitHub size="w-15 h-15" />
           <Link href={gitHubLink} target="_blank">
             See more on GitHub

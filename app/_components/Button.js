@@ -5,7 +5,7 @@ export default function Button({ link, bright = false, children, target = '_self
       <Link
         href={link}
         target={target}
-        className={`bg-white/80 text-teal-800/80 text-sm sm:text-base uppercase font-bold sm:tracking-widest hover:text-teal-600/80 rounded-lg hover:rounded-sm hover:bg-white transition ${textSize}`}
+        className={`bg-white/80 text-teal-800/80 text-sm md:text-base uppercase font-bold shadow-md sm:tracking-wide hover:text-teal-600/80 rounded-lg hover:rounded-sm hover:bg-white transition ${textSize}`}
       >
         {children}
       </Link>
@@ -15,7 +15,7 @@ export default function Button({ link, bright = false, children, target = '_self
     <Link
       href={link}
       target={target}
-      className={`bg-teal-700/80 text-white text-sm sm:text-base uppercase font-bold sm:tracking-widest rounded-lg hover:bg-teal-600/80 transition hover:rounded-sm ${textSize}`}
+      className={`bg-teal-700/80 text-white text-sm md:text-base uppercase font-bold shadow-md sm:tracking-wide rounded-lg hover:bg-teal-600/80 transition hover:rounded-sm ${textSize}`}
     >
       {children}
     </Link>

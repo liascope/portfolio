@@ -76,9 +76,9 @@ export const sections = [
   { id: 'challenges', label: 'Challenges & Learnings' },
 ]
 export const caseStudy = {
-  Daycare: 'Daycare App - Fullstack Next.js',
-  LiascopeAstrologyReactNext: 'Astrology App - React.js & Next.js',
-  Todoezel: 'To-Do List App - React.js, Redux Toolkit & TypeScript',
+  Daycare: 'Daycare App',
+  LiascopeAstrologyReactNext: 'Astrology App',
+  Todoezel: 'Task Manager App',
 }
 // CaseStudy End
 
