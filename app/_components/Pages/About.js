@@ -1,4 +1,3 @@
-import GitHubRepos from '../GitHubRepos'
 import IconButton from '../IconButton'
 import ArrowRight from '../Icons/ArrowRight'
 
@@ -28,8 +27,6 @@ export default function About() {
         </p>
       </article>
 
-      <h2 className="text-lg sm:text-xl font-bold text-sky-900/60 uppercase text-center tracking-widest my-6">GitHub Repositories</h2>
-      <GitHubRepos />
       <IconButton link="/techstack" icon={ArrowRight}>
         Technologies and tools I’ve worked with
       </IconButton>

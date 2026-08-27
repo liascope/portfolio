@@ -18,7 +18,7 @@ export default function Projects() {
             className="bg-white/40 backdrop-blur-sm md:p-6 md:shadow-md hover:scale-[1.02] transition flex flex-col justify-between items-center rounded-2xl"
           >
             <div className="flex items-center w-full min-h-14 sm:min-h-20 md:border-x-2 border-teal-800/20 rounded-2xl px-3 sm:px-4 py-2 mb-2">
-              <div className="relative flex-shrink-0 w-16 h-10 sm:w-28 sm:h-16 lg:w-32 lg:h-18">
+              <div className="relative flex-shrink-0 w-20 h-14 sm:w-28 sm:h-18 lg:w-32 lg:h-26">
                 <Image
                   src={project.logo}
                   alt={project.title}
@@ -42,20 +42,11 @@ export default function Projects() {
             <ImageSlider images={project.images || []} />
 
             <div className="flex items-center my-6 text-teal-700/80 cursor-pointer md:text-base text-xs sm:tracking-wide font-bold">
-              {project.caseStudy && (
-                <>
-                  <Link href={project.caseStudy} className="transition-all hover:scale-95 px-1 hover:text-teal-600">
-                    View Case Study
-                  </Link>
-                  <Seperation />
-                </>
-              )}
-              {project.link && (
-                <Link href={project.link} target="_blank" className="transition-all hover:scale-95 px-1 hover:text-teal-600">
-                  View Demo
-                </Link>
-              )}
-              {project.caseStudy && project.link && <Seperation />}
+              <Link href={project.link} target="_blank" className="transition-all hover:scale-95 px-1 hover:text-teal-600">
+                View Demo
+              </Link>
+
+              <Seperation />
               <Link href={project.github} target="_blank" className="transition-all hover:scale-95 px-1 hover:text-teal-600">
                 GitHub Repo
               </Link>
