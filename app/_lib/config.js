@@ -67,43 +67,6 @@ export const stack = {
 }
 // Techstack End
 
-// CaseStudy
-export const sections = [
-  { id: 'project-evolution', label: 'Project Evolution' },
-  { id: 'key-features', label: 'Key Features' },
-  { id: 'architecture', label: 'Architecture & Tech Decisions' },
-  { id: 'state-management', label: 'State Management & Data Flow' },
-  { id: 'challenges', label: 'Challenges & Learnings' },
-]
-export const caseStudy = {
-  Daycare: 'Daycare App',
-  LiascopeAstrologyReactNext: 'Astrology App',
-  Todoezel: 'Task Manager App',
-}
-// CaseStudy End
-
-// GitHub Repos
-export const reactNextProjects = [
-  { name: 'Daycare App - Fullstack Next.js', link: 'https://github.com/liascope/daycare-app' },
-  { name: 'Liascope Astrology', link: 'https://github.com/liascope/liascope-astrology' },
-  { name: 'Portfolio Website', link: 'https://github.com/liascope/portfolio' },
-]
-export const reactProjects = [
-  { name: 'Todoezel - React.js, Redux Toolkit & TypeScript', link: 'https://github.com/liascope/todoezel-rtk' },
-  { name: 'Fast React Pizza', link: 'https://github.com/liascope/fast-react-pizza' },
-  { name: 'Classy Weather', link: 'https://github.com/liascope/weatherapp' },
-  { name: 'EatNSplit', link: 'https://github.com/liascope/eatNsplit' },
-]
-export const vanillaJSprojects = [
-  { name: 'Liascope Astrology - Vanilla JS', link: 'https://github.com/liascope/liascope' },
-  { name: 'Todoezel - Vanilla JS', link: 'https://github.com/liascope/todoezel' },
-  { name: 'Mapty', link: 'https://github.com/liascope/maptyzakin' },
-  { name: 'Forkify', link: 'https://github.com/liascope/forkifyliascope' },
-  { name: 'Dice Game', link: 'https://github.com/liascope/dicegame' },
-  { name: 'Guess My Number', link: 'https://github.com/liascope/guessnumberzakin' },
-]
-// GitHub Repos End
-
 // Projects
 export function generateImages(folder, count) {
   return Array.from({ length: count }, (_, i) => `/${folder}/${i + 1}.png`)
@@ -116,10 +79,30 @@ export const projects = [
     description:
       'Full-stack daycare management system enabling staff to track attendance, manage schedules, and generate structured reports. Built with a server-driven architecture using Next.js Server Actions and PostgreSQL Row Level Security (RLS) for secure data access. Fully responsive across desktop and mobile.',
     tech: ['React.js', 'Next.js', 'Supabase', 'Server Actions', 'JWT Role-Based Access', 'Context API', 'Tailwind CSS'],
-    caseStudy: '/projects/casestudy/Daycare',
     link: 'https://daycare-app-five.vercel.app/',
     github: 'https://github.com/liascope/daycare-app',
     images: generateImages('daycare', 5),
+  },
+  {
+    logo: '/fidizle/0.png',
+    title: 'Movies & Series Archive App',
+    description:
+      'Mobile-first movie & series archive built with React Native and TypeScript. Users can search the OMDb API, explore detailed movie and series information, rate titles, and organize them in separate personal archives. Features a Netflix-inspired responsive UI with dark/light mode and native sharing.',
+    tech: [
+      'React Native',
+      'TypeScript',
+      'Expo',
+      'REST API',
+      'OMDb API',
+      'Context API',
+      'Custom Hooks',
+      '@gorhom/bottom-sheet',
+      'Ionicons',
+      'Native Sharing',
+    ],
+    link: 'https://fidizle.vercel.app/',
+    github: 'https://github.com/liascope/fidizle',
+    images: generateImages('fidizle', 3),
   },
   {
     logo: '/astroReact/0.png',
@@ -127,7 +110,6 @@ export const projects = [
     description:
       'Interactive astrology charting app with automated transit calculations, multi-chart generation, and dynamic SVG visualizations. Refactored from Vanilla JS to React and Next.js to support complex state, reusable chart logic, and responsive rendering. Added AI-powered chat (Gemini API) for real-time astrology interpretations.',
     tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'TanStack Query', 'React Hook Form', 'Framer Motion', 'SVG', 'REST APIs'],
-    caseStudy: '/projects/casestudy/LiascopeAstrologyReactNext',
     link: 'https://liascope.vercel.app/',
     github: 'https://github.com/liascope/liascope-astrology',
     images: generateImages('astroReact', 8),
@@ -138,7 +120,6 @@ export const projects = [
     description:
       'Task management app separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JS to React with Redux Toolkit and TypeScript for predictable state management, persistent storage and catching type-related errors early.',
     tech: ['React.js', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Vite', 'React Router', 'Framer Motion'],
-    caseStudy: '/projects/casestudy/Todoezel',
     link: 'https://todoezel-rtk.vercel.app/',
     github: 'https://github.com/liascope/todoezel-rtk',
     images: generateImages('todoReact', 8),

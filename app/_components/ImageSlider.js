@@ -21,16 +21,6 @@ export default function ImageSlider({ images, sliderHeight = 'h-72' }) {
     }
   }, [loadedImages, images])
 
-  // slide on hover
-
-  useEffect(() => {
-    if (!isHovered) return
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length)
-    }, 2000)
-    return () => clearInterval(interval)
-  }, [isHovered, images])
-
   const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + images.length) % images.length)
   }
