@@ -11,7 +11,7 @@ export default function ActionLink({ href, children, icon: Icon, variant = 'prim
       href={href}
       target={target}
       rel={target === '_blank' ? 'noopener noreferrer' : undefined}
-      className={`flex items-center gap-2 rounded-full px-7 py-3 font-medium transition ${styles}`}
+      className={`flex items-center gap-2 rounded-full px-5 py-2 sm:px-7 sm:py-3 font-medium transition ${styles}`}
     >
       {' '}
       {Icon && <Icon className="h-5 w-5" />}
