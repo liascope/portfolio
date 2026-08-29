@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="max-w-4xl">
           <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-neutral-500">Frontend Developer</p>
 
-          <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl lg:text-8xl">
+          <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-6xl lg:text-8xl">
             Building modern web
             <br />
             <span className="text-neutral-500">interfaces.</span>
