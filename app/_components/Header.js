@@ -32,8 +32,15 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 mx-auto flex max-w-8xl items-center justify-between border-b border-white/10 bg-black/[0.08] px-4 py-3 shadow-lg backdrop-blur-2xl sm:px-6">
-      <Link href="#top" aria-label="Liascope" className="relative sm:h-18 sm:w-28 h-14 w-24 ">
-        <Image src="/logo.png" alt="Liascope" fill priority className="object-contain saturate-55 rounded-full p-1" sizes="96px" />
+      <Link href="#top" aria-label="Liascope" className="relative sm:h-18 sm:w-28 h-12 w-22 ">
+        <Image
+          src="/logo.png"
+          alt="Liascope"
+          fill
+          priority
+          className="object-contain saturate-55 border-r min-[445px]:border-none  border-neutral-700 p-1"
+          sizes="96px"
+        />
       </Link>
 
       <nav className="flex items-center gap-1 sm:gap-2">
@@ -42,7 +49,7 @@ export default function Header() {
             <Link
               key={id}
               href={`#${id}`}
-              className={`relative rounded-full px-3 py-2 text-[11px] font-medium uppercase tracking-wider transition-colors sm:px-4 sm:text-xs ${
+              className={`relative rounded-full px-3 py-2 text-[10px] font-medium uppercase tracking-wider transition-colors sm:px-4 sm:text-xs ${
                 activeSection === id ? 'text-white' : 'text-neutral-500 hover:text-neutral-200'
               }`}
             >
