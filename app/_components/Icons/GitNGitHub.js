@@ -1,9 +1,9 @@
 import GitHub from './GitHub'
 
-export default function GitNGitHub() {
+export default function GitNGitHub({ className }) {
   return (
-    <div className="flex flex-row items-center w-22 h-22 sm:w-28 sm:h-28">
-      <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="flex w-full justify-center flex-row items-center">
+      <svg className={className} viewBox="-5 0 20 20" fill="none">
         <title>Git Logo</title>
         <g>
           {' '}
@@ -13,7 +13,7 @@ export default function GitNGitHub() {
           ></path>{' '}
         </g>
       </svg>{' '}
-      <GitHub size="w-28" />
+      <GitHub className={className} />
     </div>
   )
 }

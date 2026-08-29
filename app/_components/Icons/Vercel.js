@@ -1,7 +1,6 @@
-export default function Vercel() {
+export default function Vercel({ className }) {
   return (
-    <svg width="100" height="100" viewBox="-2 -2 18 18" xmlns="http://www.w3.org/2000/svg">
-      <title>Vercel Logo</title>{' '}
+    <svg className={className} viewBox="-2 0 18 18" fill="currentColor" role="img" aria-label="Vercel Logo">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

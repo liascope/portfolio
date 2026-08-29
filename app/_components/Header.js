@@ -1,46 +1,63 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 import { navLinks } from '../_lib/config'
-import logo from '@/public/favicon.png'
+import Link from 'next/link'
 
 export default function Header() {
-  const pathname = usePathname()
+  const [activeSection, setActiveSection] = useState('about')
+
+  useEffect(() => {
+    const sections = navLinks.map(({ id }) => document.getElementById(id)).filter(Boolean)
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      {
+        rootMargin: '-120px 0px -30% 0px',
+        threshold: 0,
+      },
+    )
+
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <div className="flex flex-col rounded-b-2xl shadow-md backdrop-blur-lg px-0 sm:px-3 bg-gradient-to-br from-slate-100/50 to-slate-200/60 mx-auto max-w-7xl">
-      <Link href="/" className="w-full flex justify-center">
-        <div className="sm:w-40 w-25 relative sm:h-10 h-7 my-4 ">
-          <Image
-            src={logo}
-            alt="Logo"
-            quality={100}
-            fill
-            priority
-            className="brightness-80 saturate-100 contain-content"
-            sizes="(max-width: 640px) 120px, 200px"
-          />
-        </div>
+    <header className="fixed inset-x-0 top-0 z-50 mx-auto flex max-w-8xl items-center justify-between border-b border-white/10 bg-black/[0.08] px-4 py-3 shadow-lg backdrop-blur-2xl sm:px-6">
+      <Link href="#top" aria-label="Liascope" className="relative sm:h-18 sm:w-28 h-14 w-24 ">
+        <Image src="/favicon.png" alt="Liascope" fill priority className="object-contain saturate-60 rounded-full p-1" sizes="96px" />
       </Link>
 
-      <nav className="sm:text-base text-xs text-sky-900/70 font-bold tracking-wider uppercase flex justify-evenly items-center sm:mb-7 mb-4">
-        {navLinks.map((link) => {
-          const isActive = pathname === link.href
+      <nav className="flex items-center gap-1 sm:gap-2">
+        {navLinks.map(({ label, id }) => {
           return (
             <Link
-              key={link.href}
-              href={link.href}
-              className={`px-2 pb-1  transition-all ${
-                isActive ? 'border-b-2 border-teal-600/50 text-sky-900/80 bold' : 'border-b-2 border-transparent scale-95 hover:border-sky-900/50'
+              key={id}
+              href={`#${id}`}
+              className={`relative rounded-full px-3 py-2 text-[11px] font-medium uppercase tracking-wider transition-colors sm:px-4 sm:text-xs ${
+                activeSection === id ? 'text-white' : 'text-neutral-500 hover:text-neutral-200'
               }`}
             >
-              {link.label}
+              {label}
+
+              <span
+                aria-hidden="true"
+                className={`absolute bottom-1 left-1/2 h-0.5 -translate-x-1/2 rounded-full bg-violet-500 transition-all duration-300 ${
+                  activeSection === id ? 'w-4 opacity-100' : 'w-0 opacity-0'
+                }`}
+              />
             </Link>
           )
         })}
       </nav>
-    </div>
+    </header>
   )
 }

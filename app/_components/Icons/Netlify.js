@@ -1,6 +1,6 @@
-export default function Netlify() {
+export default function Netlify({ className }) {
   return (
-    <svg width="100" height="100" viewBox="-2 -2 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="-2 0 18 18" fill="none" role="img" aria-label="Netlify Logo">
       <title>Netlify Logo</title>{' '}
       <path
         d="M7.14645 0.146447C7.34172 -0.0488155 7.6583 -0.0488155 7.85356 0.146447L8.83363 1.12651L7.01342 4.06685L4.30815 2.98475L7.14645 0.146447Z"

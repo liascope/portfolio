@@ -1,7 +1,6 @@
-export default function Auth() {
+export default function Auth({ className }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-2 -2 20 20" height="100" width="100">
-      <title>Auth Logo</title>
+    <svg className={className} viewBox="-3 0 20 20" fill="currentColor" role="img" aria-label="Auth Logo">
       <path
         stroke="currentColor"
         strokeLinecap="round"

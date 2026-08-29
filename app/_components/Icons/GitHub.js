@@ -1,6 +1,6 @@
-export default function GitHub({ size }) {
+export default function GitHub({ className }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className={size} viewBox="0 0 26 26">
+    <svg className={className} viewBox="-3 0 30 30" fill="currentColor" role="img" aria-label="GitHub">
       <path
         fill="currentColor"
         d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 

@@ -1,7 +1,6 @@
-export default function CssModules() {
+export default function CssModules({ className }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-4 -3 35 35" width="100" height="100">
-      <title>CSS Modules Logo</title>
+    <svg className={className} viewBox="-5 0 30 30" fill="none" role="img" aria-label="Css Modules">
       <path
         stroke="currentColor"
         strokeLinecap="round"

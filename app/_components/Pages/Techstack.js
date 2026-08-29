@@ -1,34 +1,38 @@
-import { skillIcons, stack } from '@/app/_lib/config'
-import ArrowLeft from '../Icons/ArrowLeft'
-import IconButton from '../IconButton'
+import { skillIcons, stack } from '../../_lib/config'
 
 export default function Techstack() {
   return (
-    <>
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6 uppercase text-sky-900/80 tracking-widest">Tech Stack</h1>
-      <p className="text-base sm:text-lg mb-8 text-teal-900">These are the technologies and tools I`ve worked with.</p>
-      {Object.entries(stack).map(([category, items]) => (
-        <div key={category} className="mb-8">
-          <h2 className="text-lg sm:text-xl font-bold text-sky-900/60 uppercase tracking-widest mb-6">{category}</h2>
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
-            {items.map((item, index) => {
-              const Icon = skillIcons[item]
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col text-teal-900/80 hover:text-sky-900/80 justify-center items-center text-center bg-white/40 md:backdrop-blur-sm md:rounded-xl md:shadow hover:scale-105 transition h-20 sm:h-28 w-full p-1"
-                >
-                  <Icon className="text-3xl sm:text-4xl mb-2" />
-                  <span className="sm:text-sm uppercase text-xs font-semibold">{item}</span>
-                </div>
-              )
-            })}
+    <section id="stack" className="scroll-mt-28 my-80 mx-auto max-w-7xl">
+      <div className="mb-14">
+        <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-500">02 — Stack</p>
+
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">Technologies I work with</h2>
+      </div>
+
+      <div className="space-y-12">
+        {Object.entries(stack).map(([category, items]) => (
+          <div key={category}>
+            <h3 className="mb-5 text-sm font-medium uppercase tracking-widest text-neutral-500">{category}</h3>
+
+            <div className="flex flex-wrap sm:gap-3 gap-2">
+              {items.map((item) => {
+                const Icon = skillIcons[item]
+
+                return (
+                  <div
+                    key={item}
+                    className="group flex sm:h-36 sm:w-36 h-28 w-28 flex-col items-center justify-center sm:gap-3 gap-1 rounded-xl border border-white/10 bg-white/[0.03] px-4 transition hover:border-violet-500/40 hover:bg-violet-500/[0.04]"
+                  >
+                    {Icon && <Icon className="sm:h-15 sm:w-15 h-12 w-12 shrink-0 text-neutral-400 transition group-hover:text-violet-400" />}
+
+                    <span className="text-center text-sm text-neutral-300">{item}</span>
+                  </div>
+                )
+              })}
+            </div>
           </div>
-        </div>
-      ))}
-      <IconButton link="/projects" icon={ArrowLeft} left={true}>
-        Explore Projects
-      </IconButton>
-    </>
+        ))}
+      </div>
+    </section>
   )
 }

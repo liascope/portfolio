@@ -25,10 +25,10 @@ export const email = 'mailto:liascope@hotmail.com'
 export const gitHubLink = 'https://github.com/liascope'
 
 export const navLinks = [
-  { href: '/about', label: 'About' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/techstack', label: 'Tech Stack' },
-  { href: '/contact', label: 'Contact' },
+  { label: 'About', id: 'about' },
+  { label: 'Stack', id: 'stack' },
+  { label: 'Projects', id: 'projects' },
+  { label: 'Contact', id: 'contact' },
 ]
 
 //Techstack
@@ -60,9 +60,9 @@ export const skillIcons = {
 // Strings in skillIcons have to be the same as Strings in stack //
 export const stack = {
   Core: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
-  'Frameworks & State Management': ['React.js', 'React Native', 'Next.js', 'Vue.js', 'TanStack Query', 'Redux Toolkit'],
+  'Frameworks & State Management': ['React.js', 'React Native', 'Next.js', 'Expo', 'Vue.js', 'TanStack Query', 'Redux Toolkit'],
   'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components', 'Framer Motion'],
-  'Tools & Dev Environment': ['Git & GitHub', 'Prettier & ESLint', 'Vite', 'Expo'],
+  'Tools & Dev Environment': ['Git & GitHub', 'Prettier & ESLint', 'Vite'],
   'Backend & Deployment': ['RESTful APIs', 'Supabase', 'Auth.js', 'Netlify', 'Vercel'],
 }
 // Techstack End
@@ -77,29 +77,18 @@ export const projects = [
     logo: '/daycare/0.png',
     title: 'Daycare App',
     description:
-      'Full-stack daycare management system enabling staff to track attendance, manage schedules, and generate structured reports. Built with a server-driven architecture using Next.js Server Actions and PostgreSQL Row Level Security (RLS) for secure data access. Fully responsive across desktop and mobile.',
-    tech: ['React.js', 'Next.js', 'Supabase', 'Server Actions', 'JWT Role-Based Access', 'Context API', 'Tailwind CSS'],
+      'Full-stack daycare management application for tracking attendance, managing schedules, and generating structured reports. Built with Next.js and Supabase, with role-based access and PostgreSQL Row Level Security to keep data access separated by user role. The interface is fully responsive across desktop and mobile.',
+    tech: ['React.js', 'Next.js', 'Supabase', 'PostgreSQL', 'Server Actions', 'Tailwind CSS'],
     link: 'https://daycare-app-five.vercel.app/',
     github: 'https://github.com/liascope/daycare-app',
     images: generateImages('daycare', 5),
   },
   {
     logo: '/fidizle/0.png',
-    title: 'Movies & Series Archive App',
+    title: 'Fidizle',
     description:
-      'Mobile-first movie & series archive built with React Native and TypeScript. Users can search the OMDb API, explore detailed movie and series information, rate titles, and organize them in separate personal archives. Features a Netflix-inspired responsive UI with dark/light mode and native sharing.',
-    tech: [
-      'React Native',
-      'TypeScript',
-      'Expo',
-      'REST API',
-      'OMDb API',
-      'Context API',
-      'Custom Hooks',
-      '@gorhom/bottom-sheet',
-      'Ionicons',
-      'Native Sharing',
-    ],
+      'Mobile-first movie and series archive built with React Native and TypeScript. Users can search the OMDb API, explore detailed information, rate titles, and organize them in separate personal archives. Includes persistent state, dark and light mode, responsive layouts, and native sharing.',
+    tech: ['React Native', 'TypeScript', 'Expo', 'OMDb API', 'Context API'],
     link: 'https://fidizle.vercel.app/',
     github: 'https://github.com/liascope/fidizle',
     images: generateImages('fidizle', 3),
@@ -108,21 +97,21 @@ export const projects = [
     logo: '/astroReact/0.png',
     title: 'Astrology App',
     description:
-      'Interactive astrology charting app with automated transit calculations, multi-chart generation, and dynamic SVG visualizations. Refactored from Vanilla JS to React and Next.js to support complex state, reusable chart logic, and responsive rendering. Added AI-powered chat (Gemini API) for real-time astrology interpretations.',
-    tech: ['React.js', 'Next.js', 'Tailwind CSS', 'Context API', 'TanStack Query', 'React Hook Form', 'Framer Motion', 'SVG', 'REST APIs'],
+      'Interactive astrology application with automated transit calculations, multi-chart generation, and dynamic SVG visualizations. Originally built with Vanilla JavaScript and an MVC architecture, then rebuilt with React and Next.js using reusable components and a more maintainable state and data flow. Integrates the Gemini API for AI-generated chart interpretations.',
+    tech: ['React.js', 'Next.js', 'TanStack Query', 'Tailwind CSS', 'Framer Motion', 'Gemini API'],
     link: 'https://liascope.vercel.app/',
     github: 'https://github.com/liascope/liascope-astrology',
-    images: generateImages('astroReact', 8),
+    images: generateImages('astroReact', 6),
   },
   {
     logo: '/todoReact/0.png',
-    title: 'Task Manager App',
+    title: 'Task Manager',
     description:
-      'Task management app separating daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JS to React with Redux Toolkit and TypeScript for predictable state management, persistent storage and catching type-related errors early.',
-    tech: ['React.js', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Vite', 'React Router', 'Framer Motion'],
+      'Task management application for organizing daily tasks, long-term planning, and shopping lists. Refactored from Vanilla JavaScript to React and TypeScript, replacing local state management with Redux Toolkit for predictable state and persistent data.',
+    tech: ['React.js', 'TypeScript', 'Redux Toolkit', 'Vite', 'React Router', 'Tailwind CSS'],
     link: 'https://todoezel-rtk.vercel.app/',
     github: 'https://github.com/liascope/todoezel-rtk',
-    images: generateImages('todoReact', 8),
+    images: generateImages('todoReact', 5),
   },
 ]
 

@@ -1,35 +1,24 @@
-import IconButton from '../IconButton'
-import ArrowRight from '../Icons/ArrowRight'
-
 export default function About() {
   return (
-    <>
-      <h1 className="sm:text-3xl text-2xl uppercase font-bold mb-6 sm:tracking-wider text-sky-900/80">About</h1>
+    <section id="about" className="scroll-mt-28 flex">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.7fr_1.3fr]">
+        <div>
+          <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-500">01 — About</p>
 
-      <article className="sm:text-lg text-sm flex flex-col gap-6 mb-20 ">
-        <p>
-          Frontend developer specializing in <strong className="text-teal-900/60 tracking-widest">React.js and Next.js.</strong>{' '}
-        </p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">A frontend-focused developer</h2>
+        </div>
 
-        <p>
-          I build projects from the ground up — from architecture and state management to API integration, authentication, and polished user
-          interfaces — with a strong focus on maintainable code and predictable frontend systems.
-        </p>
+        <div className="space-y-6 text-base leading-8 text-neutral-400 sm:text-lg">
+          <p>I build projects from the ground up with a focus on clean frontend structure, reusable components, and polished user interfaces.</p>
 
-        <p>
-          Alongside personal projects, I actively explore open-source projects, contribute via GitHub pull requests, and continuously expand my stack
-          by building real-world applications.
-        </p>
+          <p>
+            My work spans React, TypeScript, Next.js and React Native, including state management, API integration, authentication, responsive design
+            and full-stack applications.
+          </p>
 
-        <p>
-          Particularly interested in complex interactive interfaces, scalable frontend architecture, and building clean, production-oriented user
-          experiences.
-        </p>
-      </article>
-
-      <IconButton link="/techstack" icon={ArrowRight}>
-        Technologies and tools I’ve worked with
-      </IconButton>
-    </>
+          <p>I learn by building real applications and continuously improving how I structure, test and maintain them.</p>
+        </div>
+      </div>
+    </section>
   )
 }

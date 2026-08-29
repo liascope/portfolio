@@ -1,7 +1,6 @@
-export default function Typescript() {
+export default function Typescript({ className }) {
   return (
-    <svg width="100" height="100" viewBox="-2 -2 23 23" xmlns="http://www.w3.org/2000/svg">
-      <title>TypeScript Logo</title>{' '}
+    <svg className={className} viewBox="-3 0 20 20" fill="currentColor" role="img" aria-label="TS Logo">
       <path
         fillRule="nonzero"
         clipRule="nonzero"

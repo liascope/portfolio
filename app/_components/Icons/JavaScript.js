@@ -1,6 +1,6 @@
-export default function JavaScript() {
+export default function JavaScript({ className }) {
   return (
-    <svg width="100" height="100" viewBox="-3 -3 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="-5 0 30 30" fill="currentColor" role="img" aria-label="JS Logo">
       <title>JavaScript Logo</title>
       <path
         d="M13 6C13 5.44772 13.4477 5 14 5H17C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7H15.2C15.0895 7 15 7.08954 15 7.2V8.8C15 8.91046 15.0895 9 15.2 9H17C17.5523 9 18 9.44772 18 10V13C18 13.2652 17.8946 13.5196 17.7071 13.7071L14.7071 16.7071C14.3166 17.0976 13.6834 17.0976 13.2929 16.7071C12.9024 16.3166 12.9024 15.6834 13.2929 15.2929L15.9414 12.6444C15.9789 12.6069 16 12.556 16 12.5029V11.2C16 11.0895 15.9105 11 15.8 11H14C13.4477 11 13 10.5523 13 10V6Z"
