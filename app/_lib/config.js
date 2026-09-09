@@ -13,7 +13,6 @@ import PrettierNEsLint from '../_components/Icons/PrettierNEsLint'
 import Redux from '../_components/Icons/Redux'
 import RestApi from '../_components/Icons/RestApi'
 import Vite from '../_components/Icons/Vite'
-import FramerMotion from '../_components/Icons/FramerMotion'
 import Supabase from '../_components/Icons/Supabase'
 import StyledComponents from '../_components/Icons/StyledComponents'
 import CssModules from '../_components/Icons/CssModules'
@@ -50,7 +49,6 @@ export const skillIcons = {
   'TanStack Query': ReactQuery,
   'Prettier & ESLint': PrettierNEsLint,
   Netlify: Netlify,
-  'Framer Motion': FramerMotion,
   Supabase: Supabase,
   'Styled Components': StyledComponents,
   'CSS Modules': CssModules,
@@ -61,7 +59,7 @@ export const skillIcons = {
 export const stack = {
   Core: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
   'Frameworks & State Management': ['React.js', 'React Native', 'Next.js', 'Expo', 'Vue.js', 'TanStack Query', 'Redux Toolkit'],
-  'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components', 'Framer Motion'],
+  'Styling & UI': ['Tailwind CSS', 'CSS Modules', 'Styled Components'],
   'Tools & Dev Environment': ['Git & GitHub', 'Prettier & ESLint', 'Vite'],
   'Backend & Deployment': ['RESTful APIs', 'Supabase', 'Auth.js', 'Netlify', 'Vercel'],
 }
