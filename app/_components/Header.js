@@ -32,13 +32,13 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 mx-auto flex max-w-8xl items-center justify-between border-b border-white/10 bg-black/[0.08] px-4 py-3 shadow-lg backdrop-blur-2xl sm:px-6">
-      <Link href="#top" aria-label="Liascope" className="relative sm:h-18 sm:w-28 h-12 w-22 ">
+      <Link href="#top" aria-label="Liascope" className="relative sm:h-18 sm:w-28 h-12 w-22">
         <Image
           src="/logo.png"
           alt="Liascope"
           fill
           priority
-          className="object-contain saturate-55 border-r min-[445px]:border-none  border-neutral-700 p-1"
+          className="object-contain saturate-55 border-r min-[445px]:border-none max-[300px]:border-none border-neutral-700 md:p-1 pr-2"
           sizes="96px"
         />
       </Link>
