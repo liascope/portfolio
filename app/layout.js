@@ -1,7 +1,7 @@
 import './globals.css'
 import Header from './_components/Header'
 import Footer from './_components/Footer'
-
+import { Analytics } from '@vercel/analytics/next'
 export const metadata = {
   title: 'Liascope-Portfolio',
   description: 'Liascope | Zeliha A.',
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className="bg-neutral-950 text-neutral-100 antialiased">
         <Header />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
